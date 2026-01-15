@@ -1,0 +1,55 @@
+{
+  "sources": [
+    {
+      "name": "note - AI",
+      "type": "note_rss",
+      "url": "https://note.com/api/v2/creators/npaka/contents",
+      "keywords": ["AI", "ChatGPT", "Claude", "Gemini", "Sora", "Midjourney", "生成AI", "プロンプト", "LLM", "画像生成", "動画生成"],
+      "platform": "note"
+    },
+    {
+      "name": "Zenn - AI Topics",
+      "type": "rss",
+      "url": "https://zenn.dev/topics/ai/feed",
+      "keywords": ["ChatGPT", "Claude", "Gemini", "生成AI", "プロンプト", "GPT"],
+      "platform": "zenn"
+    },
+    {
+      "name": "Zenn - ChatGPT",
+      "type": "rss",
+      "url": "https://zenn.dev/topics/chatgpt/feed",
+      "keywords": [],
+      "platform": "zenn"
+    },
+    {
+      "name": "ASCII.jp - AI",
+      "type": "rss",
+      "url": "https://ascii.jp/elem/000/004/rss20.xml",
+      "keywords": ["AI", "ChatGPT", "Claude", "Gemini", "生成AI"],
+      "platform": "blog"
+    }
+  ],
+  "manual_articles": [
+    {
+      "title": "",
+      "description": "",
+      "url": "",
+      "platform": "x",
+      "author": "",
+      "thumbnail": "",
+      "tags": [],
+      "aiTools": []
+    }
+  ],
+  "keywords_filter": {
+    "required_any": ["AI", "ChatGPT", "Claude", "Gemini", "Sora", "Midjourney", "生成AI", "プロンプト", "LLM", "GPT", "画像生成", "動画生成", "機械学習"],
+    "exclude": ["求人", "採用", "募集中", "セミナー開催"]
+  },
+  "blacklist": [],
+  "settings": {
+    "max_articles": 50,
+    "days_to_keep": 30,
+    "auto_detect_ai_tools": true,
+    "fetch_thumbnails": true
+  }
+}

@@ -1,0 +1,42 @@
+name: Update Articles
+
+on:
+  schedule:
+    # 毎日 9:00 JST (0:00 UTC) に実行
+    - cron: '0 0 * * *'
+  
+  # 手動実行も可能
+  workflow_dispatch:
+  
+  # pushでも実行（テスト用）
+  push:
+    branches:
+      - main
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+      
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+      
+      - name: Install dependencies
+        run: |
+          pip install feedparser requests beautifulsoup4 lxml
+      
+      - name: Fetch articles
+        run: |
+          python scripts/fetch_articles.py
+      
+      - name: Commit and push if changed
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          git add data/articles.json
+          git diff --quiet && git diff --staged --quiet || (git commit -m "🤖 Update articles - $(date '+%Y-%m-%d %H:%M')" && git push)

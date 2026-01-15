@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Discover - 生成AI情報キュレーション</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@700;800&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --color-bg: #0a0e27;
+            --color-surface: #13182e;
+            --color-surface-hover: #1a2038;
+            --color-border: #2d3548;
+            --color-text-primary: #e8eaed;
+            --color-text-secondary: #9aa0b4;
+            --color-text-tertiary: #6b7280;
+            --color-accent: #f59e0b;
+            --color-accent-hover: #fbbf24;
+            --color-danger: #ef4444;
+            --font-display: 'Plus Jakarta Sans', sans-serif;
+            --font-body: 'Inter', sans-serif;
+        }
+
+        body {
+            font-family: var(--font-body);
+            background: var(--color-bg);
+            color: var(--color-text-primary);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* Header */
+        .header {
+            padding: 32px 0;
+            border-bottom: 1px solid var(--color-border);
+            margin-bottom: 32px;
+            position: sticky;
+            top: 0;
+            background: rgba(10, 14, 39, 0.95);
+            backdrop-filter: blur(10px);
+            z-index: 100;
+        }
+
+        .header-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 24px;
+            flex-wrap: wrap;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .logo-icon {
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(135deg, var(--color-accent) 0%, #d97706 100%);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+        }
+
+        .logo-text {
+            font-family: var(--font-display);
+            font-size: 24px;
+            font-weight: 800;
+            background: linear-gradient(135deg, #ffffff 0%, var(--color-accent) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .header-info {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            font-size: 13px;
+            color: var(--color-text-tertiary);
+        }
+
+        .update-time {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .search-container {
+            flex: 1;
+            max-width: 500px;
+            position: relative;
+        }
+
+        .search-input {
+            width: 100%;
+            padding: 12px 16px 12px 44px;
+            background: var(--color-surface);
+            border: 1px solid var(--color-border);
+            border-radius: 12px;
+            color: var(--color-text-primary);
+            font-family: var(--font-body);
+            font-size: 15px;
+            transition: all 0.2s;
+        }
+
+        .search-input:focus {
+            outline: none;
+            border-color: var(--color-accent);
+            box-shadow: 0 0 0 3px rgba(245, 158, 11, 0.1);
+        }
+
+        .search-icon {
+            position: absolute;
+            left: 16px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--color-text-tertiary);
+            width: 18px;
+            height: 18px;
+        }
+
+        /* Filters */
+        .filters {
+            margin-bottom: 32px;
+            display: flex;
+            gap: 24px;
+            flex-wrap: wrap;
+        }
+
+        .filter-group {
+            display: flex;
+            gap: 8px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .filter-label {
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--color-text-secondary);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-right: 4px;
+        }
+
+        .filter-btn {
+            padding: 8px 16px;
+            background: var(--color-surface);
+            border: 1px solid var(--color-border);
+            border-radius: 20px;
+            color: var(--color-text-secondary);
+            font-size: 14px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.2s;
+            white-space: nowrap;
+        }
+
+        .filter-btn:hover {
+            background: var(--color-surface-hover);
+            border-color: var(--color-accent);
+            color: var(--color-text-primary);
+        }
+
+        .filter-btn.active {
+            background: var(--color-accent);
+            border-color: var(--color-accent);
+            color: #000;
+            font-weight: 600;
+        }
+
+        /* Articles */
+        .articles {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .article-card {
+            display: flex;
+            gap: 20px;
+            padding: 20px;
+            background: var(--color-surface);
+            border: 1px solid var(--color-border);
+            border-radius: 16px;
+            transition: all 0.3s;
+            position: relative;
+        }
+
+        .article-card:hover {
+            background: var(--color-surface-hover);
+            border-color: var(--color-accent);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+        }
+
+        .article-link {
+            text-decoration: none;
+            color: inherit;
+            display: flex;
+            gap: 20px;
+            flex: 1;
+        }
+
+        .article-thumbnail {
+            flex-shrink: 0;
+            width: 200px;
+            height: 140px;
+            border-radius: 12px;
+            overflow: hidden;
+            background: linear-gradient(135deg, #2d3548 0%, #13182e 100%);
+        }
+
+        .article-thumbnail img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s;
+        }
+
+        .article-card:hover .article-thumbnail img {
+            transform: scale(1.05);
+        }
+
+        .article-content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .article-meta {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 13px;
+            color: var(--color-text-tertiary);
+        }
+
+        .article-platform {
+            font-weight: 600;
+            color: var(--color-text-secondary);
+        }
+
+        .article-title {
+            font-family: var(--font-display);
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 1.4;
+            color: var(--color-text-primary);
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+        }
+
+        .article-description {
+            font-size: 15px;
+            line-height: 1.6;
+            color: var(--color-text-secondary);
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+        }
+
+        .article-tags {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+            margin-top: auto;
+        }
+
+        .tag {
+            padding: 4px 10px;
+            background: transparent;
+            border: 1px solid var(--color-border);
+            border-radius: 6px;
+            font-size: 12px;
+            font-weight: 500;
+            color: var(--color-text-tertiary);
+        }
+
+        .tag.chatgpt { border-color: #10a37f; color: #10a37f; }
+        .tag.claude { border-color: #cc785c; color: #cc785c; }
+        .tag.gemini { border-color: #4285f4; color: #4285f4; }
+        .tag.midjourney { border-color: #9333ea; color: #9333ea; }
+        .tag.sora { border-color: #ec4899; color: #ec4899; }
+
+        /* Delete button */
+        .delete-btn {
+            position: absolute;
+            top: 16px;
+            right: 16px;
+            padding: 6px 12px;
+            background: var(--color-danger);
+            border: none;
+            border-radius: 6px;
+            color: white;
+            font-size: 12px;
+            font-weight: 600;
+            cursor: pointer;
+            opacity: 0;
+            transition: opacity 0.2s;
+        }
+
+        .article-card:hover .delete-btn {
+            opacity: 1;
+        }
+
+        .delete-btn:hover {
+            background: #dc2626;
+        }
+
+        .empty {
+            text-align: center;
+            padding: 80px 40px;
+            color: var(--color-text-secondary);
+        }
+
+        .empty h3 {
+            font-size: 20px;
+            margin-bottom: 8px;
+        }
+
+        .loading {
+            text-align: center;
+            padding: 80px 40px;
+            color: var(--color-text-secondary);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .header-inner {
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            .search-container {
+                max-width: 100%;
+            }
+
+            .article-card {
+                flex-direction: column;
+            }
+
+            .article-link {
+                flex-direction: column;
+            }
+
+            .article-thumbnail {
+                width: 100%;
+                height: 180px;
+            }
+
+            .delete-btn {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="header-inner">
+                <div class="logo">
+                    <div class="logo-icon">✨</div>
+                    <h1 class="logo-text">AI Discover</h1>
+                </div>
+                <div class="search-container">
+                    <svg class="search-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                    </svg>
+                    <input type="text" class="search-input" id="searchInput" placeholder="記事を検索...">
+                </div>
+                <div class="header-info">
+                    <div class="update-time">
+                        <span>📊</span>
+                        <span id="totalCount">0 件</span>
+                    </div>
+                    <div class="update-time">
+                        <span>🕒</span>
+                        <span id="lastUpdate">更新中...</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="filters">
+            <div class="filter-group">
+                <span class="filter-label">プラットフォーム</span>
+                <button class="filter-btn active" data-filter="platform" data-value="all">すべて</button>
+                <button class="filter-btn" data-filter="platform" data-value="note">note</button>
+                <button class="filter-btn" data-filter="platform" data-value="zenn">Zenn</button>
+                <button class="filter-btn" data-filter="platform" data-value="youtube">YouTube</button>
+                <button class="filter-btn" data-filter="platform" data-value="x">X</button>
+                <button class="filter-btn" data-filter="platform" data-value="blog">ブログ</button>
+            </div>
+            <div class="filter-group">
+                <span class="filter-label">AIツール</span>
+                <button class="filter-btn active" data-filter="ai" data-value="all">すべて</button>
+                <button class="filter-btn" data-filter="ai" data-value="chatgpt">ChatGPT</button>
+                <button class="filter-btn" data-filter="ai" data-value="claude">Claude</button>
+                <button class="filter-btn" data-filter="ai" data-value="gemini">Gemini</button>
+                <button class="filter-btn" data-filter="ai" data-value="sora">Sora</button>
+                <button class="filter-btn" data-filter="ai" data-value="midjourney">Midjourney</button>
+            </div>
+        </div>
+
+        <div class="articles" id="articlesContainer">
+            <div class="loading">
+                <h3>📡 記事を読み込み中...</h3>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let allArticles = [];
+        let currentPlatform = 'all';
+        let currentAI = 'all';
+        let currentSearch = '';
+
+        // 記事データを読み込み
+        async function loadArticles() {
+            try {
+                const response = await fetch('data/articles.json');
+                const data = await response.json();
+                
+                allArticles = data.articles;
+                
+                // 更新時刻を表示
+                const updateTime = new Date(data.last_updated);
+                document.getElementById('lastUpdate').textContent = formatDate(updateTime);
+                document.getElementById('totalCount').textContent = `${data.total} 件`;
+                
+                renderArticles();
+            } catch (error) {
+                console.error('記事の読み込みエラー:', error);
+                document.getElementById('articlesContainer').innerHTML = 
+                    '<div class="empty"><h3>⚠️ 記事の読み込みに失敗しました</h3><p>しばらくしてから再度お試しください</p></div>';
+            }
+        }
+
+        function formatDate(date) {
+            const now = new Date();
+            const diff = now - date;
+            const minutes = Math.floor(diff / 60000);
+            const hours = Math.floor(diff / 3600000);
+            const days = Math.floor(diff / 86400000);
+
+            if (minutes < 60) return `${minutes}分前に更新`;
+            if (hours < 24) return `${hours}時間前に更新`;
+            if (days < 7) return `${days}日前に更新`;
+            return date.toLocaleDateString('ja-JP');
+        }
+
+        function renderArticles() {
+            const container = document.getElementById('articlesContainer');
+            const filtered = allArticles.filter(article => {
+                const matchPlatform = currentPlatform === 'all' || article.platform === currentPlatform;
+                const matchAI = currentAI === 'all' || article.aiTools.some(tool => tool === currentAI);
+                const matchSearch = currentSearch === '' || 
+                    article.title.toLowerCase().includes(currentSearch.toLowerCase()) ||
+                    article.description.toLowerCase().includes(currentSearch.toLowerCase());
+                return matchPlatform && matchAI && matchSearch;
+            });
+
+            if (filtered.length === 0) {
+                container.innerHTML = '<div class="empty"><h3>記事が見つかりませんでした</h3><p>別の検索条件を試してみてください</p></div>';
+                return;
+            }
+
+            container.innerHTML = filtered.map(article => `
+                <div class="article-card" data-url="${article.url}">
+                    <a href="${article.url}" target="_blank" rel="noopener noreferrer" class="article-link">
+                        <div class="article-thumbnail">
+                            <img src="${article.thumbnail}" alt="${article.title}" loading="lazy">
+                        </div>
+                        <div class="article-content">
+                            <div class="article-meta">
+                                <span class="article-platform">${article.platform}</span>
+                                <span>•</span>
+                                <span>${article.author || '不明'}</span>
+                                <span>•</span>
+                                <span>${article.time}</span>
+                            </div>
+                            <h2 class="article-title">${article.title}</h2>
+                            <p class="article-description">${article.description}</p>
+                            <div class="article-tags">
+                                ${article.tags.map(tag => {
+                                    const aiClass = article.aiTools.includes(tag.toLowerCase()) ? tag.toLowerCase() : '';
+                                    return `<span class="tag ${aiClass}">${tag}</span>`;
+                                }).join('')}
+                            </div>
+                        </div>
+                    </a>
+                    <button class="delete-btn" onclick="deleteArticle('${article.url}', event)">
+                        🗑️ 削除
+                    </button>
+                </div>
+            `).join('');
+        }
+
+        function deleteArticle(url, event) {
+            event.preventDefault();
+            event.stopPropagation();
+            
+            if (!confirm('この記事をブラックリストに追加しますか？\n\n次回の更新から表示されなくなります。')) {
+                return;
+            }
+
+            // 記事を非表示
+            const card = event.target.closest('.article-card');
+            card.style.opacity = '0.5';
+            card.style.pointerEvents = 'none';
+
+            // ブラックリスト情報を表示（実際はGitHubで編集が必要）
+            alert(`記事をブラックリストに追加するには：
+
+1. GitHubリポジトリの config.json を開く
+2. "blacklist" 配列に以下を追加：
+
+"${url}"
+
+3. コミット & プッシュで完了！`);
+        }
+
+        // Filter buttons
+        document.querySelectorAll('.filter-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const filterType = btn.dataset.filter;
+                const value = btn.dataset.value;
+
+                document.querySelectorAll(`[data-filter="${filterType}"]`).forEach(b => {
+                    b.classList.remove('active');
+                });
+                btn.classList.add('active');
+
+                if (filterType === 'platform') {
+                    currentPlatform = value;
+                } else if (filterType === 'ai') {
+                    currentAI = value;
+                }
+
+                renderArticles();
+            });
+        });
+
+        // Search
+        document.getElementById('searchInput').addEventListener('input', (e) => {
+            currentSearch = e.target.value;
+            renderArticles();
+        });
+
+        // 初期読み込み
+        loadArticles();
+    </script>
+</body>
+</html>
