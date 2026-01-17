@@ -552,69 +552,69 @@
         }
 
         function renderPagination(totalPages, totalArticles) {
-            if (totalPages <= 1) return '';
+            console.log('Pagination - currentPage:', currentPage, 'totalPages:', totalPages);
 
-            const startItem = (currentPage - 1) * itemsPerPage + 1;
-            const endItem = Math.min(currentPage * itemsPerPage, totalArticles);
-
-            let paginationHTML = `
-                <div class="pagination">
-                    <div class="pagination-info">
-                        ${startItem} - ${endItem} 件目 / 全 ${totalArticles} 件
-                    </div>
-                    <div class="pagination-buttons">
-            `;
-
-            // 最初へボタン（≪）
-            if (currentPage > 1) {
-                paginationHTML += `<button class="page-btn" onclick="goToPage(1)" title="最初のページへ">≪</button>`;
+            if (totalPages <= 1) {
+                console.log('Only 1 page, hiding pagination');
+                return '';
             }
 
-            // 前へボタン
+            let pagination = '<div class="pagination">';
+
+            // 表示情報
+            const start = (currentPage - 1) * itemsPerPage + 1;
+            const end = Math.min(currentPage * itemsPerPage, totalArticles);
+            pagination += `<div class="pagination-info">${start}-${end}件 / 全${totalArticles}件</div>`;
+
+            pagination += '<div class="pagination-buttons">';
+
+            // ≪ 最初へ（currentPageが1より大きい時のみ表示）
             if (currentPage > 1) {
-                paginationHTML += `<button class="page-btn" onclick="goToPage(${currentPage - 1})">前へ</button>`;
+                pagination += `<button onclick="goToPage(1)" class="page-btn" title="最初のページへ">≪</button>`;
             }
 
-            // ページ番号ボタン
-            const maxVisiblePages = 7;
-            let startPage = Math.max(1, currentPage - Math.floor(maxVisiblePages / 2));
-            let endPage = Math.min(totalPages, startPage + maxVisiblePages - 1);
+            // 前へ
+            if (currentPage > 1) {
+                pagination += `<button onclick="goToPage(${currentPage - 1})" class="page-btn">前のページ</button>`;
+            }
 
-            if (endPage - startPage < maxVisiblePages - 1) {
-                startPage = Math.max(1, endPage - maxVisiblePages + 1);
+            // ページ番号
+            const maxButtons = 5;
+            let startPage = Math.max(1, currentPage - 2);
+            let endPage = Math.min(totalPages, startPage + maxButtons - 1);
+
+            if (endPage - startPage < maxButtons - 1) {
+                startPage = Math.max(1, endPage - maxButtons + 1);
             }
 
             if (startPage > 1) {
-                paginationHTML += `<button class="page-btn" onclick="goToPage(1)">1</button>`;
-                if (startPage > 2) {
-                    paginationHTML += `<span class="page-ellipsis">...</span>`;
-                }
+                pagination += `<button onclick="goToPage(1)" class="page-btn">1</button>`;
+                if (startPage > 2) pagination += `<span class="page-ellipsis">...</span>`;
             }
 
             for (let i = startPage; i <= endPage; i++) {
-                const activeClass = i === currentPage ? 'active' : '';
-                paginationHTML += `<button class="page-btn ${activeClass}" onclick="goToPage(${i})">${i}</button>`;
+                const active = i === currentPage ? 'active' : '';
+                pagination += `<button onclick="goToPage(${i})" class="page-btn ${active}">${i}</button>`;
             }
 
             if (endPage < totalPages) {
-                if (endPage < totalPages - 1) {
-                    paginationHTML += `<span class="page-ellipsis">...</span>`;
-                }
-                paginationHTML += `<button class="page-btn" onclick="goToPage(${totalPages})">${totalPages}</button>`;
+                if (endPage < totalPages - 1) pagination += `<span class="page-ellipsis">...</span>`;
+                pagination += `<button onclick="goToPage(${totalPages})" class="page-btn">${totalPages}</button>`;
             }
 
-            // 次へボタン
+            // 次へ
             if (currentPage < totalPages) {
-                paginationHTML += `<button class="page-btn" onclick="goToPage(${currentPage + 1})">次へ</button>`;
+                pagination += `<button onclick="goToPage(${currentPage + 1})" class="page-btn">次のページ</button>`;
             }
-// 最後へボタン（≫）            if (currentPage < totalPages) {                paginationHTML += `<button class="page-btn" onclick="goToPage(${totalPages})" title="最後のページへ">≫</button>`;            }
 
-            paginationHTML += `
-                    </div>
-                </div>
-            `;
+            // ≫ 最後へ（currentPageがtotalPagesより小さい時に表示）
+            if (currentPage < totalPages) {
+                pagination += `<button onclick="goToPage(${totalPages})" class="page-btn" title="最後のページへ">≫</button>`;
+            }
 
-            return paginationHTML;
+            pagination += '</div></div>';
+
+            return pagination;
         }
 
         function goToPage(page) {
