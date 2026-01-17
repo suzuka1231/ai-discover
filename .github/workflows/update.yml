@@ -2,8 +2,8 @@ name: Update Articles
 
 on:
   schedule:
-    # 毎日 9:00 JST (0:00 UTC) に実行
-    - cron: '0 0 * * *'
+    # 2時間ごとに実行（0, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22時）
+    - cron: '0 */2 * * *'
   
   # 手動実行も可能
   workflow_dispatch:
