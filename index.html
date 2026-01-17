@@ -354,6 +354,16 @@
         }
 
 /* Pagination */        .pagination {            margin-top: 40px;            padding: 24px;            background: var(--color-surface);            border: 1px solid var(--color-border);            border-radius: 16px;        }        .pagination-info {            text-align: center;            color: var(--color-text-secondary);            font-size: 14px;            margin-bottom: 16px;        }        .pagination-buttons {            display: flex;            justify-content: center;            align-items: center;            gap: 8px;            flex-wrap: wrap;        }        .page-btn {            padding: 8px 16px;            background: var(--color-surface);            border: 1px solid var(--color-border);            border-radius: 8px;            color: var(--color-text-secondary);            font-size: 14px;            font-weight: 500;            cursor: pointer;            transition: all 0.2s;        }        .page-btn:hover {            background: var(--color-surface-hover);            border-color: var(--color-accent);            color: var(--color-text-primary);        }        .page-btn.active {            background: var(--color-accent);            border-color: var(--color-accent);            color: white;            font-weight: 600;        }        .page-ellipsis {            color: var(--color-text-tertiary);            padding: 0 8px;        }
+
+        .pagination:first-of-type {
+            margin-bottom: 24px;
+            margin-top: 0;
+        }
+
+        .pagination:last-of-type {
+            margin-top: 40px;
+            margin-bottom: 0;
+        }
         /* Responsive */
         @media (max-width: 768px) {
             .header-inner {
@@ -503,7 +513,11 @@
             const endIndex = startIndex + itemsPerPage;
             const currentArticles = filtered.slice(startIndex, endIndex);
 
-            container.innerHTML = currentArticles.map(article => `
+            // 上部ページネーションを表示
+            container.innerHTML = renderPagination(totalPages, filtered.length);
+
+            // 記事を追加
+            container.innerHTML += currentArticles.map(article => `
                 <div class="article-card" data-url="${article.url}">
                     <a href="${article.url}" target="_blank" rel="noopener noreferrer" class="article-link">
                         <div class="article-thumbnail">
@@ -531,7 +545,10 @@
                         🗑️ 削除
                     </button>
                 </div>
-            `).join('') + renderPagination(totalPages, filtered.length);
+            `).join('');
+
+            // 下部ページネーションを追加
+            container.innerHTML += renderPagination(totalPages, filtered.length);
         }
 
         function renderPagination(totalPages, totalArticles) {
@@ -547,6 +564,11 @@
                     </div>
                     <div class="pagination-buttons">
             `;
+
+            // 最初へボタン（≪）
+            if (currentPage > 1) {
+                paginationHTML += `<button class="page-btn" onclick="goToPage(1)" title="最初のページへ">≪</button>`;
+            }
 
             // 前へボタン
             if (currentPage > 1) {
@@ -585,6 +607,7 @@
             if (currentPage < totalPages) {
                 paginationHTML += `<button class="page-btn" onclick="goToPage(${currentPage + 1})">次へ</button>`;
             }
+// 最後へボタン（≫）            if (currentPage < totalPages) {                paginationHTML += `<button class="page-btn" onclick="goToPage(${totalPages})" title="最後のページへ">≫</button>`;            }
 
             paginationHTML += `
                     </div>
