@@ -353,6 +353,7 @@
             color: var(--color-text-secondary);
         }
 
+/* Pagination */        .pagination {            margin-top: 40px;            padding: 24px;            background: var(--color-surface);            border: 1px solid var(--color-border);            border-radius: 16px;        }        .pagination-info {            text-align: center;            color: var(--color-text-secondary);            font-size: 14px;            margin-bottom: 16px;        }        .pagination-buttons {            display: flex;            justify-content: center;            align-items: center;            gap: 8px;            flex-wrap: wrap;        }        .page-btn {            padding: 8px 16px;            background: var(--color-surface);            border: 1px solid var(--color-border);            border-radius: 8px;            color: var(--color-text-secondary);            font-size: 14px;            font-weight: 500;            cursor: pointer;            transition: all 0.2s;        }        .page-btn:hover {            background: var(--color-surface-hover);            border-color: var(--color-accent);            color: var(--color-text-primary);        }        .page-btn.active {            background: var(--color-accent);            border-color: var(--color-accent);            color: white;            font-weight: 600;        }        .page-ellipsis {            color: var(--color-text-tertiary);            padding: 0 8px;        }
         /* Responsive */
         @media (max-width: 768px) {
             .header-inner {
@@ -379,6 +380,7 @@
 
             .delete-btn {
                 opacity: 1;
+.pagination-buttons {                gap: 4px;            }            .page-btn {                padding: 6px 12px;                font-size: 13px;            }
             }
         }
     </style>
@@ -442,6 +444,8 @@
         let currentPlatform = 'all';
         let currentAI = 'all';
         let currentSearch = '';
+        let currentPage = 1;
+        const itemsPerPage = 20;
 
         // 記事データを読み込み
         async function loadArticles() {
@@ -482,7 +486,7 @@
             const filtered = allArticles.filter(article => {
                 const matchPlatform = currentPlatform === 'all' || article.platform === currentPlatform;
                 const matchAI = currentAI === 'all' || article.aiTools.some(tool => tool === currentAI);
-                const matchSearch = currentSearch === '' || 
+                const matchSearch = currentSearch === '' ||
                     article.title.toLowerCase().includes(currentSearch.toLowerCase()) ||
                     article.description.toLowerCase().includes(currentSearch.toLowerCase());
                 return matchPlatform && matchAI && matchSearch;
@@ -493,7 +497,13 @@
                 return;
             }
 
-            container.innerHTML = filtered.map(article => `
+            // ページネーション用にスライス
+            const totalPages = Math.ceil(filtered.length / itemsPerPage);
+            const startIndex = (currentPage - 1) * itemsPerPage;
+            const endIndex = startIndex + itemsPerPage;
+            const currentArticles = filtered.slice(startIndex, endIndex);
+
+            container.innerHTML = currentArticles.map(article => `
                 <div class="article-card" data-url="${article.url}">
                     <a href="${article.url}" target="_blank" rel="noopener noreferrer" class="article-link">
                         <div class="article-thumbnail">
@@ -521,7 +531,73 @@
                         🗑️ 削除
                     </button>
                 </div>
-            `).join('');
+            `).join('') + renderPagination(totalPages, filtered.length);
+        }
+
+        function renderPagination(totalPages, totalArticles) {
+            if (totalPages <= 1) return '';
+
+            const startItem = (currentPage - 1) * itemsPerPage + 1;
+            const endItem = Math.min(currentPage * itemsPerPage, totalArticles);
+
+            let paginationHTML = `
+                <div class="pagination">
+                    <div class="pagination-info">
+                        ${startItem} - ${endItem} 件目 / 全 ${totalArticles} 件
+                    </div>
+                    <div class="pagination-buttons">
+            `;
+
+            // 前へボタン
+            if (currentPage > 1) {
+                paginationHTML += `<button class="page-btn" onclick="goToPage(${currentPage - 1})">前へ</button>`;
+            }
+
+            // ページ番号ボタン
+            const maxVisiblePages = 7;
+            let startPage = Math.max(1, currentPage - Math.floor(maxVisiblePages / 2));
+            let endPage = Math.min(totalPages, startPage + maxVisiblePages - 1);
+
+            if (endPage - startPage < maxVisiblePages - 1) {
+                startPage = Math.max(1, endPage - maxVisiblePages + 1);
+            }
+
+            if (startPage > 1) {
+                paginationHTML += `<button class="page-btn" onclick="goToPage(1)">1</button>`;
+                if (startPage > 2) {
+                    paginationHTML += `<span class="page-ellipsis">...</span>`;
+                }
+            }
+
+            for (let i = startPage; i <= endPage; i++) {
+                const activeClass = i === currentPage ? 'active' : '';
+                paginationHTML += `<button class="page-btn ${activeClass}" onclick="goToPage(${i})">${i}</button>`;
+            }
+
+            if (endPage < totalPages) {
+                if (endPage < totalPages - 1) {
+                    paginationHTML += `<span class="page-ellipsis">...</span>`;
+                }
+                paginationHTML += `<button class="page-btn" onclick="goToPage(${totalPages})">${totalPages}</button>`;
+            }
+
+            // 次へボタン
+            if (currentPage < totalPages) {
+                paginationHTML += `<button class="page-btn" onclick="goToPage(${currentPage + 1})">次へ</button>`;
+            }
+
+            paginationHTML += `
+                    </div>
+                </div>
+            `;
+
+            return paginationHTML;
+        }
+
+        function goToPage(page) {
+            currentPage = page;
+            renderArticles();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
         }
 
         function deleteArticle(url, event) {
@@ -565,6 +641,7 @@
                     currentAI = value;
                 }
 
+                currentPage = 1;
                 renderArticles();
             });
         });
@@ -572,6 +649,7 @@
         // Search
         document.getElementById('searchInput').addEventListener('input', (e) => {
             currentSearch = e.target.value;
+            currentPage = 1;
             renderArticles();
         });
 
