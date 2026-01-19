@@ -597,13 +597,18 @@
                 html += `<button class="filter-btn" data-filter="ai" data-value="${tool.id}">${tool.name} <span class="count">(${tool.count})</span></button>`;
             });
 
-            // その他（5件未満のツール）
-            const minorToolsCount = Object.entries(toolCounts)
+            // その他（5件未満のツール + AIツール未検出の記事）
+            const minorToolsArticles = Object.entries(toolCounts)
                 .filter(([tool, count]) => count < 5 && !majorToolIds.includes(tool))
                 .reduce((sum, [, count]) => sum + count, 0);
 
-            if (minorToolsCount > 0) {
-                html += `<button class="filter-btn" data-filter="ai" data-value="other">その他 <span class="count">(${minorToolsCount})</span></button>`;
+            // AIツール未検出の記事数
+            const noToolsArticles = articles.filter(a => !a.aiTools || a.aiTools.length === 0).length;
+
+            const otherCount = minorToolsArticles + noToolsArticles;
+
+            if (otherCount > 0) {
+                html += `<button class="filter-btn" data-filter="ai" data-value="other">その他 <span class="count">(${otherCount})</span></button>`;
             }
 
             container.innerHTML = html;
@@ -653,11 +658,15 @@
                 let matchAI = true;
                 if (currentAI !== 'all') {
                     if (currentAI === 'other') {
-                        // 「その他」：主要ツールでも5件以上でもないツールを持つ記事
-                        matchAI = article.aiTools.some(tool => {
-                            const toolLower = tool.toLowerCase();
-                            return !majorTools.includes(toolLower) && (toolCounts[toolLower] || 0) < 5;
-                        });
+                        // 「その他」：主要ツールでも5件以上でもないツールを持つ記事、またはAIツール未検出の記事
+                        if (!article.aiTools || article.aiTools.length === 0) {
+                            matchAI = true; // AIツール未検出
+                        } else {
+                            matchAI = article.aiTools.some(tool => {
+                                const toolLower = tool.toLowerCase();
+                                return !majorTools.includes(toolLower) && (toolCounts[toolLower] || 0) < 5;
+                            });
+                        }
                     } else {
                         matchAI = article.aiTools.some(tool => tool.toLowerCase() === currentAI);
                     }
