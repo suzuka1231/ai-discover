@@ -516,9 +516,11 @@
 
                 allArticles = data.articles;
 
-                // 更新時刻を表示
-                const updateTime = new Date(data.last_updated);
-                document.getElementById('lastUpdate').textContent = formatDate(updateTime);
+                // 日本時間（JST）で更新時刻を表示
+                const lastUpdated = new Date(data.last_updated);
+                const jstDate = new Date(lastUpdated.toLocaleString('en-US', { timeZone: 'Asia/Tokyo' }));
+                const formattedDate = `${jstDate.getFullYear()}-${String(jstDate.getMonth() + 1).padStart(2, '0')}-${String(jstDate.getDate()).padStart(2, '0')} ${String(jstDate.getHours()).padStart(2, '0')}:${String(jstDate.getMinutes()).padStart(2, '0')}`;
+                document.getElementById('lastUpdate').textContent = `${formattedDate} に更新`;
                 document.getElementById('totalCount').textContent = `${data.total} 件`;
 
                 // AIツールフィルターを動的に生成
