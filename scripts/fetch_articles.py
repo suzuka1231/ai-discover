@@ -260,39 +260,63 @@ class ArticleCollector:
         """AIツールを自動検出"""
         text_lower = text.lower()
         tools = []
-        
+
         ai_patterns = {
-            'chatgpt': ['chatgpt', 'gpt-4', 'gpt-3', 'gpt4', 'gpt3'],
+            'chatgpt': ['chatgpt', 'gpt-4', 'gpt-3', 'gpt4', 'gpt3', 'gpt-4o'],
             'claude': ['claude', 'anthropic'],
             'gemini': ['gemini', 'bard', 'google ai'],
+            'copilot': ['copilot', 'github copilot', 'microsoft copilot'],
+            'perplexity': ['perplexity', 'perplexity ai'],
             'sora': ['sora', 'openai sora'],
             'midjourney': ['midjourney', 'mj'],
-            'stable-diffusion': ['stable diffusion', 'sd'],
-            'dall-e': ['dall-e', 'dalle']
+            'dall-e': ['dall-e', 'dalle', 'dall·e'],
+            'stable-diffusion': ['stable diffusion', 'sd', 'sdxl'],
+            'runway': ['runway', 'runway ml', 'gen-2', 'gen-3'],
+            'notebooklm': ['notebooklm', 'notebook lm'],
+            'cursor': ['cursor', 'cursor ai'],
+            'llama': ['llama', 'llama 2', 'llama 3', 'meta llama'],
+            'deepseek': ['deepseek', 'deep seek'],
+            'grok': ['grok', 'xai'],
+            'v0': ['v0', 'v0.dev'],
+            'bolt': ['bolt.new', 'bolt'],
+            'windsurf': ['windsurf', 'codeium windsurf'],
         }
-        
+
         for tool, patterns in ai_patterns.items():
             for pattern in patterns:
                 if pattern in text_lower:
                     tools.append(tool)
                     break
-        
+
         return list(set(tools))  # 重複除去
     
     def generate_tags(self, title, description, ai_tools):
         """タグを自動生成"""
         text = (title + ' ' + description).lower()
         tags = []
-        
+
         # AI ツール名をタグに
         tool_names = {
             'chatgpt': 'ChatGPT',
             'claude': 'Claude',
             'gemini': 'Gemini',
+            'copilot': 'Copilot',
+            'perplexity': 'Perplexity',
             'sora': 'Sora',
-            'midjourney': 'Midjourney'
+            'midjourney': 'Midjourney',
+            'dall-e': 'DALL-E',
+            'stable-diffusion': 'Stable Diffusion',
+            'runway': 'Runway',
+            'notebooklm': 'NotebookLM',
+            'cursor': 'Cursor',
+            'llama': 'LLaMA',
+            'deepseek': 'DeepSeek',
+            'grok': 'Grok',
+            'v0': 'v0',
+            'bolt': 'Bolt',
+            'windsurf': 'Windsurf'
         }
-        
+
         for tool in ai_tools:
             if tool in tool_names:
                 tags.append(tool_names[tool])

@@ -311,6 +311,31 @@
         .tag.gemini { border-color: #4285f4; color: #4285f4; }
         .tag.midjourney { border-color: #9333ea; color: #9333ea; }
         .tag.sora { border-color: #ec4899; color: #ec4899; }
+        .tag.copilot { border-color: #0078d4; color: #0078d4; }
+        .tag.perplexity { border-color: #20808d; color: #20808d; }
+        .tag.dall-e { border-color: #ff6b6b; color: #ff6b6b; }
+        .tag.stable-diffusion { border-color: #7c3aed; color: #7c3aed; }
+        .tag.runway { border-color: #00ddb3; color: #00ddb3; }
+        .tag.notebooklm { border-color: #fbbc04; color: #fbbc04; }
+        .tag.cursor { border-color: #000000; color: #000000; }
+        .tag.llama { border-color: #0467df; color: #0467df; }
+        .tag.deepseek { border-color: #1a73e8; color: #1a73e8; }
+        .tag.grok { border-color: #000000; color: #000000; }
+        .tag.v0 { border-color: #000000; color: #000000; }
+        .tag.bolt { border-color: #ff6b35; color: #ff6b35; }
+        .tag.windsurf { border-color: #00c4cc; color: #00c4cc; }
+
+        #aiToolFilters {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .filter-btn .count {
+            font-size: 0.85em;
+            opacity: 0.7;
+            font-weight: normal;
+        }
 
         .empty {
             text-align: center;
@@ -397,6 +422,14 @@
                 padding: 6px 12px;
                 font-size: 13px;
             }
+
+            #aiToolFilters {
+                gap: 6px;
+            }
+
+            .filter-btn .count {
+                font-size: 0.8em;
+            }
         }
 
         /* タブレット */
@@ -454,12 +487,9 @@
             </div>
             <div class="filter-group">
                 <span class="filter-label">AIツール</span>
-                <button class="filter-btn active" data-filter="ai" data-value="all">すべて</button>
-                <button class="filter-btn" data-filter="ai" data-value="chatgpt">ChatGPT</button>
-                <button class="filter-btn" data-filter="ai" data-value="claude">Claude</button>
-                <button class="filter-btn" data-filter="ai" data-value="gemini">Gemini</button>
-                <button class="filter-btn" data-filter="ai" data-value="sora">Sora</button>
-                <button class="filter-btn" data-filter="ai" data-value="midjourney">Midjourney</button>
+                <div id="aiToolFilters">
+                    <!-- 動的に生成されます -->
+                </div>
             </div>
         </div>
 
@@ -483,18 +513,21 @@
             try {
                 const response = await fetch('data/articles.json');
                 const data = await response.json();
-                
+
                 allArticles = data.articles;
-                
+
                 // 更新時刻を表示
                 const updateTime = new Date(data.last_updated);
                 document.getElementById('lastUpdate').textContent = formatDate(updateTime);
                 document.getElementById('totalCount').textContent = `${data.total} 件`;
-                
+
+                // AIツールフィルターを動的に生成
+                generateAIToolFilters(allArticles);
+
                 renderArticles();
             } catch (error) {
                 console.error('記事の読み込みエラー:', error);
-                document.getElementById('articlesContainer').innerHTML = 
+                document.getElementById('articlesContainer').innerHTML =
                     '<div class="empty"><h3>⚠️ 記事の読み込みに失敗しました</h3><p>しばらくしてから再度お試しください</p></div>';
             }
         }
@@ -512,11 +545,124 @@
             return date.toLocaleDateString('ja-JP');
         }
 
+        // AIツールフィルターを動的に生成
+        function generateAIToolFilters(articles) {
+            // 主要ツール（固定表示）
+            const majorTools = [
+                { id: 'chatgpt', name: 'ChatGPT' },
+                { id: 'claude', name: 'Claude' },
+                { id: 'gemini', name: 'Gemini' },
+                { id: 'copilot', name: 'Copilot' },
+                { id: 'perplexity', name: 'Perplexity' },
+                { id: 'sora', name: 'Sora' },
+                { id: 'midjourney', name: 'Midjourney' },
+                { id: 'dall-e', name: 'DALL-E' },
+                { id: 'stable-diffusion', name: 'Stable Diffusion' }
+            ];
+
+            // 各AIツールの記事数をカウント
+            const toolCounts = {};
+            articles.forEach(article => {
+                article.aiTools.forEach(tool => {
+                    const toolLower = tool.toLowerCase();
+                    toolCounts[toolLower] = (toolCounts[toolLower] || 0) + 1;
+                });
+            });
+
+            // 主要ツール以外で5件以上あるツールを抽出
+            const majorToolIds = majorTools.map(t => t.id);
+            const dynamicTools = Object.entries(toolCounts)
+                .filter(([tool, count]) => count >= 5 && !majorToolIds.includes(tool))
+                .sort((a, b) => b[1] - a[1]) // 記事数の多い順
+                .map(([tool, count]) => ({
+                    id: tool,
+                    name: tool.charAt(0).toUpperCase() + tool.slice(1).replace(/-/g, ' '),
+                    count: count
+                }));
+
+            // フィルターボタンを生成
+            const container = document.getElementById('aiToolFilters');
+            let html = '<button class="filter-btn active" data-filter="ai" data-value="all">すべて</button>';
+
+            // 主要ツール
+            majorTools.forEach(tool => {
+                const count = toolCounts[tool.id] || 0;
+                if (count > 0) {
+                    html += `<button class="filter-btn" data-filter="ai" data-value="${tool.id}">${tool.name} <span class="count">(${count})</span></button>`;
+                }
+            });
+
+            // 動的ツール
+            dynamicTools.forEach(tool => {
+                html += `<button class="filter-btn" data-filter="ai" data-value="${tool.id}">${tool.name} <span class="count">(${tool.count})</span></button>`;
+            });
+
+            // その他（5件未満のツール）
+            const minorToolsCount = Object.entries(toolCounts)
+                .filter(([tool, count]) => count < 5 && !majorToolIds.includes(tool))
+                .reduce((sum, [, count]) => sum + count, 0);
+
+            if (minorToolsCount > 0) {
+                html += `<button class="filter-btn" data-filter="ai" data-value="other">その他 <span class="count">(${minorToolsCount})</span></button>`;
+            }
+
+            container.innerHTML = html;
+
+            // イベントリスナーを再設定
+            setupFilterListeners();
+        }
+
+        // フィルターのイベントリスナーを設定
+        function setupFilterListeners() {
+            document.querySelectorAll('#aiToolFilters .filter-btn').forEach(btn => {
+                btn.addEventListener('click', () => {
+                    const filterType = btn.dataset.filter;
+                    const value = btn.dataset.value;
+
+                    // 同じグループのボタンの active を外す
+                    document.querySelectorAll(`#aiToolFilters [data-filter="${filterType}"]`).forEach(b => {
+                        b.classList.remove('active');
+                    });
+
+                    btn.classList.add('active');
+                    currentAI = value;
+                    currentPage = 1;
+                    renderArticles();
+                });
+            });
+        }
+
         function renderArticles() {
             const container = document.getElementById('articlesContainer');
+
+            // 主要ツールのリスト
+            const majorTools = ['chatgpt', 'claude', 'gemini', 'copilot', 'perplexity', 'sora', 'midjourney', 'dall-e', 'stable-diffusion'];
+
+            // 各AIツールの記事数をカウント（5件以上判定用）
+            const toolCounts = {};
+            allArticles.forEach(article => {
+                article.aiTools.forEach(tool => {
+                    const toolLower = tool.toLowerCase();
+                    toolCounts[toolLower] = (toolCounts[toolLower] || 0) + 1;
+                });
+            });
+
             const filtered = allArticles.filter(article => {
                 const matchPlatform = currentPlatform === 'all' || article.platform === currentPlatform;
-                const matchAI = currentAI === 'all' || article.aiTools.some(tool => tool === currentAI);
+
+                let matchAI = true;
+                if (currentAI !== 'all') {
+                    if (currentAI === 'other') {
+                        // 「その他」：主要ツールでも5件以上でもないツールを持つ記事
+                        matchAI = article.aiTools.some(tool => {
+                            const toolLower = tool.toLowerCase();
+                            return !majorTools.includes(toolLower) && (toolCounts[toolLower] || 0) < 5;
+                        });
+                    } else {
+                        matchAI = article.aiTools.some(tool => tool.toLowerCase() === currentAI);
+                    }
+                }
+
                 const matchSearch = currentSearch === '' ||
                     article.title.toLowerCase().includes(currentSearch.toLowerCase()) ||
                     article.description.toLowerCase().includes(currentSearch.toLowerCase());
