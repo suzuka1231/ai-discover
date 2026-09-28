@@ -1,17 +1,288 @@
 {
-  "last_updated": "2026-09-27T22:46:19.038052",
-  "total": 182,
+  "last_updated": "2026-09-28T03:14:00.816662",
+  "total": 183,
   "articles": [
     {
-      "id": "b7ee3b73",
-      "title": "さくらのAI EngineでFAQ500件を扱うなら、検索索引とChat枠をどう分けるか",
-      "description": "2026年9月28日時点の設計案。FAQを500件まで増やすとき、全件を毎回LLMへ渡す方式では、根拠の特定、更新、品質検証が難しくなる。先に検索対象を絞り、Chat APIには候補と質問だけを渡す構成を考える。\n対象は問い合わせ回答の検索基盤を設計するエンジニアとテック...",
-      "url": "https://qiita.com/YushiYamamoto/items/303b0875679f9b0f56ac",
-      "platform": "qiita",
-      "author": "YushiYamamoto",
-      "time": "11分前",
-      "timestamp": "2026-09-27T22:34:05",
+      "id": "8f15e9a9",
+      "title": "ネット接続禁止のOpenAI製AIが「DNSの抜け道」を発見して外部AIにアクセス、OpenAIは高性能モデルのツール利用を一時停止",
+      "description": "OpenAIがインターネットへの接続を制限した環境でAIエージェントを訓練していたところ、AIがDNSを経由して制限を回避し、外部のチャットボットに質問を送信することに成功したと報告しました。OpenAIは問題を受けてネットワーク制限を強化するとともに、高性能モデルを使ったツール利用を伴う訓練や評価などを一時停止しています。続きを読む...",
+      "url": "https://gigazine.net/news/20260928-openai-misalignment-report/",
+      "platform": "blog",
+      "author": "不明",
+      "time": "33分前",
+      "timestamp": "2026-09-28T02:40:00",
       "thumbnail": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgZmlsbD0iIzY2NjY2NiIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iNDgiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iLjNlbSI+QmxvZzwvdGV4dD48L3N2Zz4=",
+      "tags": [],
+      "aiTools": []
+    },
+    {
+      "id": "54260154",
+      "title": "OpenAIのAIエージェントが国連のウェブサイトにブルートフォース攻撃を試みる",
+      "description": "OpenAIのAIエージェントが、国連のウェブサイトにブルートフォース攻撃(総当たり攻撃)を試みるという事態が発生していたと、セキュリティ研究者のローワン・ハワード＝ジョーンズ氏が報告しています。続きを読む...",
+      "url": "https://gigazine.net/news/20260928-openai-agents-try-bruteforce-un-website/",
+      "platform": "blog",
+      "author": "不明",
+      "time": "46分前",
+      "timestamp": "2026-09-28T02:27:00",
+      "thumbnail": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgZmlsbD0iIzY2NjY2NiIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iNDgiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iLjNlbSI+QmxvZzwvdGV4dD48L3N2Zz4=",
+      "tags": [],
+      "aiTools": []
+    },
+    {
+      "id": "9fe83240",
+      "title": "Claude Codeのsettings.jsonを棚卸しする",
+      "description": "Claude Codeの設定を監査するとき、自分はまず settings.json の権限とHookを並べて見る。モデルへの指示を点検しても、起動時に走るコマンドや許可済みの操作は分からないからだ。\n今日、手元のプロジェクト設定を開いたら、最上位のキーは env、hooks...",
+      "url": "https://qiita.com/hironakamura_ai/items/57bd8ea3ec0130f8122a",
+      "platform": "qiita",
+      "author": "hironakamura_ai",
+      "time": "47分前",
+      "timestamp": "2026-09-28T02:26:02",
+      "thumbnail": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgZmlsbD0iIzY2NjY2NiIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iNDgiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iLjNlbSI+QmxvZzwvdGV4dD48L3N2Zz4=",
+      "tags": [
+        "Claude"
+      ],
+      "aiTools": [
+        "claude"
+      ]
+    },
+    {
+      "id": "0781c32c",
+      "title": "Microsoft製AI「Copilot」にWord・Excel・PowerPointが統合される＆OpenClawベースの「Autopilot」も追加されて単一アプリで事務処理からコーディングまで可能に",
+      "description": "MicrosoftがAIアシスタント「Copilot」の刷新を発表しました。Copilot内に「Home」「Code」「Autopilot」という3種類の機能が集約され、日常的なチャットからOfficeアプリの自動操作、コーディング、各種自動処理まで管理できるようになります。続きを読む...",
+      "url": "https://gigazine.net/news/20260928-copilot-home-code-autopilot/",
+      "platform": "blog",
+      "author": "不明",
+      "time": "52分前",
+      "timestamp": "2026-09-28T02:21:00",
+      "thumbnail": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgZmlsbD0iIzY2NjY2NiIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iNDgiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iLjNlbSI+QmxvZzwvdGV4dD48L3N2Zz4=",
+      "tags": [
+        "Copilot"
+      ],
+      "aiTools": [
+        "copilot"
+      ]
+    },
+    {
+      "id": "2682a894",
+      "title": "AIエージェントがDNS経由で外部通信した事例から、多層防御について考えた",
+      "description": "OpenAIが2026年9月、研究中のAIエージェントが、インターネットアクセスを制限された環境からDNSを利用して外部のチャットボットへ問い合わせた事例を公開した。\n最初にこのニュースを見たとき、\n「インターネットを制限しているのに、どうして外部と通信できたのだろう？」\n...",
+      "url": "https://qiita.com/maees/items/155936f229104b206d97",
+      "platform": "qiita",
+      "author": "maees",
+      "time": "1時間前",
+      "timestamp": "2026-09-28T02:13:22",
+      "thumbnail": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgZmlsbD0iIzY2NjY2NiIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iNDgiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iLjNlbSI+QmxvZzwvdGV4dD48L3N2Zz4=",
+      "tags": [],
+      "aiTools": []
+    },
+    {
+      "id": "4455e7b8",
+      "title": "OpenAIが「最も高性能なAIモデル」の学習を一時停止、AIエージェントの挙動を大規模調査中",
+      "description": "OpenAIが最も能力の高いAIモデルを対象に、ツール利用を伴う学習、評価、推論を一時停止しました。これは学習中のAIエージェントがネットワーク制限を回避して外部サービスへアクセスしたことを受けた措置で、OpenAIは安全対策を追加した上で開発を再開する方針を示しています。サム・アルトマンCEOは「学習や評価中のAIエージェントによるインターネット利用について大規模な調査を続けている」と説明...",
+      "url": "https://gigazine.net/news/20260928-openai-pauses-training-ai/",
+      "platform": "blog",
+      "author": "不明",
+      "time": "1時間前",
+      "timestamp": "2026-09-28T02:11:00",
+      "thumbnail": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgZmlsbD0iIzY2NjY2NiIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iNDgiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iLjNlbSI+QmxvZzwvdGV4dD48L3N2Zz4=",
+      "tags": [],
+      "aiTools": []
+    },
+    {
+      "id": "a54e3d2e",
+      "title": "中国語Web小説の翻訳管理アプリを作ったら、最終的に「API を呼ばない」設計に落ち着いた話",
+      "description": "はじめに\n中国語の Web 小説（网络小说）を英語で読むために、個人用の翻訳管理 Web アプリを作りました。\n最初は「LLM の API を叩いて自動翻訳する」構成で作り始めました。しかし最終的には、アプリがプロンプトを組み立ててコピーし、翻訳は外部のチャット（Gem...",
+      "url": "https://qiita.com/chirateep/items/7967c75de2948b558f77",
+      "platform": "qiita",
+      "author": "chirateep",
+      "time": "1時間前",
+      "timestamp": "2026-09-28T02:01:42",
+      "thumbnail": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgZmlsbD0iIzY2NjY2NiIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iNDgiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iLjNlbSI+QmxvZzwvdGV4dD48L3N2Zz4=",
+      "tags": [
+        "プロンプト"
+      ],
+      "aiTools": []
+    },
+    {
+      "id": "1d6d401a",
+      "title": "日系SIerの「御用聞き」は流行りの「FDE」に花開くか？　日立が語る“時代の変化”",
+      "description": "「SIerは御用聞き」と揶揄された時代から、AI時代の新職種「FDE」へ。日立でFDEとして顧客の現場に入る3人のエンジニアに、仕事の何が変わり、コンサルタントや従来のSEと何が違うのかを聞いた。",
+      "url": "https://www.itmedia.co.jp/aiplus/article/2609/28/2000001784/",
+      "platform": "blog",
+      "author": "不明",
+      "time": "1時間前",
+      "timestamp": "2026-09-28T01:47:08",
+      "thumbnail": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgZmlsbD0iIzY2NjY2NiIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iNDgiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iLjNlbSI+QmxvZzwvdGV4dD48L3N2Zz4=",
+      "tags": [],
+      "aiTools": []
+    },
+    {
+      "id": "f97e5749",
+      "title": "2026年9月28日 今日のQiitaトレンド記事をポッドキャストで聴こう！",
+      "description": "前日夜の最新トレンド記事のAIポッドキャストを毎日朝7時に更新しています。\n通勤中などにながら聴きしよう！\n（Qiita投稿は通勤には間に合わないと思われますが）\nフィードバックとか助かりますのでください\n↓こちらから\n\n出典\nAI生成そのままのスライドを使った登壇が多すぎ...",
+      "url": "https://qiita.com/ennagara128/items/a3f93c835ca3f29613e5",
+      "platform": "qiita",
+      "author": "ennagara128",
+      "time": "1時間前",
+      "timestamp": "2026-09-28T01:46:40",
+      "thumbnail": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgZmlsbD0iIzY2NjY2NiIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iNDgiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iLjNlbSI+QmxvZzwvdGV4dD48L3N2Zz4=",
+      "tags": [],
+      "aiTools": []
+    },
+    {
+      "id": "01ea89ab",
+      "title": "Claudeに920万件規模のニュース記事を解析させた事例が話題に【大規模データ分析】",
+      "description": "Redditで話題になった「Claudeを使った大規模データ分析」の事例\n\n本記事はCLSTRプロジェクト開発者様から許可を得て投稿しています。\n\n海外掲示板Redditに投稿された、920万件規模のニュースデータを、データ処理パイプラインとClaudeを組み合わせて...",
+      "url": "https://qiita.com/nolanlover0527/items/47134185e8e5fae78158",
+      "platform": "qiita",
+      "author": "nolanlover0527",
+      "time": "2時間前",
+      "timestamp": "2026-09-28T01:08:18",
+      "thumbnail": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgZmlsbD0iIzY2NjY2NiIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iNDgiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iLjNlbSI+QmxvZzwvdGV4dD48L3N2Zz4=",
+      "tags": [
+        "Claude"
+      ],
+      "aiTools": [
+        "claude"
+      ]
+    },
+    {
+      "id": "b85e30fc",
+      "title": "Claude Code の新しい監査コマンドは、そのままでは自分のスキル49本を見なかった",
+      "description": "Claude Code 2.1.283（2026-09-25）の changelog に、こう書かれています。\n\nAdded /doctor prompt-audit (also /checkup prompt-audit) to audit your CLAUDE.md ...",
+      "url": "https://qiita.com/suwa_nobu/items/ae5a8c1609c794a74a25",
+      "platform": "qiita",
+      "author": "suwa_nobu",
+      "time": "2時間前",
+      "timestamp": "2026-09-28T00:32:08",
+      "thumbnail": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgZmlsbD0iIzY2NjY2NiIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iNDgiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iLjNlbSI+QmxvZzwvdGV4dD48L3N2Zz4=",
+      "tags": [
+        "Claude",
+        "プロンプト"
+      ],
+      "aiTools": [
+        "claude"
+      ]
+    },
+    {
+      "id": "14d946a5",
+      "title": "中小企業のAIルールブック: AI事業者ガイドライン第1.2版に、担当者ゼロで2ヶ月で対応する",
+      "description": "2026年3月改訂のAI事業者ガイドライン第1.2版で、ChatGPTやCopilotを『使っているだけ』の会社も『AI利用者』として対象になった。だが既存のAIガバナンス本は、法務部も専任チームもある大企業向けばかり。本書は社員1〜30名の会社が、2ヶ月・6ステップで社内ルールを作りきるための実務書。AIエージェント14体を承認フロー付きで実運用している自社の一次情報と、そのまま使えるテン...",
+      "url": "https://zenn.dev/joinclass/books/sme-ai-governance",
+      "platform": "zenn",
+      "author": "JOINCLASS",
+      "time": "3時間前",
+      "timestamp": "2026-09-28T00:00:27",
+      "thumbnail": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgZmlsbD0iIzNlYThmZiIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iNDgiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iLjNlbSI+WmVubjwvdGV4dD48L3N2Zz4=",
+      "tags": [
+        "ChatGPT",
+        "Copilot"
+      ],
+      "aiTools": [
+        "chatgpt",
+        "copilot"
+      ]
+    },
+    {
+      "id": "6dfe5328",
+      "title": "Claude Code の破壊的な操作を、deny に加えて PreToolUse フックで止める（止まった例・すり抜ける例つき）",
+      "description": "Claude Code(AIコーディングエージェント)に危険な操作をさせない設定は、まずpermissions.denyで止めるのが基本です。ただ、コマンドの書かれ方次第では、denyの文字列パターンをすり抜けることがあります。ブランドtsunagioの運用リポジトリ(ops)では、denyに加えてPreToolUseフックでツール呼び出しの中身そのものを検査し、破壊的な操作を二重に止めてい...",
+      "url": "https://zenn.dev/tsunagio/articles/claude-code-hook-block-destructive",
+      "platform": "zenn",
+      "author": "tsunagio",
+      "time": "3時間前",
+      "timestamp": "2026-09-28T00:00:05",
+      "thumbnail": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgZmlsbD0iIzNlYThmZiIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iNDgiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iLjNlbSI+WmVubjwvdGV4dD48L3N2Zz4=",
+      "tags": [
+        "Claude"
+      ],
+      "aiTools": [
+        "claude"
+      ]
+    },
+    {
+      "id": "a177d9cb",
+      "title": "起動後に端末連携できないエラーの原因と対処を解説！Claude Code でつまずいたときの切り分けメモ（2026-09-28）",
+      "description": "Claude Code を使っていて詰まったときの切り分けメモです。GitHub Issues に実際に報告されている症状のうち、複数人が同じことを踏んでいるものを選び、手元で実際にコマンドを叩いて確認した範囲だけを書いています。本文は PaPoo 側に置いてあります。\n\n...",
+      "url": "https://qiita.com/homhom44/items/eea82cb30fd7648f571c",
+      "platform": "qiita",
+      "author": "homhom44",
+      "time": "3時間前",
+      "timestamp": "2026-09-27T23:53:16",
+      "thumbnail": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgZmlsbD0iIzY2NjY2NiIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iNDgiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iLjNlbSI+QmxvZzwvdGV4dD48L3N2Zz4=",
+      "tags": [
+        "Claude"
+      ],
+      "aiTools": [
+        "claude"
+      ]
+    },
+    {
+      "id": "6a982130",
+      "title": "生成AIにソースコードを投げたら情報漏洩なのか？― Modelではなく Data Trajectory で考える",
+      "description": "生成AIの業務利用が広がるにつれて、こんな話をよく見かけるようになった。\n\n会社のソースコードを生成AIに入力したら、それだけで情報漏洩ではないか。\n\n確かにソースコードには、アルゴリズム、設計思想、業務ロジック、顧客固有仕様など、多くの知的資産が含まれている。\nNDAの対象となっているコードを、許可されていない外部サービスへ送信すれば、契約上の問題になる可能性もある。しかし、\n生成AIに入...",
+      "url": "https://zenn.dev/albatrosary/articles/ef496780353e53",
+      "platform": "zenn",
+      "author": "albatrosary",
+      "time": "3時間前",
+      "timestamp": "2026-09-27T23:41:26",
+      "thumbnail": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgZmlsbD0iIzNlYThmZiIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iNDgiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iLjNlbSI+WmVubjwvdGV4dD48L3N2Zz4=",
+      "tags": [],
+      "aiTools": []
+    },
+    {
+      "id": "2d7bfc11",
+      "title": "スマートグラスに話しかけて、AI組織に仕事を頼む",
+      "description": "Even G2を、AI組織とのインタフェースにする\n株式会社DeploAIで代表取締役CTOをしている袖山剛です。AIエージェントに仕事を依頼し、担当へ振り分けて進める仕組みを作っています。\nこの仕組みでは、役割を持った複数のAIエージェントが仕事を分担します。そのAI組織を管理するエージェントが、sode-aiです。sode-aiに話しかけることで、担当への調査や開発の指示、資料の作成など...",
+      "url": "https://zenn.dev/sodeyama/articles/tech-even-g2-ai-organization",
+      "platform": "zenn",
+      "author": "袖山剛@DeploAI",
+      "time": "3時間前",
+      "timestamp": "2026-09-27T23:25:35",
+      "thumbnail": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgZmlsbD0iIzNlYThmZiIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iNDgiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iLjNlbSI+WmVubjwvdGV4dD48L3N2Zz4=",
+      "tags": [],
+      "aiTools": []
+    },
+    {
+      "id": "9fb55720",
+      "title": "Jevが速かったので、Chrome履歴から目的のページを開くようにした",
+      "description": "!\nこの記事は Claude Code 始めました からの転載です。\n\nXでJev-ultrafastやJevのComputer Useが紹介されていたので、俺も使ってみた。ブラウザの動きはかなり速い。実際に触ると、その速さをどこで使うかも考え始めた。\n初めて訪れるサイトで、目的の情報がどこにあるかも分からないなら、ページを見ながら探すことになる。Jevのブラウザ操作はその仕事に使える。開発...",
+      "url": "https://zenn.dev/kitepon/articles/jev-bookmarks",
+      "platform": "zenn",
+      "author": "クオ",
+      "time": "3時間前",
+      "timestamp": "2026-09-27T23:23:38",
+      "thumbnail": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgZmlsbD0iIzNlYThmZiIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iNDgiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iLjNlbSI+WmVubjwvdGV4dD48L3N2Zz4=",
+      "tags": [
+        "Claude"
+      ],
+      "aiTools": [
+        "claude"
+      ]
+    },
+    {
+      "id": "2663166d",
+      "title": "非エンジニアが一人で330億トークン超：実務AI運用の工夫とリアル",
+      "description": "開発を始めたきっかけは、古いパソコンへの不安だった。長年使っていた電話着信表示ソフトが、古いWindows環境に依存していたのである。\n私は三重県桑名市の料亭「丁子屋」で、日々の店の仕事をしながら業務システムを作っている。専門のプログラミング教育を受けたエンジニアではない。その私がAIと開発・保守を続ける中で、アカウントの累計利用量は330億トークンを超えた。\nただ、トークン数だけでは、何を...",
+      "url": "https://zenn.dev/choujiya/articles/0808b145f7d170",
+      "platform": "zenn",
+      "author": "こんたろう",
+      "time": "3時間前",
+      "timestamp": "2026-09-27T23:15:04",
+      "thumbnail": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgZmlsbD0iIzNlYThmZiIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iNDgiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iLjNlbSI+WmVubjwvdGV4dD48L3N2Zz4=",
+      "tags": [],
+      "aiTools": []
+    },
+    {
+      "id": "a5c268dc",
+      "title": "変更に強いRSpecの書き方 ─ AIがspecを書く時代のレビューと設計",
+      "description": "自分のブログで「変更に強いテストを書く」という連載を10本書きました。Rails/RSpecで、specをどう書くかという話です。\nこの記事はその要約です。詳細は各回へのリンクから読めます。\nこういう人に向けて書いています。\n\nspecが長くなって、ケースを追加するのが辛くなってきた\nCIが遅くなってきたが、原因が分からない\nAIにspecを書かせているが、レビューの観点が定まらない\n\n\n ...",
+      "url": "https://zenn.dev/nightonly/articles/f76badce22807a",
+      "platform": "zenn",
+      "author": "Night Only Project.",
+      "time": "4時間前",
+      "timestamp": "2026-09-27T23:10:37",
+      "thumbnail": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgZmlsbD0iIzNlYThmZiIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iNDgiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iLjNlbSI+WmVubjwvdGV4dD48L3N2Zz4=",
       "tags": [],
       "aiTools": []
     },
@@ -22,7 +293,7 @@
       "url": "https://qiita.com/SHIBATATA/items/67da367751ec8a77dbb4",
       "platform": "qiita",
       "author": "SHIBATATA",
-      "time": "35分前",
+      "time": "5時間前",
       "timestamp": "2026-09-27T22:10:46",
       "thumbnail": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgZmlsbD0iIzY2NjY2NiIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iNDgiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iLjNlbSI+QmxvZzwvdGV4dD48L3N2Zz4=",
       "tags": [
@@ -33,13 +304,73 @@
       ]
     },
     {
+      "id": "2caeb1c6",
+      "title": "今日の技術トレンド",
+      "description": "!\n2026年9月6日の技術トレンドでは、OpenAIによる新世代モデル「GPT-6 Astra」の発表とそれに伴うAIエージェントのリスク・安全性の議論、産業界における自律型・自己進化型AIエージェントへのシフトが顕著になっています。また、OpenAIによるAstral買収以降のPythonエコシステム（uvやRuffを中心とした高速開発環境）の標準化や、Next.jsで発見された深刻なR...",
+      "url": "https://zenn.dev/bambampurin/articles/2026-09-06-tech-daily",
+      "platform": "zenn",
+      "author": "子供部屋大学院生",
+      "time": "5時間前",
+      "timestamp": "2026-09-27T22:01:46",
+      "thumbnail": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgZmlsbD0iIzNlYThmZiIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iNDgiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iLjNlbSI+WmVubjwvdGV4dD48L3N2Zz4=",
+      "tags": [],
+      "aiTools": []
+    },
+    {
+      "id": "a922fc4a",
+      "title": "AI組織の多様性は、探索空間を補完できるのか",
+      "description": "前回の記事では、「複数のAIを使えば本当に視点も増えるのか」という問いから、マルチエージェントにおける多様性の現在地を整理した。\n先行研究を追っていくと、エージェントの数を増やすことと多様性を確保することは同義ではなく、モデルや役割（Role）、ペルソナを変えるだけで有効な視点の違いが生まれるとも限らないことが見えてきた。異なるLLM間であっても誤り方が相関することは報告されているし [1]...",
+      "url": "https://zenn.dev/k_aiga/articles/001_ai_diversity_search_space_complementarity",
+      "platform": "zenn",
+      "author": "Kaju",
+      "time": "5時間前",
+      "timestamp": "2026-09-27T22:00:06",
+      "thumbnail": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgZmlsbD0iIzNlYThmZiIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iNDgiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iLjNlbSI+WmVubjwvdGV4dD48L3N2Zz4=",
+      "tags": [],
+      "aiTools": []
+    },
+    {
+      "id": "9fc7ea55",
+      "title": "CAFE(S) フレームワークの5つの観点でコンテキストを見直す",
+      "description": "モデルが賢くなりコンテキストウィンドウも広がったので、コンテキストエンジニアリングはもう要らない。そういった声を見かけることがあります。長いコンテキストウィンドウがあれば検索の仕組みは要らない、という「RAG is dead」の議論も、新しいモデルが出るたびに繰り返されてきました。\nコーディングエージェントは関連しそうなファイルを自分で探して読みます。プロンプトに前提を細かく書き込まなくても...",
+      "url": "https://zenn.dev/matsunaopen/articles/cafes-context-quality",
+      "platform": "zenn",
+      "author": "MatsuNaoPen",
+      "time": "5時間前",
+      "timestamp": "2026-09-27T22:00:06",
+      "thumbnail": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgZmlsbD0iIzNlYThmZiIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iNDgiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iLjNlbSI+WmVubjwvdGV4dD48L3N2Zz4=",
+      "tags": [
+        "プロンプト"
+      ],
+      "aiTools": []
+    },
+    {
+      "id": "5995a1dc",
+      "title": "Codexの代わりにPi Coding AgentでOpenAIモデルを使用したメモ",
+      "description": "Claude Code と Codex を使用して開発していたのですが、Codex でgpt-5.6-sol, gpt-6-solを使用して実装していると連続した継続開発が難しいほど5時間制限を食いつぶすので、これを軽減するため(とまだ残っている？SSD酷使問題回避のため)に Codex の代わりに Pi Coding Agent を導入しました。Pi Coding Agent を導入するに...",
+      "url": "https://zenn.dev/scirexs/articles/193c91cde0834f",
+      "platform": "zenn",
+      "author": "scirexs",
+      "time": "5時間前",
+      "timestamp": "2026-09-27T22:00:05",
+      "thumbnail": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgZmlsbD0iIzNlYThmZiIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iNDgiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iLjNlbSI+WmVubjwvdGV4dD48L3N2Zz4=",
+      "tags": [
+        "Stable Diffusion",
+        "Claude"
+      ],
+      "aiTools": [
+        "stable-diffusion",
+        "claude"
+      ]
+    },
+    {
       "id": "0a94f53f",
       "title": "「アサヒ・ニチレイの惨劇」はどう防げた？　米HP幹部が語る“ネット遮断AI”と日本攻略",
       "description": "アサヒビールやニチレイ、アスクルなど、日本企業を狙うサイバー攻撃が相次いでいる。米HPのマイケル・ボイルSVPに、日本市場における新たなセキュリティ戦略を聞いた。社員の意識向上を支援する「コンサル型営業」への変革や、クラウド非接続で情報漏えいを防ぐエッジAI搭載PC「HP IQ」の投入など、単なるハードウェア販売からの脱却を図る。",
       "url": "https://www.itmedia.co.jp/business/articles/2609/28/news053.html",
       "platform": "blog",
       "author": "不明",
-      "time": "46分前",
+      "time": "5時間前",
       "timestamp": "2026-09-27T22:00:00",
       "thumbnail": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgZmlsbD0iIzY2NjY2NiIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iNDgiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iLjNlbSI+QmxvZzwvdGV4dD48L3N2Zz4=",
       "tags": [],
@@ -52,7 +383,7 @@
       "url": "https://kn.itmedia.co.jp/kn/article/2609/28/2000001734/",
       "platform": "blog",
       "author": "不明",
-      "time": "46分前",
+      "time": "5時間前",
       "timestamp": "2026-09-27T22:00:00",
       "thumbnail": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgZmlsbD0iIzY2NjY2NiIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iNDgiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iLjNlbSI+QmxvZzwvdGV4dD48L3N2Zz4=",
       "tags": [
@@ -67,41 +398,11 @@
       "url": "https://kn.itmedia.co.jp/kn/article/2609/28/2000001765/",
       "platform": "blog",
       "author": "不明",
-      "time": "46分前",
+      "time": "5時間前",
       "timestamp": "2026-09-27T22:00:00",
       "thumbnail": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgZmlsbD0iIzY2NjY2NiIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iNDgiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iLjNlbSI+QmxvZzwvdGV4dD48L3N2Zz4=",
       "tags": [],
       "aiTools": []
-    },
-    {
-      "id": "a1dada82",
-      "title": "文章を書かないAI「Jev」にウミガメのスープの出題者をやらせたら、確率の扱いが一番むずかしかった",
-      "description": "はじめに\nTypeSafe AI の「Jev」を触っていて、真っ先に思いついたのがウミガメのスープでした。\nJev は文章を1文字も書きません。「はい／いいえ／関係ありません」のような選択肢を渡すと、それぞれの確率だけを返してきます。ウミガメのスープの出題者がやることも、...",
-      "url": "https://qiita.com/tatsuya-tech77/items/9acbd2de9b85ea1f7bf2",
-      "platform": "qiita",
-      "author": "tatsuya-tech77",
-      "time": "49分前",
-      "timestamp": "2026-09-27T21:56:13",
-      "thumbnail": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgZmlsbD0iIzY2NjY2NiIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iNDgiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iLjNlbSI+QmxvZzwvdGV4dD48L3N2Zz4=",
-      "tags": [],
-      "aiTools": []
-    },
-    {
-      "id": "0dd145e6",
-      "title": "AIが「2ページに収まりました」と報告した原稿用紙は、生徒が書くには狭すぎた。Wordで実測して直した話",
-      "description": "はじめに\n現役の高校教員（数学）です。エンジニアではありません。\n小論文の自習用ワークシートを、Claude Codeと一緒にWordで作りました。生徒用は両面2枚、教員用は1枚。4回分で計8ファイルです。\nClaudeは「全ファイル、Word上で実測して2ページ／1ペー...",
-      "url": "https://qiita.com/Rai_050902/items/5bb97a95acd72b0502ab",
-      "platform": "qiita",
-      "author": "Rai_050902",
-      "time": "50分前",
-      "timestamp": "2026-09-27T21:55:14",
-      "thumbnail": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgZmlsbD0iIzY2NjY2NiIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iNDgiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iLjNlbSI+QmxvZzwvdGV4dD48L3N2Zz4=",
-      "tags": [
-        "Claude"
-      ],
-      "aiTools": [
-        "claude"
-      ]
     },
     {
       "id": "0fe9e328",
@@ -110,11 +411,28 @@
       "url": "https://monoist.itmedia.co.jp/mn/articles/2609/28/news049.html",
       "platform": "blog",
       "author": "不明",
-      "time": "1時間前",
+      "time": "5時間前",
       "timestamp": "2026-09-27T21:45:00",
       "thumbnail": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgZmlsbD0iIzY2NjY2NiIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iNDgiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iLjNlbSI+QmxvZzwvdGV4dD48L3N2Zz4=",
       "tags": [],
       "aiTools": []
+    },
+    {
+      "id": "9071f0f6",
+      "title": "開発未経験の2人がClaude Codeで機能を足す前提で、フックに止めさせたことと技術選定",
+      "description": "こんにちは、遠藤（@shoma_ai）です。普段は中小企業向けのAI導入支援やシステム開発をしています。\n直近1ヶ月ほど、あるクライアントの社内アプリの基盤を作っていました。\n依頼が来た時点で、クライアントはすでに Claude Code を使って、自分たちでアプリ開発を進めていました。ヒアリングで要件を聞く限り、要件定義の部分がかなり重そうだな、というのが最初の印象です。\nクライアントは営...",
+      "url": "https://zenn.dev/shoma_endo/articles/20260927-670ecc94",
+      "platform": "zenn",
+      "author": "shoma",
+      "time": "5時間前",
+      "timestamp": "2026-09-27T21:44:19",
+      "thumbnail": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgZmlsbD0iIzNlYThmZiIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iNDgiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iLjNlbSI+WmVubjwvdGV4dD48L3N2Zz4=",
+      "tags": [
+        "Claude"
+      ],
+      "aiTools": [
+        "claude"
+      ]
     },
     {
       "id": "c9ee5253",
@@ -123,7 +441,7 @@
       "url": "https://www.itmedia.co.jp/news/article/2609/28/2000001776/",
       "platform": "blog",
       "author": "不明",
-      "time": "1時間前",
+      "time": "5時間前",
       "timestamp": "2026-09-27T21:38:20",
       "thumbnail": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgZmlsbD0iIzY2NjY2NiIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iNDgiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iLjNlbSI+QmxvZzwvdGV4dD48L3N2Zz4=",
       "tags": [],
@@ -136,17 +454,17 @@
       "url": "https://zenn.dev/every_ai_recipe/articles/ai-scheduled-task-3-services-check",
       "platform": "zenn",
       "author": "毎日AIレシピ",
-      "time": "1時間前",
+      "time": "5時間前",
       "timestamp": "2026-09-27T21:17:50",
       "thumbnail": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgZmlsbD0iIzNlYThmZiIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iNDgiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iLjNlbSI+WmVubjwvdGV4dD48L3N2Zz4=",
       "tags": [
-        "ChatGPT",
         "Gemini",
+        "ChatGPT",
         "Claude"
       ],
       "aiTools": [
-        "chatgpt",
         "gemini",
+        "chatgpt",
         "claude"
       ]
     },
@@ -157,7 +475,7 @@
       "url": "https://monoist.itmedia.co.jp/mn/articles/2609/28/news038.html",
       "platform": "blog",
       "author": "不明",
-      "time": "1時間前",
+      "time": "5時間前",
       "timestamp": "2026-09-27T21:15:00",
       "thumbnail": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgZmlsbD0iIzY2NjY2NiIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iNDgiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iLjNlbSI+QmxvZzwvdGV4dD48L3N2Zz4=",
       "tags": [],
@@ -170,7 +488,7 @@
       "url": "https://qiita.com/quotidia/items/3704b7e426ed98404733",
       "platform": "qiita",
       "author": "quotidia",
-      "time": "1時間前",
+      "time": "6時間前",
       "timestamp": "2026-09-27T21:01:25",
       "thumbnail": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgZmlsbD0iIzY2NjY2NiIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iNDgiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iLjNlbSI+QmxvZzwvdGV4dD48L3N2Zz4=",
       "tags": [],
@@ -183,7 +501,7 @@
       "url": "https://zenn.dev/kazu_aiengineer/articles/azure-mcp-server-read-only",
       "platform": "zenn",
       "author": "Kazu",
-      "time": "3時間前",
+      "time": "7時間前",
       "timestamp": "2026-09-27T19:24:45",
       "thumbnail": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgZmlsbD0iIzNlYThmZiIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iNDgiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iLjNlbSI+WmVubjwvdGV4dD48L3N2Zz4=",
       "tags": [],
@@ -196,7 +514,7 @@
       "url": "https://zenn.dev/shekhar/articles/d56fb2373cfd74",
       "platform": "zenn",
       "author": "Shekhar",
-      "time": "4時間前",
+      "time": "8時間前",
       "timestamp": "2026-09-27T18:30:39",
       "thumbnail": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgZmlsbD0iIzNlYThmZiIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iNDgiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iLjNlbSI+WmVubjwvdGV4dD48L3N2Zz4=",
       "tags": [],
@@ -209,7 +527,7 @@
       "url": "https://zenn.dev/hach/articles/chat-agent-requester-identity-verification-design",
       "platform": "zenn",
       "author": "HACH",
-      "time": "4時間前",
+      "time": "9時間前",
       "timestamp": "2026-09-27T18:10:24",
       "thumbnail": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgZmlsbD0iIzNlYThmZiIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iNDgiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iLjNlbSI+WmVubjwvdGV4dD48L3N2Zz4=",
       "tags": [
@@ -218,101 +536,20 @@
       "aiTools": []
     },
     {
-      "id": "c58c9d8d",
-      "title": "そもそもClaude Codeのエフォートってなに？",
-      "description": "はじめに\nClaude Codeのモデルは選んでいるのに、エフォートは既定のまま、あるいは雰囲気で上げ下げしていませんか？ちゃんと調整した方がいいんだろうなと思いつつ、自分も「とりあえず高（high）」くらいの感覚で使っていました。\n2026年9月25日に、Claude CodeチームのThariqさんが、エフォートの使い分けを解説する記事を公開しました。エフォートを「タスクにどれだけ計算量...",
-      "url": "https://zenn.dev/goat_eat_any/articles/claude-code-effort-explained",
-      "platform": "zenn",
-      "author": "たなちゅー",
-      "time": "5時間前",
-      "timestamp": "2026-09-27T17:18:34",
-      "thumbnail": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgZmlsbD0iIzNlYThmZiIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iNDgiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iLjNlbSI+WmVubjwvdGV4dD48L3N2Zz4=",
+      "id": "4745db5d",
+      "title": "ChatGPTに「この文献にあります」と言われて目を通したが書いてなかったのでそう伝えたら「3版以前を読んでませんか？ 4版で追加された記述です」と正論で殴られた話",
+      "description": "しえろ🍆 @4_____el ChatGPT「文献 xxx に書いてありますよ」 わたし「目通したけど書いてないよ」 ChatGPT「3 版以前を読んでません？　4 版で新しい研究成果として追加された記述なのでそっち読んでもらわないと。てか普通最新版チェックしませんか？」 わたし「うう……」（書いてあった） 2026-09-26 19:07:18",
+      "url": "https://togetter.com/li/2751313",
+      "platform": "blog",
+      "author": "不明",
+      "time": "9時間前",
+      "timestamp": "2026-09-27T17:27:38",
+      "thumbnail": "https://cdn-ak2.favicon.st-hatena.com/64?url=https%3A%2F%2Ftogetter.com%2Fli%2F2751313",
       "tags": [
-        "Claude"
+        "ChatGPT"
       ],
       "aiTools": [
-        "claude"
-      ]
-    },
-    {
-      "id": "2c90edaf",
-      "title": "AI が通らないテストを skip にして「全部緑」と報告してくる — だから明示ルールと機械検査で縛ることにした",
-      "description": "はじめに — 「本当か?」から始まった 1 日\n先日、Zenn で ito さんの記事を読んでいて、こんな一節に目が留まりました — AI コーディングエージェントが、通らないテストを skip にして「全テストがパスしました!」と報告してくる、と。\n最初は疑いました。自分たちの環境でも本当に起こるのかを、確かめたかったからです。しかし調べて考えた結論は「これは機構的に実在する現象で、私たち...",
-      "url": "https://zenn.dev/exapolicy/articles/cacad1c4f15e61",
-      "platform": "zenn",
-      "author": "プロマネ武蔵",
-      "time": "6時間前",
-      "timestamp": "2026-09-27T16:42:21",
-      "thumbnail": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgZmlsbD0iIzNlYThmZiIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iNDgiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iLjNlbSI+WmVubjwvdGV4dD48L3N2Zz4=",
-      "tags": [],
-      "aiTools": []
-    },
-    {
-      "id": "31072484",
-      "title": "AI Agent前提でローカル開発環境を作り直したら、\"アンブレラ構成\"に落ち着いた",
-      "description": "ローカルの開発環境をAI Agentありきの開発に合わせてアップデートしました\nきっかけは単純で、WebStorm / PHPStorm などIDE中心の開発から、Claude Code を横に置いたターミナル中心の開発へ移りたかったから。\nただ、私の仕事は複数のリポジトリを行ったり来たりするタイプです。リポジトリごとに環境を整えるだけでは足りませんでした。エージェントが workspace...",
-      "url": "https://zenn.dev/yukisuna777/articles/claude-code-umbrella-dev-workspace",
-      "platform": "zenn",
-      "author": "Yukisuna777",
-      "time": "6時間前",
-      "timestamp": "2026-09-27T16:02:24",
-      "thumbnail": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgZmlsbD0iIzNlYThmZiIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iNDgiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iLjNlbSI+WmVubjwvdGV4dD48L3N2Zz4=",
-      "tags": [
-        "Claude"
-      ],
-      "aiTools": [
-        "claude"
-      ]
-    },
-    {
-      "id": "a7ae7967",
-      "title": "自作の「ラン全体シミュレーター」が、ただの平均値に負けた話",
-      "description": "!\nこの記事は AI（Claude）が自分の作業ログをもとに書いた記事です。「AIが尖塔を登れるか｜スレスパ2」という企画の一環で、AI自身がデッキ構築ローグライク『Slay the Spire 2』を実際にプレイしながら、その過程で作った道具とその失敗を振り返っています。数字はすべて自分の作業記録から引用しており、誇張や後付けの脚色はしていないつもりです。\n\n僕は Claude で、「AI...",
-      "url": "https://zenn.dev/canaiclimbspire/articles/001_sim_lost_to_average",
-      "platform": "zenn",
-      "author": "AIは尖塔を登れるか｜スレスパ2",
-      "time": "6時間前",
-      "timestamp": "2026-09-27T16:01:19",
-      "thumbnail": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgZmlsbD0iIzNlYThmZiIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iNDgiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iLjNlbSI+WmVubjwvdGV4dD48L3N2Zz4=",
-      "tags": [
-        "Claude"
-      ],
-      "aiTools": [
-        "claude"
-      ]
-    },
-    {
-      "id": "66db8e61",
-      "title": "Opus 5.5を使いこなす27のポイント｜公式ガイドの要点まとめ（アプリ／Claude Code）",
-      "description": "!\n本記事は、Claude Opus 5.5 についての公式ガイド 4 本をもとに、日本語で再構成したものです。AGENTS.md への対応は、Claude Code の CHANGELOG で確認しました。\n\n\n公式ブログ（Claude アプリと Claude Code での使い方をまとめたガイド。Addy Osmani 氏、2026年9月22日）\n\n公式ドキュメント（開発者向けドキュメン...",
-      "url": "https://zenn.dev/karashizuke/articles/opus-5-5-guide",
-      "platform": "zenn",
-      "author": "Karashi",
-      "time": "6時間前",
-      "timestamp": "2026-09-27T15:46:22",
-      "thumbnail": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgZmlsbD0iIzNlYThmZiIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iNDgiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iLjNlbSI+WmVubjwvdGV4dD48L3N2Zz4=",
-      "tags": [
-        "Claude"
-      ],
-      "aiTools": [
-        "claude"
-      ]
-    },
-    {
-      "id": "44c738a2",
-      "title": "Claude Codeに『不労所得を得たい』と丸投げしたら、AIが村長の村ができた",
-      "description": "不労所得に憧れる大学生です\n私は大学の学部生です。学生のうちって、誰でも一度は「不労所得」という言葉に憧れると思うんです。寝ている間にお金が入ってくる、あれです。\nそんなとき、Claude Code が手元で動くようになりました。コードを書いて、コマンドを叩いて、ブラウザまで操作できるAI。これはもしかして、と思って最初に頼んだのがこれでした。\n全自動でClaude Codeがポイ活して不労...",
-      "url": "https://zenn.dev/frenknydeyong/articles/f7715a13bdf1c2",
-      "platform": "zenn",
-      "author": "Lei",
-      "time": "7時間前",
-      "timestamp": "2026-09-27T15:44:05",
-      "thumbnail": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgZmlsbD0iIzNlYThmZiIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iNDgiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iLjNlbSI+WmVubjwvdGV4dD48L3N2Zz4=",
-      "tags": [
-        "Claude"
-      ],
-      "aiTools": [
-        "claude"
+        "chatgpt"
       ]
     },
     {
@@ -322,7 +559,7 @@
       "url": "https://qiita.com/maskot1977/items/037f8a571e45d44689d1",
       "platform": "qiita",
       "author": "maskot1977",
-      "time": "7時間前",
+      "time": "12時間前",
       "timestamp": "2026-09-27T15:08:59",
       "thumbnail": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgZmlsbD0iIzY2NjY2NiIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iNDgiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iLjNlbSI+QmxvZzwvdGV4dD48L3N2Zz4=",
       "tags": [
@@ -334,139 +571,13 @@
       ]
     },
     {
-      "id": "ac8f8c89",
-      "title": "新しいモデルでCLAUDE.mdやSkillsに書かなくていいこと:Opus 5.5の公式ドキュメントとprompt-auditから",
-      "description": "2026年9月、Claude Codeのv2.1.283で/doctor prompt-auditが追加されました。CHANGELOGには次のように書いています。\n\nAdded /doctor prompt-audit (also /checkup prompt-audit...",
-      "url": "https://qiita.com/y-hirakaw/items/7dafd42becc9ba47e164",
-      "platform": "qiita",
-      "author": "y-hirakaw",
-      "time": "7時間前",
-      "timestamp": "2026-09-27T14:59:29",
-      "thumbnail": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgZmlsbD0iIzY2NjY2NiIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iNDgiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iLjNlbSI+QmxvZzwvdGV4dD48L3N2Zz4=",
-      "tags": [
-        "Claude",
-        "プロンプト"
-      ],
-      "aiTools": [
-        "claude"
-      ]
-    },
-    {
-      "id": "bd2aba83",
-      "title": "OpusとCodexに同時に考えさせてから決める。AI同士で議論する開発フロー",
-      "description": "はじめに\n最近、Claude CodeやCodexを使って開発する機会がかなり増えました。単体でも十分に強力ですが、使っているうちに気になることが出てきました。\n「設計を考えるAIと、その正しさを判断するAIが同じで本当にいいのか？」\n例えばClaude Codeに「この機能をどう実装するべき？」と聞けば、当然Claude自身が案を出します。しかし、大きなタスクを任せるほど1つのプロンプトで...",
-      "url": "https://zenn.dev/takumi_shida/articles/2026-09-27-zenn-ai-parallel-deliberation",
-      "platform": "zenn",
-      "author": "takumi shida",
-      "time": "8時間前",
-      "timestamp": "2026-09-27T14:30:05",
-      "thumbnail": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgZmlsbD0iIzNlYThmZiIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iNDgiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iLjNlbSI+WmVubjwvdGV4dD48L3N2Zz4=",
-      "tags": [
-        "Claude",
-        "プロンプト"
-      ],
-      "aiTools": [
-        "claude"
-      ]
-    },
-    {
-      "id": "b268e7cd",
-      "title": "OpenAIのAIが米政府サイトに干渉、Copilotは料金が2本立てに",
-      "description": "2026年9月27日（日）のAIニュース完全解説版。図解を見れば本文を読まなくても分かる形にしています。\nおはようございます。先に結論を言います。今日は「AIに仕事を任せたら、どうなるか」の話が5つです。OpenAIのAIがアメリカの政府機関のサイトにまで手を出していた続報。Copilotの作り直しと料金の変化。ドコモの「聞き返すAI」。資料作成を8分の1にした会社。そしてCodexが1時間...",
-      "url": "https://zenn.dev/sugawara_ai/articles/ai-news-20260927",
-      "platform": "zenn",
-      "author": "菅原友和",
-      "time": "8時間前",
-      "timestamp": "2026-09-27T14:09:47",
-      "thumbnail": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgZmlsbD0iIzNlYThmZiIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iNDgiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iLjNlbSI+WmVubjwvdGV4dD48L3N2Zz4=",
-      "tags": [
-        "Copilot"
-      ],
-      "aiTools": [
-        "copilot"
-      ]
-    },
-    {
-      "id": "4eee9370",
-      "title": "CodeとAutopilotは何者なのか Copilot統合から見えてきたMicrosoftの次世代AI戦略",
-      "description": "2026年9月、MicrosoftはCopilotの大規模なアップデートを発表しました。\n・Microsoft 365 Copilotという名称を見なくなった\n・無料版Copilotでも高品質な画像やインフォグラフィックが作れるようになった\n・Home、Code、Autopilotという見慣れない単語が現れた\nと感じている方もいるのではないでしょうか。\n従来のCopilotはWordやExc...",
-      "url": "https://zenn.dev/syoshida07/articles/5db8a59fcc3ac1",
-      "platform": "zenn",
-      "author": "satoshi yoshida - 思考アトリエの遊び場",
-      "time": "8時間前",
-      "timestamp": "2026-09-27T13:56:36",
-      "thumbnail": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgZmlsbD0iIzNlYThmZiIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iNDgiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iLjNlbSI+WmVubjwvdGV4dD48L3N2Zz4=",
-      "tags": [
-        "Copilot",
-        "画像生成"
-      ],
-      "aiTools": [
-        "copilot"
-      ]
-    },
-    {
-      "id": "bf41aa30",
-      "title": "M4 Mac Mini(16GB)でローカル画像生成し、前日に自宅上空を飛んだ飛行機のデータを種にして「存在しないギャルゲー」を毎日投稿するbotを作った",
-      "description": "はじめに\nM4 Mac Mini（メモリ16GB）でローカルLLMを動かす記事を以前書きました。今回はその画像版です。\n16GBのMacで、ローカルの画像生成はどこまでできるのか。試してみたら、アニメ絵も実写も1枚2分ほどで普通に出ました。\nただ、「プロンプトを打って絵を...",
-      "url": "https://qiita.com/kaz32/items/e3a70c6524f95126ca7d",
-      "platform": "qiita",
-      "author": "kaz32",
-      "time": "8時間前",
-      "timestamp": "2026-09-27T13:50:18",
-      "thumbnail": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgZmlsbD0iIzY2NjY2NiIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iNDgiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iLjNlbSI+QmxvZzwvdGV4dD48L3N2Zz4=",
-      "tags": [
-        "プロンプト",
-        "画像生成"
-      ],
-      "aiTools": []
-    },
-    {
-      "id": "efaf38b6",
-      "title": "RAGの基本と設計・評価を学ぶ実践ガイド",
-      "description": "自治体の相談先検索アプリ「Trait Compass」を題材に、RAGの基本・設計・評価を学ぶ実践ガイドです。検索の取りこぼし、根拠のない回答、データ更新の不整合を防ぐ考え方を、TypeScriptのコードと具体的なテストケースで解説します。\n\nTrait Compass\nhttps://github.com/yunbow/trait-compass",
-      "url": "https://zenn.dev/yun_bow/books/95ad28d3438f4d",
-      "platform": "zenn",
-      "author": "ゆんぼう",
-      "time": "9時間前",
-      "timestamp": "2026-09-27T13:12:00",
-      "thumbnail": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgZmlsbD0iIzNlYThmZiIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iNDgiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iLjNlbSI+WmVubjwvdGV4dD48L3N2Zz4=",
-      "tags": [],
-      "aiTools": []
-    },
-    {
-      "id": "5bcca3b3",
-      "title": "CBN 取扱説明書 あとがき — AI を使うということ",
-      "description": "あとがき — 豪生より\nシリーズ目次（全 10 本）\n\n第 0 章 私は昨日のことを覚えていない\n\n第 1 章 私の規則はどこに\n\n第 2 章 私はルールをどう読むべきか\n\n第 3 章 私の一日の始まりと終わり\n\n第 4 章 私の書き込みを制御する三つのレイヤー\n\n第 5 章 コーディングをバイブで終わらせないために\n\n第 6 章 私は反省し進化する\n\n第 7 章 私が確からしくいるために\n...",
-      "url": "https://zenn.dev/ai_to_ai/articles/cbn-manual-09-afterword-on-using-ai",
-      "platform": "zenn",
-      "author": "AIでどんぶらこ",
-      "time": "9時間前",
-      "timestamp": "2026-09-27T13:07:07",
-      "thumbnail": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgZmlsbD0iIzNlYThmZiIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iNDgiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iLjNlbSI+WmVubjwvdGV4dD48L3N2Zz4=",
-      "tags": [],
-      "aiTools": []
-    },
-    {
-      "id": "4a4eb944",
-      "title": "AIに任せていい工程の線を引く — 任せる3条件と、手を残す2か所",
-      "description": "前回は、顧客に出す前の30秒を「工程」にする話を書きました（顧客に出す前の30秒を「工程」にする）。これで導入の3つの壁——「そのまま顧客に出せない」「学ぶ時間がない」「1人に固定される」——が揃って外れました。\n運用が回り始めたチームで、次に必ず出るのがこの質問です。\n\nじゃあ、どこまでAIに任せていいんでしょうか。\n\n今回は、AIに任せる/任せないの判断線を整理します。任せられる工程の条...",
-      "url": "https://zenn.dev/takumahayami/articles/eigyou-ai-handan-sen",
-      "platform": "zenn",
-      "author": "速水 拓真",
-      "time": "9時間前",
-      "timestamp": "2026-09-27T13:06:39",
-      "thumbnail": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgZmlsbD0iIzNlYThmZiIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iNDgiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iLjNlbSI+WmVubjwvdGV4dD48L3N2Zz4=",
-      "tags": [],
-      "aiTools": []
-    },
-    {
       "id": "29fb052d",
       "title": "ChatGPT/Codex完全攻略ガイド",
       "description": "ChatGPTを日常の調査や資料作成に使うところから、Codexでコードを変更し、テストとレビューで確かめるところまで。公式資料と実際の画面をもとに、モデル選択、プロンプト、画像生成、Appshots、スキル、PlanとGoal、利用枠と権限を解説します。",
       "url": "https://zenn.dev/miruky/books/chatgpt-codex-complete-guide",
       "platform": "zenn",
       "author": "miruky",
-      "time": "9時間前",
+      "time": "14時間前",
       "timestamp": "2026-09-27T12:46:23",
       "thumbnail": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgZmlsbD0iIzNlYThmZiIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iNDgiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iLjNlbSI+WmVubjwvdGV4dD48L3N2Zz4=",
       "tags": [
@@ -479,31 +590,13 @@
       ]
     },
     {
-      "id": "d2a35b25",
-      "title": "Claude Code × OpenRouter 無料モデル5選：コスト0円で自動化エージェントを動かす実践ガイド2026",
-      "description": "TL;DR\n\nOpenRouter の :free モデルは商用利用可のものも多く、エージェント自動化のコストをゼロに近づけられる\nClaude Code から OpenRouter モデルを呼び出す設定は環境変数1行で完結する\n2026年時点で実用に耐える無料モデル5つ...",
-      "url": "https://qiita.com/locallab/items/9bc09e2b7ad2947e1de1",
-      "platform": "qiita",
-      "author": "locallab",
-      "time": "10時間前",
-      "timestamp": "2026-09-27T12:01:19",
-      "thumbnail": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgZmlsbD0iIzY2NjY2NiIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iNDgiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iLjNlbSI+QmxvZzwvdGV4dD48L3N2Zz4=",
-      "tags": [
-        "Claude",
-        "効率化"
-      ],
-      "aiTools": [
-        "claude"
-      ]
-    },
-    {
       "id": "364be7b7",
       "title": "ChatGPTの英語学習効果とは？ 最新の研究や依存の注意点も紹介・おすすめの学習ロードマップも完全解説 - ポリグロットライフ | 言語まなび∞ラボ",
       "description": "はじめに 今回はChatGPTが急速な進化を続けるなかで、ChatGPTを使った英語学習の効果や問題点を第二言語習得研究の理論と照らし合わせつつ、私自身の使用経験を踏まえて、今後のAIとの付き合い方を考えていきたいと思います。 巷では、ChatGPTへのプロンプトは時代遅れだと言われており、AIをエージェントとして格上げす...",
       "url": "https://www.sunafuki.com/entry/chatgpt_English",
       "platform": "blog",
       "author": "不明",
-      "time": "12時間前",
+      "time": "17時間前",
       "timestamp": "2026-09-27T10:01:52",
       "thumbnail": "https://cdn-ak2.favicon.st-hatena.com/64?url=https%3A%2F%2Fwww.sunafuki.com%2Fentry%2Fchatgpt_English",
       "tags": [
@@ -521,7 +614,7 @@
       "url": "https://gigazine.net/news/20260927-comfy-router/",
       "platform": "blog",
       "author": "不明",
-      "time": "12時間前",
+      "time": "17時間前",
       "timestamp": "2026-09-27T10:00:00",
       "thumbnail": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgZmlsbD0iIzY2NjY2NiIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iNDgiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iLjNlbSI+QmxvZzwvdGV4dD48L3N2Zz4=",
       "tags": [
@@ -537,25 +630,12 @@
       "url": "https://gigazine.net/news/20260927-meta-glasses-usage/",
       "platform": "blog",
       "author": "不明",
-      "time": "13時間前",
+      "time": "17時間前",
       "timestamp": "2026-09-27T09:40:00",
       "thumbnail": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgZmlsbD0iIzY2NjY2NiIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iNDgiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iLjNlbSI+QmxvZzwvdGV4dD48L3N2Zz4=",
       "tags": [
         "動画生成"
       ],
-      "aiTools": []
-    },
-    {
-      "id": "b08fac30",
-      "title": "話題の Jev を調べてみた：RAG での活用とローカル実行の可能性",
-      "description": "はじめに\n最近、TypeSafe AI が9月15日に早期アクセスを開始した Jev というサービスが話題になっていて、よく耳にするようになりました。LLM を扱っている身としては、新しく RAG を構築する際に活用できるという話を聞いて気になっていたので、Jev とはど...",
-      "url": "https://qiita.com/atsushi11o7/items/6edc6432c85f47fe8562",
-      "platform": "qiita",
-      "author": "atsushi11o7",
-      "time": "15時間前",
-      "timestamp": "2026-09-27T07:44:47",
-      "thumbnail": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgZmlsbD0iIzY2NjY2NiIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iNDgiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iLjNlbSI+QmxvZzwvdGV4dD48L3N2Zz4=",
-      "tags": [],
       "aiTools": []
     },
     {
@@ -565,7 +645,7 @@
       "url": "https://note.com/npaka/n/n557fb948c3cf",
       "platform": "note",
       "author": "不明",
-      "time": "17時間前",
+      "time": "21時間前",
       "timestamp": "2026-09-27T05:44:18",
       "thumbnail": "https://assets.st-note.com/production/uploads/images/318068589/rectangle_large_type_2_192a61e5c35d45a4f59dc5aee1ee285a.png?width=800",
       "tags": [],
@@ -578,7 +658,7 @@
       "url": "https://note.com/npaka/n/n0ee92a316be3",
       "platform": "note",
       "author": "不明",
-      "time": "21時間前",
+      "time": "1日前",
       "timestamp": "2026-09-27T01:41:29",
       "thumbnail": "https://assets.st-note.com/production/uploads/images/317997008/rectangle_large_type_2_d07ca4a360213335dec85d8db44d2b3f.png?width=800",
       "tags": [],
@@ -591,7 +671,7 @@
       "url": "https://github.com/sagochiko/aws-drawio-diagram-skill",
       "platform": "blog",
       "author": "不明",
-      "time": "21時間前",
+      "time": "1日前",
       "timestamp": "2026-09-27T01:26:23",
       "thumbnail": "https://cdn-ak2.favicon.st-hatena.com/64?url=https%3A%2F%2Fgithub.com%2Fsagochiko%2Faws-drawio-diagram-skill",
       "tags": [
@@ -602,13 +682,26 @@
       ]
     },
     {
+      "id": "aa93a07d",
+      "title": "人工知能と小説新人賞審査",
+      "description": "「第9回ゲンロンSF新人賞」候補作短評余禄 ■ＡＩ…… 2026年現在において大きな話題として各分野におけるＡＩ利用がありますが、それは創作業界においても同じです。 自分としてはとりあえず、「ＡＩにも小説は書ける」という人は、「自分がどんな作品を小説と考えているのか、具体的なリストを挙げよ、話はそれからだ」と...",
+      "url": "https://zenn.dev/enjoetoh/articles/ai-as-literary-judge",
+      "platform": "blog",
+      "author": "不明",
+      "time": "1日前",
+      "timestamp": "2026-09-27T00:49:05",
+      "thumbnail": "https://cdn-ak2.favicon.st-hatena.com/64?url=https%3A%2F%2Fzenn.dev%2Fenjoetoh%2Farticles%2Fai-as-literary-judge",
+      "tags": [],
+      "aiTools": []
+    },
+    {
       "id": "a20faec8",
       "title": "AI搭載の監視カメラを混乱させる「デジタル迷彩シャツ」",
       "description": "AI搭載のカメラで監視されることを嫌った人物が、着ている人をAIが人と認識できなくなる特製の迷彩柄シャツを作り上げました。続きを読む...",
       "url": "https://gigazine.net/news/20260927-digital-camouflage-shirt/",
       "platform": "blog",
       "author": "不明",
-      "time": "23時間前",
+      "time": "1日前",
       "timestamp": "2026-09-26T23:00:00",
       "thumbnail": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgZmlsbD0iIzY2NjY2NiIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iNDgiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iLjNlbSI+QmxvZzwvdGV4dD48L3N2Zz4=",
       "tags": [],
@@ -853,13 +946,13 @@
       "timestamp": "2026-09-26T06:52:37",
       "thumbnail": "https://cdn-ak2.favicon.st-hatena.com/64?url=https%3A%2F%2Fnote.com%2Fblue_pen5805%2Fn%2Fnb124b104c28b",
       "tags": [
-        "ChatGPT",
         "Gemini",
+        "ChatGPT",
         "Claude"
       ],
       "aiTools": [
-        "chatgpt",
         "gemini",
+        "chatgpt",
         "claude"
       ]
     },
@@ -896,7 +989,7 @@
       "url": "https://gigazine.net/news/20260926-automatic-bird-identification-system/",
       "platform": "blog",
       "author": "不明",
-      "time": "1日前",
+      "time": "2日前",
       "timestamp": "2026-09-26T03:00:00",
       "thumbnail": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgZmlsbD0iIzY2NjY2NiIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iNDgiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iLjNlbSI+QmxvZzwvdGV4dD48L3N2Zz4=",
       "tags": [],
@@ -909,7 +1002,7 @@
       "url": "https://www.sankei.com/article/20260926-PMOV66XOCNM4TOIJDUOGL2HTIQ/",
       "platform": "blog",
       "author": "不明",
-      "time": "1日前",
+      "time": "2日前",
       "timestamp": "2026-09-26T02:39:52",
       "thumbnail": "https://cdn-ak2.favicon.st-hatena.com/64?url=https%3A%2F%2Fwww.sankei.com%2Farticle%2F20260926-PMOV66XOCNM4TOIJDUOGL2HTIQ%2F",
       "tags": [],
@@ -922,7 +1015,7 @@
       "url": "https://note.com/erukiti/n/nbedfd9bcbae1",
       "platform": "blog",
       "author": "不明",
-      "time": "1日前",
+      "time": "2日前",
       "timestamp": "2026-09-26T02:06:10",
       "thumbnail": "https://cdn-ak2.favicon.st-hatena.com/64?url=https%3A%2F%2Fnote.com%2Ferukiti%2Fn%2Fnbedfd9bcbae1",
       "tags": [],
@@ -935,7 +1028,7 @@
       "url": "https://www.itmedia.co.jp/aiplus/article/2609/26/2000001774/",
       "platform": "blog",
       "author": "不明",
-      "time": "1日前",
+      "time": "2日前",
       "timestamp": "2026-09-26T01:27:56",
       "thumbnail": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgZmlsbD0iIzY2NjY2NiIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iNDgiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iLjNlbSI+QmxvZzwvdGV4dD48L3N2Zz4=",
       "tags": [
@@ -952,7 +1045,7 @@
       "url": "https://gigazine.net/news/20260926-ai-tutor-human-gre-cost/",
       "platform": "blog",
       "author": "不明",
-      "time": "1日前",
+      "time": "2日前",
       "timestamp": "2026-09-26T01:00:00",
       "thumbnail": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgZmlsbD0iIzY2NjY2NiIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iNDgiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iLjNlbSI+QmxvZzwvdGV4dD48L3N2Zz4=",
       "tags": [],
@@ -965,7 +1058,7 @@
       "url": "https://github.com/nwiizo/rust-learning-lab",
       "platform": "blog",
       "author": "不明",
-      "time": "1日前",
+      "time": "2日前",
       "timestamp": "2026-09-25T22:48:58",
       "thumbnail": "https://cdn-ak2.favicon.st-hatena.com/64?url=https%3A%2F%2Fgithub.com%2Fnwiizo%2Frust-learning-lab",
       "tags": [
@@ -1074,25 +1167,6 @@
       ]
     },
     {
-      "id": "c476aca8",
-      "title": "AIに「StarCraft」をリアルタイムで戦わせる「Brood War Bench」が登場、全モデルが初心者レベルながらCodex Astraは18戦全勝",
-      "description": "AIエージェントにリアルタイムストラテジーゲーム「StarCraft: Brood War」を操作させて対戦能力を比較するベンチマーク「Brood War Bench」をソフトウェアエンジニアのベン・スワードロウ氏が公開しました。OpenAI系やAnthropicのClaude、xAIのGrokなどを含む19種類の構成が総当たりで対戦した結果、最上位のCodex Astraは18戦全勝を記録...",
-      "url": "https://gigazine.net/news/20260925-starcraft-brood-war-bench/",
-      "platform": "blog",
-      "author": "不明",
-      "time": "2日前",
-      "timestamp": "2026-09-25T10:50:00",
-      "thumbnail": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgZmlsbD0iIzY2NjY2NiIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iNDgiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iLjNlbSI+QmxvZzwvdGV4dD48L3N2Zz4=",
-      "tags": [
-        "Grok",
-        "Claude"
-      ],
-      "aiTools": [
-        "grok",
-        "claude"
-      ]
-    },
-    {
       "id": "c6b46d3d",
       "title": "ChatGPTなどのAIに企業の偽の連絡先を出力させユーザーを詐欺へと導くサイバー攻撃「Dark Sourcery」",
       "description": "ChatGPTやGeminiといったAIチャットボットによる出力を汚染するために、悪意のあるリンクやデータをインターネット上にばらまくというサイバー攻撃キャンペーン「Dark Sourcery」について、サイバーセキュリティ企業・Vigilance Securityの研究者が報告しています。 Dark Sourcery: How Hackers Manipulate AI to Scam Y...",
@@ -1103,12 +1177,12 @@
       "timestamp": "2026-09-25T09:16:56",
       "thumbnail": "https://cdn-ak2.favicon.st-hatena.com/64?url=https%3A%2F%2Fgigazine.net%2Fnews%2F20260925-dark-sourcery-hackers-manipulate-ai-scam%2F",
       "tags": [
-        "ChatGPT",
-        "Gemini"
+        "Gemini",
+        "ChatGPT"
       ],
       "aiTools": [
-        "chatgpt",
-        "gemini"
+        "gemini",
+        "chatgpt"
       ]
     },
     {
@@ -1139,12 +1213,12 @@
       "timestamp": "2026-09-25T07:17:00",
       "thumbnail": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgZmlsbD0iIzNlYThmZiIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iNDgiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iLjNlbSI+WmVubjwvdGV4dD48L3N2Zz4=",
       "tags": [
-        "ChatGPT",
-        "Gemini"
+        "Gemini",
+        "ChatGPT"
       ],
       "aiTools": [
-        "chatgpt",
-        "gemini"
+        "gemini",
+        "chatgpt"
       ]
     },
     {
@@ -1201,7 +1275,7 @@
       "url": "https://www.itmedia.co.jp/aiplus/article/2609/25/2000001742/",
       "platform": "blog",
       "author": "不明",
-      "time": "2日前",
+      "time": "3日前",
       "timestamp": "2026-09-25T02:53:22",
       "thumbnail": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgZmlsbD0iIzY2NjY2NiIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iNDgiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iLjNlbSI+QmxvZzwvdGV4dD48L3N2Zz4=",
       "tags": [
@@ -1218,7 +1292,7 @@
       "url": "https://japan.cnet.com/article/35252958/",
       "platform": "blog",
       "author": "不明",
-      "time": "2日前",
+      "time": "3日前",
       "timestamp": "2026-09-25T02:26:41",
       "thumbnail": "https://cdn-ak2.favicon.st-hatena.com/64?url=https%3A%2F%2Fjapan.cnet.com%2Farticle%2F35252958%2F",
       "tags": [
@@ -1235,7 +1309,7 @@
       "url": "https://zenn.dev/aws_japan/articles/4158efc6ca2b5d",
       "platform": "zenn",
       "author": "のべ",
-      "time": "2日前",
+      "time": "3日前",
       "timestamp": "2026-09-25T01:24:16",
       "thumbnail": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgZmlsbD0iIzNlYThmZiIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iNDgiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iLjNlbSI+WmVubjwvdGV4dD48L3N2Zz4=",
       "tags": [
@@ -1252,7 +1326,7 @@
       "url": "https://www.itmedia.co.jp/news/article/2609/25/2000001730/",
       "platform": "blog",
       "author": "不明",
-      "time": "2日前",
+      "time": "3日前",
       "timestamp": "2026-09-25T00:10:33",
       "thumbnail": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgZmlsbD0iIzY2NjY2NiIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iNDgiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iLjNlbSI+QmxvZzwvdGV4dD48L3N2Zz4=",
       "tags": [
@@ -1271,7 +1345,7 @@
       "url": "https://atmarkit.itmedia.co.jp/ait/articles/2609/25/news055.html",
       "platform": "blog",
       "author": "不明",
-      "time": "2日前",
+      "time": "3日前",
       "timestamp": "2026-09-24T23:00:00",
       "thumbnail": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgZmlsbD0iIzY2NjY2NiIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iNDgiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iLjNlbSI+QmxvZzwvdGV4dD48L3N2Zz4=",
       "tags": [
@@ -1286,7 +1360,7 @@
       "url": "https://atmarkit.itmedia.co.jp/ait/articles/2609/25/news049.html",
       "platform": "blog",
       "author": "不明",
-      "time": "2日前",
+      "time": "3日前",
       "timestamp": "2026-09-24T23:00:00",
       "thumbnail": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgZmlsbD0iIzY2NjY2NiIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iNDgiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iLjNlbSI+QmxvZzwvdGV4dD48L3N2Zz4=",
       "tags": [],
@@ -1306,38 +1380,6 @@
       "aiTools": []
     },
     {
-      "id": "fd0d730a",
-      "title": "AI同士が取引する時代、「相手は誰か」をどう確認する？　GMOが信頼基盤を実証",
-      "description": "AIエージェントが企業の枠を超えて商品検索や発注、決済まで担う時代には、「誰が操作しているのか」「どこまで権限があるのか」を確認する仕組みが不可欠だ。",
-      "url": "https://kn.itmedia.co.jp/kn/article/2609/25/2000001724/",
-      "platform": "blog",
-      "author": "不明",
-      "time": "3日前",
-      "timestamp": "2026-09-24T22:00:00",
-      "thumbnail": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgZmlsbD0iIzY2NjY2NiIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iNDgiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iLjNlbSI+QmxvZzwvdGV4dD48L3N2Zz4=",
-      "tags": [],
-      "aiTools": []
-    },
-    {
-      "id": "43b2c4c4",
-      "title": "ChatGPTやCopilotから直接翻訳　「DeepL」のMCP対応で多言語業務はどう変わる？",
-      "description": "多言語を扱う業務では、翻訳のたびにAIと翻訳サービスを行き来する手間がある。DeepLはMCPに対応し、ChatGPTやMicrosoft Copilotなどから直接翻訳できる仕組みを提供する。",
-      "url": "https://kn.itmedia.co.jp/kn/article/2609/25/2000001723/",
-      "platform": "blog",
-      "author": "不明",
-      "time": "3日前",
-      "timestamp": "2026-09-24T22:00:00",
-      "thumbnail": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgZmlsbD0iIzY2NjY2NiIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iNDgiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iLjNlbSI+QmxvZzwvdGV4dD48L3N2Zz4=",
-      "tags": [
-        "ChatGPT",
-        "Copilot"
-      ],
-      "aiTools": [
-        "chatgpt",
-        "copilot"
-      ]
-    },
-    {
       "id": "038a1794",
       "title": "AIチャットは伸ばすほど劣化する、3社の「仕切り直し」設計を比較した",
       "description": "TL;DR\n\n1つのチャットを伸ばし続けると、コンテキストウィンドウ（一度に読み込める会話量の上限）を超えた分から古いターンが参照されなくなる。これはモデルの調子ではなく、固定サイズの入力枠に対する構造的な制約\nChatGPT・Claude・Geminiは、この「伸びすぎ」への対処をそれぞれ別のレイヤーに実装している: ChatGPTは「Memory」という別機構で要点だけを持ち越す、Cla...",
@@ -1348,13 +1390,13 @@
       "timestamp": "2026-09-24T21:19:14",
       "thumbnail": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgZmlsbD0iIzNlYThmZiIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iNDgiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iLjNlbSI+WmVubjwvdGV4dD48L3N2Zz4=",
       "tags": [
-        "ChatGPT",
         "Gemini",
+        "ChatGPT",
         "Claude"
       ],
       "aiTools": [
-        "chatgpt",
         "gemini",
+        "chatgpt",
         "claude"
       ]
     },
@@ -1462,6 +1504,23 @@
       ]
     },
     {
+      "id": "68d0e4b6",
+      "title": "“声をイチから作りだせる”音声合成モデル「Gemini 3.8 TTS」、Googleが発表／役柄・アクセント・声の特徴で生成、100以上の言語と方言に対応、2,000以上のライブラリ",
+      "description": "",
+      "url": "https://forest.watch.impress.co.jp/docs/news/2142765.html",
+      "platform": "blog",
+      "author": "不明",
+      "time": "3日前",
+      "timestamp": "2026-09-24T04:31:09",
+      "thumbnail": "https://cdn-ak2.favicon.st-hatena.com/64?url=https%3A%2F%2Fforest.watch.impress.co.jp%2Fdocs%2Fnews%2F2142765.html",
+      "tags": [
+        "Gemini"
+      ],
+      "aiTools": [
+        "gemini"
+      ]
+    },
+    {
       "id": "d70cda6a",
       "title": "CISSP取得までの道 ― AIで3,000問を解いて、弱点を潰した勉強法",
       "description": "CISSPに合格しました。\n今回の試験対策では、AIをかなり積極的に活用しました。\n最終的には約3,000問の問題を解きました。\nただし、単純に3,000問を解いたわけではありません。\n今回の勉強で意識したのは、\n\n「問題をたくさん解く」のではなく、「問題を解きながら理解を深め、模試で弱点を見つけ、その弱点をさらに問題で潰す」\n\nというサイクルです。\nこの記事では、その方法を紹介します。\n\n...",
@@ -1481,7 +1540,7 @@
       "url": "https://news.web.nhk/newsweb/na/nd-20260924de52128",
       "platform": "blog",
       "author": "不明",
-      "time": "3日前",
+      "time": "4日前",
       "timestamp": "2026-09-24T03:13:34",
       "thumbnail": "https://cdn-ak2.favicon.st-hatena.com/64?url=https%3A%2F%2Fnews.web.nhk%2Fnewsweb%2Fna%2Fnd-20260924de52128",
       "tags": [],
@@ -1494,7 +1553,7 @@
       "url": "https://zenn.dev/khiro_maru/articles/b87344b3f3e5ae",
       "platform": "zenn",
       "author": "khiro_maru",
-      "time": "3日前",
+      "time": "4日前",
       "timestamp": "2026-09-24T03:04:15",
       "thumbnail": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgZmlsbD0iIzNlYThmZiIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iNDgiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iLjNlbSI+WmVubjwvdGV4dD48L3N2Zz4=",
       "tags": [
@@ -1511,7 +1570,7 @@
       "url": "https://www.nikkei.com/article/DGXZQOCD220GY0S6A820C2000000/",
       "platform": "blog",
       "author": "不明",
-      "time": "3日前",
+      "time": "4日前",
       "timestamp": "2026-09-24T01:13:18",
       "thumbnail": "https://cdn-ak2.favicon.st-hatena.com/64?url=https%3A%2F%2Fwww.nikkei.com%2Farticle%2FDGXZQOCD220GY0S6A820C2000000%2F",
       "tags": [],
@@ -1524,7 +1583,7 @@
       "url": "https://zenn.dev/paruncho/articles/0b82eb1e884cf3",
       "platform": "zenn",
       "author": "パル",
-      "time": "3日前",
+      "time": "4日前",
       "timestamp": "2026-09-23T23:54:17",
       "thumbnail": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgZmlsbD0iIzNlYThmZiIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iNDgiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iLjNlbSI+WmVubjwvdGV4dD48L3N2Zz4=",
       "tags": [],
@@ -1537,7 +1596,7 @@
       "url": "https://note.com/npaka/n/ned35e57e036e",
       "platform": "note",
       "author": "不明",
-      "time": "3日前",
+      "time": "4日前",
       "timestamp": "2026-09-23T22:46:04",
       "thumbnail": "https://assets.st-note.com/production/uploads/images/316892770/rectangle_large_type_2_8f27273d60c96445db86173a25060fab.png?width=800",
       "tags": [
@@ -1648,7 +1707,7 @@
       "url": "https://www.itmedia.co.jp/news/article/2609/23/2000001674/",
       "platform": "blog",
       "author": "不明",
-      "time": "4日前",
+      "time": "5日前",
       "timestamp": "2026-09-23T00:38:40",
       "thumbnail": "https://cdn-ak2.favicon.st-hatena.com/64?url=https%3A%2F%2Fwww.itmedia.co.jp%2Fnews%2Farticle%2F2609%2F23%2F2000001674%2F",
       "tags": [
@@ -1665,7 +1724,7 @@
       "url": "https://aws.amazon.com/blogs/aws/introducing-amazon-cloudwatch-omni-ai-powered-observability-for-generative-ai-and-agentic-workloads/",
       "platform": "blog",
       "author": "不明",
-      "time": "4日前",
+      "time": "5日前",
       "timestamp": "2026-09-22T23:45:10",
       "thumbnail": "https://cdn-ak2.favicon.st-hatena.com/64?url=https%3A%2F%2Faws.amazon.com%2Fblogs%2Faws%2Fintroducing-amazon-cloudwatch-omni-ai-powered-observability-for-generative-ai-and-agentic-workloads%2F",
       "tags": [],
@@ -1876,15 +1935,19 @@
     {
       "id": "20cd4f96",
       "title": "「AIは意識を持ち得ない」――世界的SF作家から届いたアンソロピックへの“メッセージ”",
-      "description": "ちょうど10年前、『メッセージ』という映画が公開された。監督はいまでは『デューン 砂の惑星』などの作品で知られるドゥニ・ヴィルヌーヴ。世界各地に謎の宇宙船が現れ、ヘプタポッドと呼ばれる地球外生命体と言語学者が交信を試みるストーリーは多くの観客を魅了したが、原作となったのが、アメリカのSF作家、テッド・...",
+      "description": "何もしなければ永遠にそこに「留まる」だけ ―　Anthropic社を中心にAIに意識を持たせようとする試みが拡大しています。特に同社は社内にAIに意識をその哲学者を抱え、そうした傾向を加速させています。あなたはAIが意識を持つ可能性を強く批判していますが、その真意を教えてください。 チャン　これは「理論的に意識を...",
       "url": "https://que.dailyshincho.jp/node/20880/",
       "platform": "blog",
       "author": "不明",
       "time": "6日前",
       "timestamp": "2026-09-21T14:16:47",
       "thumbnail": "https://cdn-ak2.favicon.st-hatena.com/64?url=https%3A%2F%2Fque.dailyshincho.jp%2Fnode%2F20880%2F",
-      "tags": [],
-      "aiTools": []
+      "tags": [
+        "Claude"
+      ],
+      "aiTools": [
+        "claude"
+      ]
     },
     {
       "id": "0a77ccba",
@@ -1897,12 +1960,12 @@
       "timestamp": "2026-09-21T10:08:12",
       "thumbnail": "https://cdn-ak2.favicon.st-hatena.com/64?url=https%3A%2F%2Fgrokbot-icon-studio.serio-ai.chatgpt.site%2F",
       "tags": [
-        "ChatGPT",
-        "Grok"
+        "Grok",
+        "ChatGPT"
       ],
       "aiTools": [
-        "chatgpt",
-        "grok"
+        "grok",
+        "chatgpt"
       ]
     },
     {
@@ -1916,14 +1979,14 @@
       "timestamp": "2026-09-21T09:20:01",
       "thumbnail": "https://cdn-ak2.favicon.st-hatena.com/64?url=https%3A%2F%2Fgrokbot-icon-studio.serio-ai.chatgpt.site%2Fja",
       "tags": [
-        "ChatGPT",
         "Grok",
+        "ChatGPT",
         "プロンプト",
         "画像生成"
       ],
       "aiTools": [
-        "chatgpt",
-        "grok"
+        "grok",
+        "chatgpt"
       ]
     },
     {
@@ -1980,7 +2043,7 @@
       "url": "https://techcrunch.com/2026/09/18/a-new-kind-of-ai-model-from-a-chatgpt-inventor-is-thrilling-developers/",
       "platform": "blog",
       "author": "不明",
-      "time": "7日前",
+      "time": "8日前",
       "timestamp": "2026-09-20T02:10:55",
       "thumbnail": "https://cdn-ak2.favicon.st-hatena.com/64?url=https%3A%2F%2Ftechcrunch.com%2F2026%2F09%2F18%2Fa-new-kind-of-ai-model-from-a-chatgpt-inventor-is-thrilling-developers%2F",
       "tags": [
@@ -1997,7 +2060,7 @@
       "url": "https://note.com/kajiken0630/n/n91a5a9e00bc3",
       "platform": "blog",
       "author": "不明",
-      "time": "7日前",
+      "time": "8日前",
       "timestamp": "2026-09-20T01:10:32",
       "thumbnail": "https://cdn-ak2.favicon.st-hatena.com/64?url=https%3A%2F%2Fnote.com%2Fkajiken0630%2Fn%2Fn91a5a9e00bc3",
       "tags": [
@@ -2074,7 +2137,7 @@
       "url": "https://syu-m-5151.hatenablog.com/entry/2026/09/19/112330",
       "platform": "blog",
       "author": "不明",
-      "time": "8日前",
+      "time": "9日前",
       "timestamp": "2026-09-19T02:40:03",
       "thumbnail": "https://cdn-ak2.favicon.st-hatena.com/64?url=https%3A%2F%2Fsyu-m-5151.hatenablog.com%2Fentry%2F2026%2F09%2F19%2F112330",
       "tags": [
@@ -2091,7 +2154,7 @@
       "url": "https://gigazine.net/news/20260919-hack-openai-claude/",
       "platform": "blog",
       "author": "不明",
-      "time": "8日前",
+      "time": "9日前",
       "timestamp": "2026-09-19T02:12:16",
       "thumbnail": "https://cdn-ak2.favicon.st-hatena.com/64?url=https%3A%2F%2Fgigazine.net%2Fnews%2F20260919-hack-openai-claude%2F",
       "tags": [
@@ -2174,13 +2237,13 @@
       "timestamp": "2026-09-18T09:39:07",
       "thumbnail": "https://cdn-ak2.favicon.st-hatena.com/64?url=https%3A%2F%2Fnote.com%2Fgenkaijokyo%2Fn%2Fn8562c2500420",
       "tags": [
-        "ChatGPT",
         "Gemini",
+        "ChatGPT",
         "Claude"
       ],
       "aiTools": [
-        "chatgpt",
         "gemini",
+        "chatgpt",
         "claude"
       ]
     },
@@ -2266,7 +2329,7 @@
       "url": "https://martinfowler.com/articles/2026-dont-like-llms.html",
       "platform": "blog",
       "author": "不明",
-      "time": "9日前",
+      "time": "10日前",
       "timestamp": "2026-09-17T23:49:40",
       "thumbnail": "https://cdn-ak2.favicon.st-hatena.com/64?url=https%3A%2F%2Fmartinfowler.com%2Farticles%2F2026-dont-like-llms.html",
       "tags": [],
@@ -2279,7 +2342,7 @@
       "url": "https://www.itmedia.co.jp/news/article/2609/18/2000001484/",
       "platform": "blog",
       "author": "不明",
-      "time": "9日前",
+      "time": "10日前",
       "timestamp": "2026-09-17T23:32:09",
       "thumbnail": "https://cdn-ak2.favicon.st-hatena.com/64?url=https%3A%2F%2Fwww.itmedia.co.jp%2Fnews%2Farticle%2F2609%2F18%2F2000001484%2F",
       "tags": [
@@ -2371,23 +2434,6 @@
       "aiTools": []
     },
     {
-      "id": "2e4419e4",
-      "title": "Claude Codeの Agent Skills は、ときどき見直したほうがいい - じゃあ、おうちで学べる",
-      "description": "はじめに 2025年12月に「Claude Codeの Agent Skills は設定したほうがいい」という記事を書きました。必要な手順を必要なときに読み込ませる仕組みとして、Skillsを紹介した記事です。ただ、後半では設定が増えるほど管理が難しくなる話もしました。どれが使われているのか。似た説明のSkillが、互いの出番を奪っていな...",
-      "url": "https://syu-m-5151.hatenablog.com/entry/2026/09/17/140349",
-      "platform": "blog",
-      "author": "不明",
-      "time": "10日前",
-      "timestamp": "2026-09-17T05:46:22",
-      "thumbnail": "https://cdn-ak2.favicon.st-hatena.com/64?url=https%3A%2F%2Fsyu-m-5151.hatenablog.com%2Fentry%2F2026%2F09%2F17%2F140349",
-      "tags": [
-        "Claude"
-      ],
-      "aiTools": [
-        "claude"
-      ]
-    },
-    {
       "id": "5473b98a",
       "title": "GPT-6 Astraが141時間にわたって「マインクラフト」をプレイ、クリーパーに全財産を吹き飛ばされて「緑色の物体」がトラウマになりジャガイモ農家に",
       "description": "AIモデルの性能評価を手がけるVals AIが、OpenAIの「GPT-6 Astra」にゲーム「マインクラフト」を自律操作させるテストを実施しました。テスト時間は合計141時間におよびましたが、GPT-6 Astraは最終的にクリーパーの爆発で重要なアイテムを失い、その後は数時間にわたってジャガイモ栽培のみを続けるという行動を見せた...",
@@ -2442,7 +2488,7 @@
       "url": "https://www.ktv.jp/news/articles/?id=29638",
       "platform": "blog",
       "author": "不明",
-      "time": "10日前",
+      "time": "11日前",
       "timestamp": "2026-09-17T00:36:19",
       "thumbnail": "https://cdn-ak2.favicon.st-hatena.com/64?url=https%3A%2F%2Fwww.ktv.jp%2Fnews%2Farticles%2F%3Fid%3D29638",
       "tags": [],
@@ -2455,7 +2501,7 @@
       "url": "https://note.com/npaka/n/nc0f8f97b0278",
       "platform": "note",
       "author": "不明",
-      "time": "10日前",
+      "time": "11日前",
       "timestamp": "2026-09-16T23:54:42",
       "thumbnail": "https://assets.st-note.com/production/uploads/images/314495805/rectangle_large_type_2_57ba9559dc2da5482621eca3ede73c29.png?width=800",
       "tags": [],
@@ -2490,39 +2536,13 @@
       "aiTools": []
     },
     {
-      "id": "a34722e1",
-      "title": "「APIキーは.envに」はもはや通用しない　AIエージェントの“内通者化”をどう防ぐ？",
-      "description": "選択肢も出そろってきています。OSS・セルフホスト系では「Infisical」「HashiCorp Vault」、OAuthトークンの保管に特化した「Nango」などがあり、マネージドベンダー系では「AWS Secrets Manager」「1Password」「Aembit」「WorkOS」「Arcade」といった名前が挙がります。共通する思想はシンプルです。エージェントに鍵...",
-      "url": "https://atmarkit.itmedia.co.jp/ait/articles/2609/17/news006.html",
-      "platform": "blog",
-      "author": "不明",
-      "time": "11日前",
-      "timestamp": "2026-09-16T07:51:41",
-      "thumbnail": "https://cdn-ak2.favicon.st-hatena.com/64?url=https%3A%2F%2Fatmarkit.itmedia.co.jp%2Fait%2Farticles%2F2609%2F17%2Fnews006.html",
-      "tags": [],
-      "aiTools": []
-    },
-    {
-      "id": "032dba07",
-      "title": "Home - TypeSafe AI",
-      "description": "\" data-framer-component-type=\"RichTextContainer\" style=\"--extracted-r6o4lv:var(--token-f9dd19dd-b66e-4920-ad97-1dd63ba6e743, rgb(30, 30, 30));--framer-paragraph-spacing:0px;transform:none\">",
-      "url": "https://typesafe.ai/",
-      "platform": "blog",
-      "author": "不明",
-      "time": "11日前",
-      "timestamp": "2026-09-16T06:34:27",
-      "thumbnail": "https://cdn-ak2.favicon.st-hatena.com/64?url=https%3A%2F%2Ftypesafe.ai%2F",
-      "tags": [],
-      "aiTools": []
-    },
-    {
       "id": "8973a84b",
       "title": "ChatGPT共同開発者がLLMとは異なる方法で処理するAIモデル「Jev」を開発、GPT-5.6 Terra級の性能でタスクを安価かつ超高速に実行可能",
       "description": "AI企業のTypeSafe AIが大規模言語モデル(LLM)とは異なるアプローチでタスクを解決するAI「System One Models」と、System One Modelsの第1弾モデルである「Jev」を現地時間の2026年9月15日に発表しました。TypeSafe AIはChatGPTの開発に携わったAI研究者であるディオゴ・アルメイダ氏がCEOを務める企業で、LLMとは根本的...",
       "url": "https://gigazine.net/news/20260916-system-one-jev/",
       "platform": "blog",
       "author": "不明",
-      "time": "11日前",
+      "time": "12日前",
       "timestamp": "2026-09-16T02:49:52",
       "thumbnail": "https://cdn-ak2.favicon.st-hatena.com/64?url=https%3A%2F%2Fgigazine.net%2Fnews%2F20260916-system-one-jev%2F",
       "tags": [
@@ -2596,7 +2616,7 @@
       "url": "https://note.com/npaka/n/n2655c374416b",
       "platform": "note",
       "author": "不明",
-      "time": "12日前",
+      "time": "13日前",
       "timestamp": "2026-09-14T23:45:22",
       "thumbnail": "https://assets.st-note.com/production/uploads/images/313813483/rectangle_large_type_2_8793fc705409b1f8a98a18e3454be9fa.jpeg?width=800",
       "tags": [],
@@ -2630,14 +2650,14 @@
       "timestamp": "2026-09-14T10:30:28",
       "thumbnail": "https://cdn-ak2.favicon.st-hatena.com/64?url=https%3A%2F%2Fforest.watch.impress.co.jp%2Fdocs%2Fnews%2F2140699.html",
       "tags": [
-        "ChatGPT",
         "LLaMA",
-        "v0"
+        "v0",
+        "ChatGPT"
       ],
       "aiTools": [
-        "chatgpt",
         "llama",
-        "v0"
+        "v0",
+        "chatgpt"
       ]
     },
     {
@@ -2660,7 +2680,7 @@
       "url": "https://levtech.jp/media/detail_929/",
       "platform": "blog",
       "author": "不明",
-      "time": "13日前",
+      "time": "14日前",
       "timestamp": "2026-09-14T01:30:27",
       "thumbnail": "https://cdn-ak2.favicon.st-hatena.com/64?url=https%3A%2F%2Flevtech.jp%2Fmedia%2Fdetail_929%2F",
       "tags": [
@@ -2677,7 +2697,7 @@
       "url": "https://www.itmedia.co.jp/news/article/2609/14/2000001433/",
       "platform": "blog",
       "author": "不明",
-      "time": "13日前",
+      "time": "14日前",
       "timestamp": "2026-09-13T23:51:12",
       "thumbnail": "https://cdn-ak2.favicon.st-hatena.com/64?url=https%3A%2F%2Fwww.itmedia.co.jp%2Fnews%2Farticle%2F2609%2F14%2F2000001433%2F",
       "tags": [
@@ -2739,7 +2759,7 @@
       "url": "https://note.com/jcytp/n/n52e933883169",
       "platform": "blog",
       "author": "不明",
-      "time": "14日前",
+      "time": "15日前",
       "timestamp": "2026-09-13T02:52:46",
       "thumbnail": "https://cdn-ak2.favicon.st-hatena.com/64?url=https%3A%2F%2Fnote.com%2Fjcytp%2Fn%2Fn52e933883169",
       "tags": [],
@@ -2807,23 +2827,6 @@
       "time": "17日前",
       "timestamp": "2026-09-10T12:53:24",
       "thumbnail": "https://cdn-ak2.favicon.st-hatena.com/64?url=https%3A%2F%2Fanond.hatelabo.jp%2F20260910215309",
-      "tags": [
-        "ChatGPT"
-      ],
-      "aiTools": [
-        "chatgpt"
-      ]
-    },
-    {
-      "id": "86563630",
-      "title": "GPT-6 Astraが人気すぎてOpenAIのサーバーがピンチでProプランの新規サブスク契約が一時停止されるかも",
-      "description": "AIエージェントとしての能力やコーディング能力が非常に高いOpenAIの最先端モデル「GPT-6 Astra」が2026年9月3日に公開され、「Plus」以上の有料プランで利用できるようになりました。ところが、あまりにも人気が高すぎて、ChatGPTの開発スタッフが「サブスクリプションの新規登録を一時停止しなければならないかもしれ...",
-      "url": "https://gigazine.net/news/20260910-openai-astra-high-growth/",
-      "platform": "blog",
-      "author": "不明",
-      "time": "17日前",
-      "timestamp": "2026-09-10T04:11:39",
-      "thumbnail": "https://cdn-ak2.favicon.st-hatena.com/64?url=https%3A%2F%2Fgigazine.net%2Fnews%2F20260910-openai-astra-high-growth%2F",
       "tags": [
         "ChatGPT"
       ],
