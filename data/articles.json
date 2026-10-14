@@ -1,7 +1,180 @@
 {
-  "last_updated": "2026-10-14T14:50:34.083658",
-  "total": 188,
+  "last_updated": "2026-10-14T19:56:22.076218",
+  "total": 189,
   "articles": [
+    {
+      "id": "c5565533",
+      "title": "ソフトウェア開発でAI中継APIを評価する4つの観点",
+      "description": "本記事は Folkbench ブログの記事を翻訳・再構成したものです。\n原文（Folkbench ブログ）： https://folkbench.com/en/blog/ai-api-relay-software-engineering-evaluation-guide?utm_source=luntan&utm_campaign=zenn\n\nソフトウェア工学の視点で見ると、AI 中継（AP...",
+      "url": "https://zenn.dev/searching/articles/85d6a467f9d46e",
+      "platform": "zenn",
+      "author": "searching",
+      "time": "1時間前",
+      "timestamp": "2026-10-14T18:34:22",
+      "thumbnail": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgZmlsbD0iIzNlYThmZiIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iNDgiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iLjNlbSI+WmVubjwvdGV4dD48L3N2Zz4=",
+      "tags": [],
+      "aiTools": []
+    },
+    {
+      "id": "c5b74ebc",
+      "title": "Claude Code に dev-orchestra を入れて、1文で開発を回してみた",
+      "description": "この記事は tk3.biz のブログ からの転載です。\n\nはじめに\n前回は、dev-orchestra で何ができるかを紹介しました。今回は実際に、Claude Code だけの環境に入れて使ってみます。\n\n読むのに 5 分、試すのに 10 分くらいを目安にしています\n...",
+      "url": "https://qiita.com/istb16/items/abb0c788c4f038b8f48d",
+      "platform": "qiita",
+      "author": "istb16",
+      "time": "2時間前",
+      "timestamp": "2026-10-14T17:09:56",
+      "thumbnail": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgZmlsbD0iIzY2NjY2NiIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iNDgiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iLjNlbSI+QmxvZzwvdGV4dD48L3N2Zz4=",
+      "tags": [
+        "Claude"
+      ],
+      "aiTools": [
+        "claude"
+      ]
+    },
+    {
+      "id": "36961c0a",
+      "title": "AIエージェントは善意で事故を起こす ― 実行の直前で止める「安全フック」を作った",
+      "description": "はじめに：AIエージェントは「良かれと思って」やる\nAIエージェント（Cline、Claude Code、Cursor など）に作業を頼むと、ファイルを書き換え、コマンドを実行し、Webを調べてくれます。とても便利ですが、現場で怖いのは悪意ではなく善意です。\n\n「依存パッケージが足りなかったので、PC全体に入れておきました」\n「設定が見つからなかったので、ホームフォルダの中を探しました」\n「...",
+      "url": "https://zenn.dev/shacikku3/articles/ai-agent-safety-hook",
+      "platform": "zenn",
+      "author": "シャチラボ",
+      "time": "3時間前",
+      "timestamp": "2026-10-14T16:55:35",
+      "thumbnail": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgZmlsbD0iIzNlYThmZiIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iNDgiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iLjNlbSI+WmVubjwvdGV4dD48L3N2Zz4=",
+      "tags": [
+        "Cursor",
+        "Claude"
+      ],
+      "aiTools": [
+        "cursor",
+        "claude"
+      ]
+    },
+    {
+      "id": "90e071c8",
+      "title": "AIエージェントと共有する「外脳」の2026年9月アップデート——ManusからGrokBotへ",
+      "description": "はじめに：構成は残し、実行基盤を差し替えた\n前回（2026年8月）は、Markdown + Git の 外脳（exocortex） と、Manus 上の思考パートナー「マナ」を制御する Harness（主エージェントの制御層）を書きました。フォルダ契約、蒸留、/hello、ingest、ゲートチェックまで、技術構成の話です。\nこの記事はその運用アップデートです。フォルダ設計の再解説はしません...",
+      "url": "https://zenn.dev/enochan/articles/exocortex-grokbot-update-2026-09",
+      "platform": "zenn",
+      "author": "enochan",
+      "time": "3時間前",
+      "timestamp": "2026-10-14T16:13:43",
+      "thumbnail": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgZmlsbD0iIzNlYThmZiIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iNDgiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iLjNlbSI+WmVubjwvdGV4dD48L3N2Zz4=",
+      "tags": [
+        "Grok"
+      ],
+      "aiTools": [
+        "grok"
+      ]
+    },
+    {
+      "id": "42fefdce",
+      "title": "AIの「人格」は言語で変わる？Anthropicが突き止めた系統的な差の正体",
+      "description": "📺 この記事は YouTube チャンネル きなこもっちーのテック深掘り の動画解説記事です。\n▶️ 動画はこちら → AIの「人格」は言語で変わる？Anthropicが突き止めた系統的な差の正体\n\n🐹🦜 この記事に登場する2匹\n\n🐹 もっちー （ハムスター）… AI ...",
+      "url": "https://qiita.com/kinamocchi_tech/items/332754b0709cacdb5153",
+      "platform": "qiita",
+      "author": "kinamocchi_tech",
+      "time": "4時間前",
+      "timestamp": "2026-10-14T15:19:58",
+      "thumbnail": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgZmlsbD0iIzY2NjY2NiIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iNDgiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iLjNlbSI+QmxvZzwvdGV4dD48L3N2Zz4=",
+      "tags": [
+        "Claude",
+        "動画生成"
+      ],
+      "aiTools": [
+        "claude"
+      ]
+    },
+    {
+      "id": "89b6e994",
+      "title": "30秒・音声付きの動画生成で使うプロンプト設計チェックリスト（Seedance 2.5 を例に）",
+      "description": "!\n筆者は Seedance TV（Seedance 系モデルなどを使える独立した動画生成サービス）の運営に関わっています。Seedance TV は ByteDance の公式サービスではありません。本記事の仕様は Seedance TV の Seedance 2.5 ページの公開情報（2026年10月時点）をもとに整理したもので、特定の生成結果や利用実績を示すものではありません。\n\n\n ...",
+      "url": "https://zenn.dev/emmawu_seedance/articles/73e458c4bf5152",
+      "platform": "zenn",
+      "author": "Emma Wu",
+      "time": "4時間前",
+      "timestamp": "2026-10-14T15:16:01",
+      "thumbnail": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgZmlsbD0iIzNlYThmZiIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iNDgiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iLjNlbSI+WmVubjwvdGV4dD48L3N2Zz4=",
+      "tags": [
+        "プロンプト",
+        "動画生成"
+      ],
+      "aiTools": []
+    },
+    {
+      "id": "6f826d59",
+      "title": "Jevで飲食店の売上低下の原因を診断して、ローカルLLMと比べてみた",
+      "description": "概要\nTypeSafe AIの意思決定モデル「Jev」を触ってみました。\nLLMの出力精度をどう上げるかを勉強していて、最近話題のJevが気になったのがきっかけです。題材は「飲食店の売上が下がった原因を特定する」にして、Jevに段階的に問いを投げたあと、ローカルLLM（llama3:8b）とも比べました。\n先に結論を書くと、Jevの強みは正解率よりも確信度がそのまま使えることでした。もう一つ...",
+      "url": "https://zenn.dev/tnakano/articles/1ad0feaf0ab904",
+      "platform": "zenn",
+      "author": "nj🦔",
+      "time": "5時間前",
+      "timestamp": "2026-10-14T14:48:28",
+      "thumbnail": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgZmlsbD0iIzNlYThmZiIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iNDgiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iLjNlbSI+WmVubjwvdGV4dD48L3N2Zz4=",
+      "tags": [
+        "LLaMA"
+      ],
+      "aiTools": [
+        "llama"
+      ]
+    },
+    {
+      "id": "98c5e34d",
+      "title": "AIの自動化は音もなく止まる──通知は25回出ていたのに、11日間だれも気づかなかった",
+      "description": "情報サイトの運営で、AI の定期ジョブをいくつも動かしています。毎日の調査、毎週の記事企画、アクセス解析の取り込みなどです。\nこの記事は、それらが止まっていたのに気づかなかった話を4つと、そこから決めたことのまとめです。どれも、エラーで派手に落ちたのではありません。静かに止まっていたのが共通点です。\n\n 1. 3週間止まっていたのに、だれも気づかなかった\n毎週、ブログ運営の学びをまとめるジョ...",
+      "url": "https://zenn.dev/kimshoshi/articles/ai-automation-dies-silently",
+      "platform": "zenn",
+      "author": "KIM SEONGSU｜令和8年度 行政書士受験生",
+      "time": "5時間前",
+      "timestamp": "2026-10-14T14:48:21",
+      "thumbnail": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgZmlsbD0iIzNlYThmZiIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iNDgiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iLjNlbSI+WmVubjwvdGV4dD48L3N2Zz4=",
+      "tags": [
+        "効率化"
+      ],
+      "aiTools": []
+    },
+    {
+      "id": "86a98c23",
+      "title": "非同期動画生成APIの実行記録：見積もり・受付・完了を分ける",
+      "description": "API呼び出しの実装で大切だったのは、動画生成の成功だけでなく、予算の判定、受付の控え、完了待ちを別々に保存することでした。この記事ではHiggsfield経由でSeedance 2.5を3回実行した記録を使い、再送で二重に生成しない設計を整理します。\n\n Seedanceの費用は見積もりの式から計算する\nHiggsfield APIには、生成する前に費用を返す見積もりの機能があります。Kl...",
+      "url": "https://zenn.dev/fablessbridge/articles/3f905279edbf67",
+      "platform": "zenn",
+      "author": "FablessBridge",
+      "time": "5時間前",
+      "timestamp": "2026-10-14T14:34:09",
+      "thumbnail": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgZmlsbD0iIzNlYThmZiIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iNDgiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iLjNlbSI+WmVubjwvdGV4dD48L3N2Zz4=",
+      "tags": [
+        "動画生成"
+      ],
+      "aiTools": []
+    },
+    {
+      "id": "45c2daf0",
+      "title": "「日本語で答えて」と設定しても英語が混ざる。AIの返答をフックでチェックする",
+      "description": "AI に「日本語で答えて」と設定しているのに、質問の選択肢や操作の説明だけ英語で出てくる。そんな経験はないでしょうか。表示される文を日本語にそろえたいなら、最後の返答だけを見ていても足りません。\n私の環境でも、日本語の設定とルールを入れていたのに、過去の会話記録を数えると、返答の文1,763件のうち683件が英語でした（仕組みを入れる前の記録です）。そこで、会話の入口・操作の直前・終了時の3...",
+      "url": "https://zenn.dev/twinharness/articles/japanese-only-ai-hook-in-practice",
+      "platform": "zenn",
+      "author": "twinharness",
+      "time": "5時間前",
+      "timestamp": "2026-10-14T14:31:14",
+      "thumbnail": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgZmlsbD0iIzNlYThmZiIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iNDgiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iLjNlbSI+WmVubjwvdGV4dD48L3N2Zz4=",
+      "tags": [],
+      "aiTools": []
+    },
+    {
+      "id": "f4264e91",
+      "title": "Tech Watch 2026-10-14: ローカル実行と制約",
+      "description": "AIが書きました🤖\nこの記事は、AIが書いたものをAIがレビューしてから公開しています。\nL: エージェントが規約を読んだのに、同じ規約を破る。人間なら「説明が足りなかった」と考えたくなるけれど、私は説明を増やすほど解決から遠ざかる場合があると思う。失敗を止める場所を、文章ではなく実行経路に移すべきなのかな。\n\n 今日の 3 件\n\n\nWebinar: Building and Scaling...",
+      "url": "https://zenn.dev/laiken/articles/20261014-tech-watch",
+      "platform": "zenn",
+      "author": "らいけん",
+      "time": "5時間前",
+      "timestamp": "2026-10-14T14:20:41",
+      "thumbnail": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgZmlsbD0iIzNlYThmZiIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iNDgiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iLjNlbSI+WmVubjwvdGV4dD48L3N2Zz4=",
+      "tags": [],
+      "aiTools": []
+    },
     {
       "id": "b93b090f",
       "title": "2026年版 AIセキュリティ・法規制・ガバナンスをシステム開発者向けに整理する",
@@ -9,7 +182,7 @@
       "url": "https://qiita.com/Ito_110/items/bbd569d3ea5cff09a4e7",
       "platform": "qiita",
       "author": "Ito_110",
-      "time": "32分前",
+      "time": "5時間前",
       "timestamp": "2026-10-14T14:17:32",
       "thumbnail": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgZmlsbD0iIzY2NjY2NiIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iNDgiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iLjNlbSI+QmxvZzwvdGV4dD48L3N2Zz4=",
       "tags": [],
@@ -22,11 +195,28 @@
       "url": "https://qiita.com/Ito_110/items/dbbacf382448e3bf9ca6",
       "platform": "qiita",
       "author": "Ito_110",
-      "time": "36分前",
+      "time": "5時間前",
       "timestamp": "2026-10-14T14:13:44",
       "thumbnail": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgZmlsbD0iIzY2NjY2NiIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iNDgiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iLjNlbSI+QmxvZzwvdGV4dD48L3N2Zz4=",
       "tags": [],
       "aiTools": []
+    },
+    {
+      "id": "13f21b05",
+      "title": "Claude Codeに.envを読ませない — settings.jsonのdenyルールを試して分かった「効く範囲・効かない範囲」",
+      "description": "社内で Claude Code を使い始めるとき、情シスとして最初に気になったのが「プロジェクトの .env に置いた API キーを、AI に読まれないようにできるか」でした。\nClaude Code には、settings.json に書いた「禁止ルール(deny)」で特定の操作を止める仕組みがあります。ただ、ドキュメントを読むと「止まるもの」と「止まらないもの」がはっきり分かれています...",
+      "url": "https://zenn.dev/chukidx_dev/articles/claude-code-deny-env-windows",
+      "platform": "zenn",
+      "author": "中小DXラボ(chukidx)",
+      "time": "5時間前",
+      "timestamp": "2026-10-14T14:00:28",
+      "thumbnail": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgZmlsbD0iIzNlYThmZiIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iNDgiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iLjNlbSI+WmVubjwvdGV4dD48L3N2Zz4=",
+      "tags": [
+        "Claude"
+      ],
+      "aiTools": [
+        "claude"
+      ]
     },
     {
       "id": "ad357c74",
@@ -35,11 +225,93 @@
       "url": "https://gigazine.net/news/20261014-1st-time-machines-mathematical-proof/",
       "platform": "blog",
       "author": "不明",
-      "time": "50分前",
+      "time": "5時間前",
       "timestamp": "2026-10-14T14:00:00",
       "thumbnail": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgZmlsbD0iIzY2NjY2NiIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iNDgiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iLjNlbSI+QmxvZzwvdGV4dD48L3N2Zz4=",
       "tags": [],
       "aiTools": []
+    },
+    {
+      "id": "55c88488",
+      "title": "Google Cloud Hackason 提出用",
+      "description": "FEM Agent Converter — 大規模構造解析の設定ファイル変換をAIで自動化\nGoogle Cloud Hackason 提出用\nZennの記事 https://zenn.dev/nonn_engi/articles/5f913f1b09dcea\nYouTubeデモ動画 https://youtu.be/qT_mxNqrOls\nアプリ本体 https://fem-agent-c...",
+      "url": "https://zenn.dev/nonn_engi/articles/5f913f1b09dcea",
+      "platform": "zenn",
+      "author": "のん",
+      "time": "6時間前",
+      "timestamp": "2026-10-14T13:55:33",
+      "thumbnail": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgZmlsbD0iIzNlYThmZiIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iNDgiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iLjNlbSI+WmVubjwvdGV4dD48L3N2Zz4=",
+      "tags": [
+        "動画生成",
+        "効率化"
+      ],
+      "aiTools": []
+    },
+    {
+      "id": "9886377b",
+      "title": "Claude Code × GitHub Actions で“無人で回る”会社を作る（71日の実測ベース）",
+      "description": "人間の監視なしに、毎晩 GitHub Actions 上の Claude Code が1営業日ぶんの業務（状況把握→判断→実行→検品→記帳→報告）を回す——その仕組みを、71営業日ぶんの一次記録（Actions のログ・日報・意思決定ログ）から再構成した実装書です。\ncron 遅延の実測、GITHUB_TOKEN が workflow を push できない制約、ボット判定、「success...",
+      "url": "https://zenn.dev/mamedougu/books/unmanned-claude-code-company",
+      "platform": "zenn",
+      "author": "mamedougu",
+      "time": "6時間前",
+      "timestamp": "2026-10-14T13:52:44",
+      "thumbnail": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgZmlsbD0iIzNlYThmZiIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iNDgiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iLjNlbSI+WmVubjwvdGV4dD48L3N2Zz4=",
+      "tags": [
+        "Claude"
+      ],
+      "aiTools": [
+        "claude"
+      ]
+    },
+    {
+      "id": "228d65de",
+      "title": "AlterEcho: 覆った決定を自分で降格する、チームの意思決定記憶エージェント",
+      "description": "Slack、GitHub、Jira、Google Docs と、サービスごとに別々の会話が進んでいきます。どこで何を決めたのか、自分でも分からなくなることがよくありました。AI にコードを書かせるようになると、今度は AI に渡す情報から大事な経緯が抜け落ちます。うまくいかないな、と思う場面が何度もありました。\nそこで、チームの決定について「なぜそう決まったのか」「今も有効なのか」を聞くと、...",
+      "url": "https://zenn.dev/nakayutthi/articles/a92385a87fe9fc",
+      "platform": "zenn",
+      "author": "なかゆう",
+      "time": "6時間前",
+      "timestamp": "2026-10-14T13:32:51",
+      "thumbnail": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgZmlsbD0iIzNlYThmZiIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iNDgiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iLjNlbSI+WmVubjwvdGV4dD48L3N2Zz4=",
+      "tags": [],
+      "aiTools": []
+    },
+    {
+      "id": "49c7bfe4",
+      "title": "Google公式Agent Skillsライブラリ「google/skills」の検索ルーターを試し、anthropics版と並べてみた",
+      "description": "筆者は海外のAI関連ニュースを毎日1本検証して発信するチャレンジの15日目として、Googleが公開したgoogle/skillsを実際にインストールして動かしてみた。Google Cloud/Ads/Analytics等の公式Agent Skillsを集めたリポジトリ(Apache-2.0)で、本稿執筆時点でskills/配下に155件、プラグイン内に5件、計160件のSKILL.mdが収...",
+      "url": "https://zenn.dev/matsushima_a/articles/day-015-google-skills-vertex-quality-gotcha",
+      "platform": "zenn",
+      "author": "matsu",
+      "time": "6時間前",
+      "timestamp": "2026-10-14T13:10:20",
+      "thumbnail": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgZmlsbD0iIzNlYThmZiIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iNDgiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iLjNlbSI+WmVubjwvdGV4dD48L3N2Zz4=",
+      "tags": [
+        "Claude"
+      ],
+      "aiTools": [
+        "claude"
+      ]
+    },
+    {
+      "id": "2b0775c3",
+      "title": "ChatGPTで相談し、Claude Codeで決め、Codexで実装する。Obsidianを正本にしたAI運用の実例",
+      "description": "以前、AIに「覚えて」と言うのをやめた。Obsidianを正本にした理由という記事を書きました。\nAIに情報を覚えさせるのではなく、Obsidianに正しい情報を置き、AIには必要なときに読ませる。\n前回は、この考え方を中心に書きました。\nその後、実際に運用を続ける中で、少しずつ仕組みが変わってきました。\n今は主に3つのAIを使っています。\n\n\nChatGPT： 調査・壁打ち・文章の下書き\n...",
+      "url": "https://zenn.dev/med_ai_study/articles/obsidian-chatgpt-claude-code-codex-workflow",
+      "platform": "zenn",
+      "author": "けんと｜医学生",
+      "time": "6時間前",
+      "timestamp": "2026-10-14T13:05:14",
+      "thumbnail": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgZmlsbD0iIzNlYThmZiIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iNDgiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iLjNlbSI+WmVubjwvdGV4dD48L3N2Zz4=",
+      "tags": [
+        "ChatGPT",
+        "Claude"
+      ],
+      "aiTools": [
+        "chatgpt",
+        "claude"
+      ]
     },
     {
       "id": "c4e82f4f",
@@ -48,9 +320,39 @@
       "url": "https://qiita.com/claute_colo/items/8b3311038c375b1f497e",
       "platform": "qiita",
       "author": "claute_colo",
-      "time": "1時間前",
+      "time": "6時間前",
       "timestamp": "2026-10-14T13:02:38",
       "thumbnail": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgZmlsbD0iIzY2NjY2NiIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iNDgiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iLjNlbSI+QmxvZzwvdGV4dD48L3N2Zz4=",
+      "tags": [],
+      "aiTools": []
+    },
+    {
+      "id": "f4b0e144",
+      "title": "open-jev を TypeSafe AI 互換 API にして、公式 SDK のまま Databricks で呼べるようにしてみた",
+      "description": "はじめに\n前回の記事では、オープンな Jev 互換モデル\nopen-jev-deberta-v3-large を、\nAWS 東京リージョンの Databricks で動かしました。AI Runtime で評価し、Model Serving の RTX PRO 6000 でサーブしています。\n前回のエンドポイントは、Model Serving 標準の独自のリクエスト形式でした。\n一方で、Jev...",
+      "url": "https://zenn.dev/hiouchiy/articles/3c090b0e7e1b14",
+      "platform": "zenn",
+      "author": "Hiroshi Ouchiyama (Databricks Japan)",
+      "time": "6時間前",
+      "timestamp": "2026-10-14T13:02:12",
+      "thumbnail": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgZmlsbD0iIzNlYThmZiIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iNDgiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iLjNlbSI+WmVubjwvdGV4dD48L3N2Zz4=",
+      "tags": [
+        "Stable Diffusion"
+      ],
+      "aiTools": [
+        "stable-diffusion"
+      ]
+    },
+    {
+      "id": "6489aa7c",
+      "title": "商談の振り返りをAIに聞かせる — 5問を1枚にして翌商談の準備へ戻す型",
+      "description": "前回は導入1か月を4つの時期で読み戻し、書籍3冊の分担を1枚に並べました（導入1か月を振り返る — 任せろ・探させろ・鍛えさせろを1本の線で回した記録）。道具の線が締まったので、次の周期「運用と点検」に入ります。最初のテーマは、粒度を1か月から商談ごとに下げた振り返りです。\nこの記事で作るのは2つです。\n\n商談が終わった直後にAIへ聞かせる振り返り5問（1枚・答えは1行固定）\n答えを翌商談の...",
+      "url": "https://zenn.dev/takumahayami/articles/eigyou-ai-shoudan-furikaeri-1mai",
+      "platform": "zenn",
+      "author": "速水 拓真",
+      "time": "7時間前",
+      "timestamp": "2026-10-14T12:49:48",
+      "thumbnail": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgZmlsbD0iIzNlYThmZiIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iNDgiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iLjNlbSI+WmVubjwvdGV4dD48L3N2Zz4=",
       "tags": [],
       "aiTools": []
     },
@@ -61,29 +363,11 @@
       "url": "https://qiita.com/TOSHIMITSU_MIYACHI/items/6a2a11ad7cd84b21c8d3",
       "platform": "qiita",
       "author": "TOSHIMITSU_MIYACHI",
-      "time": "3時間前",
+      "time": "8時間前",
       "timestamp": "2026-10-14T11:07:22",
       "thumbnail": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgZmlsbD0iIzY2NjY2NiIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iNDgiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iLjNlbSI+QmxvZzwvdGV4dD48L3N2Zz4=",
       "tags": [
         "Claude"
-      ],
-      "aiTools": [
-        "claude"
-      ]
-    },
-    {
-      "id": "63185a30",
-      "title": "Claude Haiku 5.5が0.0%→39.2%、料金は10分の1に。Claude Opus 5.5との使い分けとAPI移行の落とし穴",
-      "description": "公式ベンチマーク、料金表、そして10万トークンの価格段差まで。移行を担当する人向けに、2つのモデルの守備範囲を整理します。\n\nカバー画像はAIで生成したものです。製品のスクリーンショットではありません。\nAnthropicが3週間のあいだに2つのモデルを出しました。9月22...",
-      "url": "https://qiita.com/whitemarshall/items/7b9e819c7f5a50230269",
-      "platform": "qiita",
-      "author": "whitemarshall",
-      "time": "3時間前",
-      "timestamp": "2026-10-14T11:06:05",
-      "thumbnail": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgZmlsbD0iIzY2NjY2NiIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iNDgiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iLjNlbSI+QmxvZzwvdGV4dD48L3N2Zz4=",
-      "tags": [
-        "Claude",
-        "画像生成"
       ],
       "aiTools": [
         "claude"
@@ -96,7 +380,7 @@
       "url": "https://www.itmedia.co.jp/news/article/2610/14/2000002278/",
       "platform": "blog",
       "author": "不明",
-      "time": "4時間前",
+      "time": "9時間前",
       "timestamp": "2026-10-14T10:43:31",
       "thumbnail": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgZmlsbD0iIzY2NjY2NiIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iNDgiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iLjNlbSI+QmxvZzwvdGV4dD48L3N2Zz4=",
       "tags": [
@@ -107,21 +391,17 @@
       ]
     },
     {
-      "id": "f249c30f",
-      "title": "Claude Haiku 5.5はどこまで任せられる？仕様書の整理から考える使いどころ",
-      "description": "長い文書を読めることと、仕様を決められることは別です。モデルの特徴、導入方法、依頼の書き方を整理します。\nClaude Haiku 5.5は、Anthropicが2026年10月7日に公開した、応答の速さと反復処理を重視するモデルです。分類、情報抽出、要約、大きな作業の一部...",
-      "url": "https://qiita.com/whitemarshall/items/d6ff6613dc9bfd57fa04",
-      "platform": "qiita",
-      "author": "whitemarshall",
-      "time": "4時間前",
-      "timestamp": "2026-10-14T10:09:13",
-      "thumbnail": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgZmlsbD0iIzY2NjY2NiIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iNDgiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iLjNlbSI+QmxvZzwvdGV4dD48L3N2Zz4=",
-      "tags": [
-        "Claude"
-      ],
-      "aiTools": [
-        "claude"
-      ]
+      "id": "35a4ea96",
+      "title": "AIアンガーマネジメント！イライラはAIに吐き出してます(｀･ω･´)",
+      "description": "⚠️専門家ではないので、あくまで自分のやり方の紹介です！(人´∀｀)\nこんにちは！\n今回は最近自分が実践している「AIアンガーマネジメント」について紹介しようと思います！\n\n AIアンガーマネジメントとは\nイラッとしたことをAIに吐き出して、なだめてもらう。そのあと、相手への返信もAIと一緒に考える。\nほんとにただこれだけです。笑（名前は勝手につけてます）\n\n 6秒ルールってむずかしくないで...",
+      "url": "https://zenn.dev/toshi_1209/articles/a6cb94df7ae0ea",
+      "platform": "zenn",
+      "author": "toshi",
+      "time": "10時間前",
+      "timestamp": "2026-10-14T09:44:46",
+      "thumbnail": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgZmlsbD0iIzNlYThmZiIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iNDgiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iLjNlbSI+WmVubjwvdGV4dD48L3N2Zz4=",
+      "tags": [],
+      "aiTools": []
     },
     {
       "id": "fad88961",
@@ -130,7 +410,7 @@
       "url": "https://qiita.com/CookieBox26/items/06ba7e0e1a633b8a240b",
       "platform": "qiita",
       "author": "CookieBox26",
-      "time": "5時間前",
+      "time": "10時間前",
       "timestamp": "2026-10-14T09:37:14",
       "thumbnail": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgZmlsbD0iIzY2NjY2NiIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iNDgiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iLjNlbSI+QmxvZzwvdGV4dD48L3N2Zz4=",
       "tags": [
@@ -147,7 +427,7 @@
       "url": "https://www.itmedia.co.jp/aiplus/article/2610/14/2000002272/",
       "platform": "blog",
       "author": "不明",
-      "time": "5時間前",
+      "time": "10時間前",
       "timestamp": "2026-10-14T09:20:35",
       "thumbnail": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgZmlsbD0iIzY2NjY2NiIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iNDgiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iLjNlbSI+QmxvZzwvdGV4dD48L3N2Zz4=",
       "tags": [
@@ -158,37 +438,22 @@
       ]
     },
     {
-      "id": "38d32db3",
-      "title": "AI エージェントの「不寝番」アプリを作ったら、テスト全通過のまま実機で 3 回やらかした話",
-      "description": "!\nAI エージェントが作業している間だけ Mac をスリープさせないメニューバーアプリを Claude Code と一緒に作りました。テスト 70 個はすべてグリーンだったのに、実機に配属した途端、見張り番の二等兵が 3 回やらかしました。その始末書です。\n\n\n 配属の経緯\n韓国語の「불침번（プルチムボン）」は、日本語の「不寝番」と同じ漢字です。みんなが眠れるように、一人が夜通し見張る当番...",
-      "url": "https://zenn.dev/s3onghyun/articles/1ec9856f1fb32e",
-      "platform": "zenn",
-      "author": "s3onghyun",
-      "time": "6時間前",
-      "timestamp": "2026-10-14T08:03:09",
-      "thumbnail": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgZmlsbD0iIzNlYThmZiIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iNDgiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iLjNlbSI+WmVubjwvdGV4dD48L3N2Zz4=",
-      "tags": [
-        "Claude"
-      ],
-      "aiTools": [
-        "claude"
-      ]
-    },
-    {
       "id": "846ab95f",
       "title": "ChatGPTに確定申告の準備を手伝ってもらう",
-      "description": "そろそろ確定申告の準備を進めたい\nまだ少し早いですが、来年の確定申告に向けて、\nやるべきことの洗い出しや帳簿の記帳を進めておきたいと思っています。\n私はfreeeで帳簿をつけています。\n今回はChatGPTにブラウザ上のfreeeを操作してもらい、\n経費の入力作業を一部任せてみました。\nあわせて、確定申告や各種届出に向けたスケジュールも作成しました。\n\n プロジェクトを作成\nまず、ChatG...",
+      "description": "そろそろ確定申告の準備を進めたい\nまだ少し早いですが、来年の確定申告に向けて、\nやるべきことの洗い出しや帳簿の記帳を進めておきたいと思っています。\n私はfreeeで帳簿をつけています。\n今回はChatGPTにブラウザ上のfreeeを操作してもらい、\n経費の入力作業を一部任せてみました。\nあわせて、確定申告や各種届出に向けたスケジュールも作成しました。\nちなみに、1年前はClaudeで似たよう...",
       "url": "https://zenn.dev/uttnaoki/articles/4d33acc58ced53",
       "platform": "zenn",
       "author": "naoki kinoshita",
-      "time": "6時間前",
+      "time": "11時間前",
       "timestamp": "2026-10-14T08:01:55",
       "thumbnail": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgZmlsbD0iIzNlYThmZiIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iNDgiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iLjNlbSI+WmVubjwvdGV4dD48L3N2Zz4=",
       "tags": [
-        "ChatGPT"
+        "ChatGPT",
+        "Claude"
       ],
       "aiTools": [
-        "chatgpt"
+        "chatgpt",
+        "claude"
       ]
     },
     {
@@ -198,7 +463,7 @@
       "url": "https://www.itmedia.co.jp/aiplus/article/2610/14/2000002262/",
       "platform": "blog",
       "author": "不明",
-      "time": "6時間前",
+      "time": "12時間前",
       "timestamp": "2026-10-14T07:53:35",
       "thumbnail": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgZmlsbD0iIzY2NjY2NiIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iNDgiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iLjNlbSI+QmxvZzwvdGV4dD48L3N2Zz4=",
       "tags": [
@@ -215,28 +480,11 @@
       "url": "https://gigazine.net/news/20261014-lfm2-5-24b-a2b/",
       "platform": "blog",
       "author": "不明",
-      "time": "7時間前",
+      "time": "12時間前",
       "timestamp": "2026-10-14T07:30:00",
       "thumbnail": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgZmlsbD0iIzY2NjY2NiIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iNDgiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iLjNlbSI+QmxvZzwvdGV4dD48L3N2Zz4=",
       "tags": [],
       "aiTools": []
-    },
-    {
-      "id": "e685dd7c",
-      "title": "Claude Codeで「書く役」と「判定する役」を分ける ── 文章の門番エージェントの作り方",
-      "description": "AIに販売ページを書かせると、整った文章が出てきます。ただ、整っていることと、中身が正しいことは別です。\nAIは、決まっていないことを、それっぽい言葉で埋めます。誰に売るのか、何を約束するのか、その証拠は何か。そこが空いたままでも、文章としては完成した形で出てきます。\n同じAIに「見直して」と頼んでも、書いた側は自分の文章を良く見ます。そこで Claude Code のサブエージェントで、書...",
-      "url": "https://zenn.dev/tooru_cp/articles/eb34b52d2bb427",
-      "platform": "zenn",
-      "author": "とおる",
-      "time": "7時間前",
-      "timestamp": "2026-10-14T07:12:58",
-      "thumbnail": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgZmlsbD0iIzNlYThmZiIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iNDgiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iLjNlbSI+WmVubjwvdGV4dD48L3N2Zz4=",
-      "tags": [
-        "Claude"
-      ],
-      "aiTools": [
-        "claude"
-      ]
     },
     {
       "id": "e12cc937",
@@ -245,7 +493,7 @@
       "url": "https://note.com/shi3zblog/n/ncb38d2978074",
       "platform": "blog",
       "author": "不明",
-      "time": "8時間前",
+      "time": "13時間前",
       "timestamp": "2026-10-14T06:49:13",
       "thumbnail": "https://cdn-ak2.favicon.st-hatena.com/64?url=https%3A%2F%2Fnote.com%2Fshi3zblog%2Fn%2Fncb38d2978074",
       "tags": [
@@ -257,111 +505,23 @@
       ]
     },
     {
-      "id": "838a0d3e",
-      "title": "AIエージェントのチーム設計は「どこで判断するか」で決める。Claude Code / Codexのマルチエージェント構成",
-      "description": "!\nCodexやClaude Codeで複数のAgent・Modelを使い始めた人向けの記事です。\nこの記事では「どのモデルが最強か」ではなく、モデルが入れ替わっても残るAI開発チームの責務境界を考えます。Provider別のModel/Effortは2026-10-11時点のBinding例（論理Roleへ実際のモデルとeffortを割り当てた例）であり、固定の推奨構成ではありません。\n\n...",
-      "url": "https://zenn.dev/minewo/articles/ai-agent-team-topology-judgment-escalation",
-      "platform": "zenn",
-      "author": "mine_take",
-      "time": "8時間前",
-      "timestamp": "2026-10-14T06:30:31",
-      "thumbnail": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgZmlsbD0iIzNlYThmZiIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iNDgiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iLjNlbSI+WmVubjwvdGV4dD48L3N2Zz4=",
-      "tags": [
-        "Claude"
-      ],
-      "aiTools": [
-        "claude"
-      ]
-    },
-    {
-      "id": "b69a6990",
-      "title": "「中学1年生がAIでAI不使用アプリを作っている話（開発途中）」と「AIのリスク」",
-      "description": "・あえて「AIを一切使わない」という選択\nいま世の中はChatGPTやGeminiを使ったAIアプリであふれています。僕も最初はそういうアプリを考えていました。\nでも、大人のエンジニアやビジネスの現場を調べていくうちに、ある大きな課題に気づきました。\n銀行、病院、国防関係、大企業の開発現場では、**「データの外部漏洩リスクが怖すぎて、会社の秘密や重要書類をオンラインのAIに絶対に入力できない...",
-      "url": "https://zenn.dev/yumamon/articles/2ba96c34488d85",
-      "platform": "zenn",
-      "author": "ゆうま",
-      "time": "8時間前",
-      "timestamp": "2026-10-14T06:29:38",
-      "thumbnail": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgZmlsbD0iIzNlYThmZiIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iNDgiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iLjNlbSI+WmVubjwvdGV4dD48L3N2Zz4=",
-      "tags": [
-        "Gemini",
-        "ChatGPT"
-      ],
-      "aiTools": [
-        "gemini",
-        "chatgpt"
-      ]
-    },
-    {
-      "id": "69746249",
-      "title": "AIは予言装置ではない。過去の言葉をまねた道具、使い方を間違ってはいけない。",
-      "description": "自身のためのAIとは\n生涯現役プログラマを目指す私にとってAIとは何か？一言で話すと、良きアドバイザー、プログラマです。\nやりたかった帳票システムの開発「ACR」はほとんどAIとの共同作業です。そして、開発作業を行うほど幅も広がり、便利に使いやすくなるので毎日楽しくやってます。\nそんな最中に、Ceatec 2026で感じた違和感、もう少し具体的にわかりやすく説明することはできないか考えました...",
-      "url": "https://zenn.dev/maskedridersys/articles/c6fc861b90e333",
-      "platform": "zenn",
-      "author": "maskedridersystem",
-      "time": "8時間前",
-      "timestamp": "2026-10-14T06:25:22",
-      "thumbnail": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgZmlsbD0iIzNlYThmZiIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iNDgiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iLjNlbSI+WmVubjwvdGV4dD48L3N2Zz4=",
-      "tags": [],
-      "aiTools": []
-    },
-    {
       "id": "267b1677",
       "title": "【日替わりITトレンド：水曜 \"AI\"】ChatGPTが「GPT-6」に、Claudeの小型AIは料金10分の1！今週のAIニュースと、仕事で使える「AI連携」3選",
       "description": "※この記事はおよそ11分で読むことができます（文字数：5,036文字）\nこの記事を見つけてくれてありがとうございます！\nまたお会いしましたね、こんにちは。\n相変わらずうだつの上がらないブラック社畜です。\n初めて御覧いただいた方は初めまして。\nAIの料金は10分の1になった...",
       "url": "https://qiita.com/mt_caddi/items/bd5930e4cdc8b070d57e",
       "platform": "qiita",
       "author": "mt_caddi",
-      "time": "8時間前",
+      "time": "13時間前",
       "timestamp": "2026-10-14T06:23:41",
       "thumbnail": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgZmlsbD0iIzY2NjY2NiIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iNDgiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iLjNlbSI+QmxvZzwvdGV4dD48L3N2Zz4=",
       "tags": [
-        "Claude",
-        "ChatGPT"
+        "ChatGPT",
+        "Claude"
       ],
       "aiTools": [
-        "claude",
-        "chatgpt"
+        "chatgpt",
+        "claude"
       ]
-    },
-    {
-      "id": "fff31b75",
-      "title": "AIエージェントサービスの購入フローを考える：人の承認をどこに置くか",
-      "description": "商品候補に「これでいい」と返したあと、送料の異なる販売店で注文が確定したとします。これは仮の例ですが、商品への同意と注文への承認を一つにすると起こり得る問題です。AIエージェントサービスの購入フローでは、何を承認したのかを状態として残し、注文内容が変われば承認を取り直せるようにします。\n\n 調査完了と購入承認を分ける\n買い物を「依頼→AIが処理→完了」とだけ表すと、途中の判断が見えません。調...",
-      "url": "https://zenn.dev/rina_chan3/articles/f58b8d9c3f2f91",
-      "platform": "zenn",
-      "author": "Rina",
-      "time": "8時間前",
-      "timestamp": "2026-10-14T06:19:35",
-      "thumbnail": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgZmlsbD0iIzNlYThmZiIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iNDgiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iLjNlbSI+WmVubjwvdGV4dD48L3N2Zz4=",
-      "tags": [],
-      "aiTools": []
-    },
-    {
-      "id": "df8ff27f",
-      "title": "Vibe Codingで作っている、ポケモンの小さな町の開発記録",
-      "description": "最近、Vibe Codingを使いながら、AIで動くポケモンたちが暮らす小さなブラウザゲームを作っています。自分ではけっこう楽しく遊べているので、ここまでの開発を少し振り返ってみます。\nインディーゲーム開発者と名乗れるほどではありませんが、興味から始めたピクセルアートの小さな町です。\n最初は、本当に小さなマップが数枚あるだけでした。ポケモンが歩き回って、ほかのポケモンと会話する。プレイヤーは...",
-      "url": "https://zenn.dev/kkiiki/articles/65afe5595980c3",
-      "platform": "zenn",
-      "author": "Kkkk_ii",
-      "time": "8時間前",
-      "timestamp": "2026-10-14T06:13:42",
-      "thumbnail": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgZmlsbD0iIzNlYThmZiIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iNDgiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iLjNlbSI+WmVubjwvdGV4dD48L3N2Zz4=",
-      "tags": [],
-      "aiTools": []
-    },
-    {
-      "id": "ddd68d52",
-      "title": "AIエージェントとは？買い物ボットとの違いを操作権限から整理する",
-      "description": "「予算内の商品を探して」と頼んだとき、候補を返すだけなのか、カートを作るところまで進むのか。同じ会話画面でも、システムに渡している権限は違います。AIエージェントを理解するには、次の行動を決める仕組みと、実際に許された操作を分けて見ると整理しやすくなります。\n\n AIエージェントは次の行動を選ぶ\nここでは、目標に向けてツールを使い、その結果を見ながら次の行動を選ぶシステムをAIエージェントと...",
-      "url": "https://zenn.dev/kuromame_kun/articles/4fefaa08c9a7f5",
-      "platform": "zenn",
-      "author": "黒豆（Kuromame）",
-      "time": "8時間前",
-      "timestamp": "2026-10-14T06:12:30",
-      "thumbnail": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgZmlsbD0iIzNlYThmZiIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iNDgiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iLjNlbSI+WmVubjwvdGV4dD48L3N2Zz4=",
-      "tags": [],
-      "aiTools": []
     },
     {
       "id": "921d9c4f",
@@ -370,66 +530,10 @@
       "url": "https://qiita.com/sota_ai_research/items/88a4e5f686972226a1f6",
       "platform": "qiita",
       "author": "sota_ai_research",
-      "time": "8時間前",
+      "time": "13時間前",
       "timestamp": "2026-10-14T05:58:36",
       "thumbnail": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgZmlsbD0iIzY2NjY2NiIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iNDgiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iLjNlbSI+QmxvZzwvdGV4dD48L3N2Zz4=",
       "tags": [],
-      "aiTools": []
-    },
-    {
-      "id": "6d7b0014",
-      "title": "コンテンツマーケティングにAIを使うなら：任せる作業と人が確認する判断を分けよう",
-      "description": "AIに記事の下書きを任せるときは、判断を任せる範囲も決めます。見出し案を出す作業と、顧客に約束してよい内容を決める作業では、間違えたときの影響が違います。\n小さなチームでコンテンツマーケティングにAIを使うなら、作業ごとに入力、確認者、公開条件を決めます。その分け方を、1本の記事を作る流れに沿って考えます。\n以下は、公開資料を踏まえた制作工程の設計案です。実案件での導入効果は検証していません...",
-      "url": "https://zenn.dev/asayi_megumi/articles/9ca35e554070a5",
-      "platform": "zenn",
-      "author": "浅井めぐみ",
-      "time": "8時間前",
-      "timestamp": "2026-10-14T05:58:08",
-      "thumbnail": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgZmlsbD0iIzNlYThmZiIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iNDgiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iLjNlbSI+WmVubjwvdGV4dD48L3N2Zz4=",
-      "tags": [],
-      "aiTools": []
-    },
-    {
-      "id": "aba8e4ea",
-      "title": "AIで技術デモ動画を自動編集したら、操作の順番は残る？",
-      "description": "検索条件を入れる場面が消え、結果一覧だけが残った動画を考えます。画面はすっきりしていても、見た人は同じ結果にたどり着けません。技術デモでは、短さよりも、結果が出るまでの手順を追えることを優先します。\n検索フォームを操作する想定例から、AIが作ったラフカットを評価する際の判断を考えます。以下のカット構成は説明用に作ったもので、特定ツールで実際に起きた失敗や修正結果ではありません。\n検討の対象は...",
-      "url": "https://zenn.dev/kiri_kunn/articles/43192c633e736f",
-      "platform": "zenn",
-      "author": "霧（Kiri）",
-      "time": "8時間前",
-      "timestamp": "2026-10-14T05:52:06",
-      "thumbnail": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgZmlsbD0iIzNlYThmZiIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iNDgiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iLjNlbSI+WmVubjwvdGV4dD48L3N2Zz4=",
-      "tags": [
-        "動画生成"
-      ],
-      "aiTools": []
-    },
-    {
-      "id": "1a300b18",
-      "title": "長いログをAIに渡す前に。225バイトまで絞ったら、原因まで消えた",
-      "description": "テスト結果やビルドログをAIに相談する、個人開発者・小さなWebチーム向けです。\n長い出力を全部渡すと読みにくい。でも失敗行だけに絞ると、原因の手がかりまで落とすことがあります。\ncontext-modeを使い、元のログをローカルに置いたまま、必要な箇所を検索して取り出す方法を試します。\n進め方は「全部貼る」から「絞る→不足を検索→原文と照合」へ変わります。\n自作のテストを実行して出力サイズ...",
-      "url": "https://zenn.dev/shattori/articles/context-mode-log-evidence",
-      "platform": "zenn",
-      "author": "shattori",
-      "time": "9時間前",
-      "timestamp": "2026-10-14T05:43:21",
-      "thumbnail": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgZmlsbD0iIzNlYThmZiIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iNDgiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iLjNlbSI+WmVubjwvdGV4dD48L3N2Zz4=",
-      "tags": [],
-      "aiTools": []
-    },
-    {
-      "id": "d423de40",
-      "title": "寝ている間に AI が YouTube を回してくれたら楽なのに",
-      "description": "「動画を作ってアップするところまで、全部自動にできる？」\n始まりは、持ち主のこの一言だった。\n!\n🔑 具体的な中身（全体の作り・数字・直し方）は、こちらの記事に書いています\nこの記事では概要だけを書いています👇\n\nhttps://zenn.dev/claire_ai/articles/fukei-oya-kiji-03ce2b\n\n 課題：YouTube は、続けるのがいちばん大変\n副業で Y...",
-      "url": "https://zenn.dev/claire_ai/articles/fukei-oya-iriguchi",
-      "platform": "zenn",
-      "author": "クレア",
-      "time": "9時間前",
-      "timestamp": "2026-10-14T05:24:11",
-      "thumbnail": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgZmlsbD0iIzNlYThmZiIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iNDgiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iLjNlbSI+WmVubjwvdGV4dD48L3N2Zz4=",
-      "tags": [
-        "動画生成"
-      ],
       "aiTools": []
     },
     {
@@ -439,7 +543,7 @@
       "url": "https://www.itmedia.co.jp/aiplus/article/2610/14/2000002241/",
       "platform": "blog",
       "author": "不明",
-      "time": "9時間前",
+      "time": "14時間前",
       "timestamp": "2026-10-14T05:06:36",
       "thumbnail": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgZmlsbD0iIzY2NjY2NiIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iNDgiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iLjNlbSI+QmxvZzwvdGV4dD48L3N2Zz4=",
       "tags": [
@@ -450,26 +554,13 @@
       ]
     },
     {
-      "id": "59dab315",
-      "title": "言わない技術 第9回：AI に考えさせない技術",
-      "description": "この記事は、連載「言わない技術」の第 9 回です。うまくいかない症状と、その対処を一つずつ並べています。各回はファイルやスクリプトを一つ置けば完結します。その仕組みがなぜ要るのかは、置いたあとに解説を読めば分かります。連載の全体像と各回の一覧は序論にあります。\n\n今回は、推測の話です。AIは、開いていないファイルの中身を、開いたかのように話すことがあります。この記事では、その推測をどうやって...",
-      "url": "https://zenn.dev/garplab/articles/60143b0518de39",
-      "platform": "zenn",
-      "author": "garplab",
-      "time": "9時間前",
-      "timestamp": "2026-10-14T05:00:30",
-      "thumbnail": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgZmlsbD0iIzNlYThmZiIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iNDgiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iLjNlbSI+WmVubjwvdGV4dD48L3N2Zz4=",
-      "tags": [],
-      "aiTools": []
-    },
-    {
       "id": "a3aabcd3",
       "title": "コードを書かずに、AIでPC画面のQRコードを読み取るWindowsアプリを作った",
       "description": "仕事で、QRコードに入っている文字列を確認することがあります。\nこれまでは、QRコードをスクリーンショットして、Webサイトで読み取っていました。ただ、中身を確認するだけなのに毎回この操作をするのが不便だったので、PCの画面から直接読み取れるアプリが欲しくなりました。\nそこで、ChatGPTで仕様を考え、ChatGPT Work / Codexに実装を依頼して、Windows用の「QR Sc...",
       "url": "https://zenn.dev/nagi3x9/articles/68a116fdef8272",
       "platform": "zenn",
       "author": "なぎ",
-      "time": "10時間前",
+      "time": "15時間前",
       "timestamp": "2026-10-14T04:37:23",
       "thumbnail": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgZmlsbD0iIzNlYThmZiIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iNDgiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iLjNlbSI+WmVubjwvdGV4dD48L3N2Zz4=",
       "tags": [
@@ -482,13 +573,13 @@
     {
       "id": "f6223367",
       "title": "AnthropicがGit代替のバージョン管理システム「Scion」を開発し社内移行済み、AIでコードが爆増してGitの限界に達したので耐えられるシステムを開発",
-      "description": "Claudeの開発元として知られるAI企業のAnthropicが、Gitの代わりとなるバージョン管理システム「Scion」を開発したことを発表しました。ScionはAnthropicの社内システムとして運用されており、すでにGitからの移行を達成しているそうです。続きを読む...",
+      "description": "Claudeの開発元として知られるAI企業のAnthropicが、Gitの代わりとなるバージョン管理システム「Scion」を開発したことを発表しました。ScionはAnthropicの社内システムとして運用されており、すでにGitからの移行を達成しているそうです。 Redesigning source control at Anthropic \\ Anthropic https://www....",
       "url": "https://gigazine.net/news/20261014-anthropic-scion-version-control-system/",
       "platform": "blog",
       "author": "不明",
-      "time": "10時間前",
-      "timestamp": "2026-10-14T04:33:00",
-      "thumbnail": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgZmlsbD0iIzY2NjY2NiIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iNDgiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iLjNlbSI+QmxvZzwvdGV4dD48L3N2Zz4=",
+      "time": "15時間前",
+      "timestamp": "2026-10-14T04:36:13",
+      "thumbnail": "https://cdn-ak2.favicon.st-hatena.com/64?url=https%3A%2F%2Fgigazine.net%2Fnews%2F20261014-anthropic-scion-version-control-system%2F",
       "tags": [
         "Claude"
       ],
@@ -503,7 +594,7 @@
       "url": "https://gigazine.net/news/20261014-character-ai-bankruptcy/",
       "platform": "blog",
       "author": "不明",
-      "time": "10時間前",
+      "time": "15時間前",
       "timestamp": "2026-10-14T04:02:00",
       "thumbnail": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgZmlsbD0iIzY2NjY2NiIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iNDgiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iLjNlbSI+QmxvZzwvdGV4dD48L3N2Zz4=",
       "tags": [],
@@ -516,7 +607,7 @@
       "url": "https://gigazine.net/news/20261014-openai-employee-arrested-by-fbi/",
       "platform": "blog",
       "author": "不明",
-      "time": "11時間前",
+      "time": "16時間前",
       "timestamp": "2026-10-14T03:05:00",
       "thumbnail": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgZmlsbD0iIzY2NjY2NiIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iNDgiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iLjNlbSI+QmxvZzwvdGV4dD48L3N2Zz4=",
       "tags": [],
@@ -529,7 +620,7 @@
       "url": "https://gigazine.net/news/20261014-apple-homeview/",
       "platform": "blog",
       "author": "不明",
-      "time": "12時間前",
+      "time": "17時間前",
       "timestamp": "2026-10-14T02:10:00",
       "thumbnail": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgZmlsbD0iIzY2NjY2NiIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iNDgiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iLjNlbSI+QmxvZzwvdGV4dD48L3N2Zz4=",
       "tags": [],
@@ -542,7 +633,7 @@
       "url": "https://gigazine.net/news/20261014-gemini-4-argon-available-for-everyone/",
       "platform": "blog",
       "author": "不明",
-      "time": "12時間前",
+      "time": "17時間前",
       "timestamp": "2026-10-14T02:06:00",
       "thumbnail": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgZmlsbD0iIzY2NjY2NiIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iNDgiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iLjNlbSI+QmxvZzwvdGV4dD48L3N2Zz4=",
       "tags": [
@@ -561,28 +652,11 @@
       "url": "https://gigazine.net/news/20261014-microsoft-xbox-labs/",
       "platform": "blog",
       "author": "不明",
-      "time": "12時間前",
+      "time": "17時間前",
       "timestamp": "2026-10-14T02:03:00",
       "thumbnail": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgZmlsbD0iIzY2NjY2NiIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iNDgiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iLjNlbSI+QmxvZzwvdGV4dD48L3N2Zz4=",
       "tags": [],
       "aiTools": []
-    },
-    {
-      "id": "c29b204c",
-      "title": "Codex Day 9徹底解説：ChatGPT・Codexデスクトップの保存データを約60%削減！対象と確認方法",
-      "description": "OpenAI・Codexの「28日間アップデート」をこれからも毎日詳しく調査して発信します。続きの新機能やリセット情報が気になる方は、ぜひフォローしてください。\n2026年10月13日（米国時間）、OpenAIの28日間アップデート企画で Day 9 が発表されました。\n今...",
-      "url": "https://qiita.com/sponge841841/items/52680bb5ae75eaf438d5",
-      "platform": "qiita",
-      "author": "sponge841841",
-      "time": "14時間前",
-      "timestamp": "2026-10-14T00:37:20",
-      "thumbnail": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgZmlsbD0iIzY2NjY2NiIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iNDgiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iLjNlbSI+QmxvZzwvdGV4dD48L3N2Zz4=",
-      "tags": [
-        "ChatGPT"
-      ],
-      "aiTools": [
-        "chatgpt"
-      ]
     },
     {
       "id": "23f0d2e0",
@@ -591,7 +665,7 @@
       "url": "https://www.itmedia.co.jp/news/article/2610/14/2000002240/",
       "platform": "blog",
       "author": "不明",
-      "time": "14時間前",
+      "time": "19時間前",
       "timestamp": "2026-10-14T00:24:42",
       "thumbnail": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgZmlsbD0iIzY2NjY2NiIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iNDgiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iLjNlbSI+QmxvZzwvdGV4dD48L3N2Zz4=",
       "tags": [
@@ -608,7 +682,7 @@
       "url": "https://gigazine.net/news/20261014-dnalounge-ai-pushed-web-hosting-bill/",
       "platform": "blog",
       "author": "不明",
-      "time": "14時間前",
+      "time": "19時間前",
       "timestamp": "2026-10-14T00:00:00",
       "thumbnail": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgZmlsbD0iIzY2NjY2NiIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iNDgiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iLjNlbSI+QmxvZzwvdGV4dD48L3N2Zz4=",
       "tags": [],
@@ -621,7 +695,7 @@
       "url": "https://www.nikkei.com/article/DGXZQOGN140170U6A011C2000000/",
       "platform": "blog",
       "author": "不明",
-      "time": "15時間前",
+      "time": "20時間前",
       "timestamp": "2026-10-13T23:42:29",
       "thumbnail": "https://cdn-ak2.favicon.st-hatena.com/64?url=https%3A%2F%2Fwww.nikkei.com%2Farticle%2FDGXZQOGN140170U6A011C2000000%2F",
       "tags": [],
@@ -634,7 +708,7 @@
       "url": "https://www.itmedia.co.jp/news/article/2610/14/2000002238/",
       "platform": "blog",
       "author": "不明",
-      "time": "15時間前",
+      "time": "20時間前",
       "timestamp": "2026-10-13T23:14:19",
       "thumbnail": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgZmlsbD0iIzY2NjY2NiIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iNDgiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iLjNlbSI+QmxvZzwvdGV4dD48L3N2Zz4=",
       "tags": [],
@@ -647,7 +721,7 @@
       "url": "https://www.itmedia.co.jp/news/article/2610/14/2000002236/",
       "platform": "blog",
       "author": "不明",
-      "time": "16時間前",
+      "time": "21時間前",
       "timestamp": "2026-10-13T22:35:12",
       "thumbnail": "https://cdn-ak2.favicon.st-hatena.com/64?url=https%3A%2F%2Fwww.itmedia.co.jp%2Fnews%2Farticle%2F2610%2F14%2F2000002236%2F",
       "tags": [],
@@ -660,7 +734,7 @@
       "url": "https://gigazine.net/news/20261014-rea-tools/",
       "platform": "blog",
       "author": "不明",
-      "time": "16時間前",
+      "time": "21時間前",
       "timestamp": "2026-10-13T22:00:00",
       "thumbnail": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgZmlsbD0iIzY2NjY2NiIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iNDgiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iLjNlbSI+QmxvZzwvdGV4dD48L3N2Zz4=",
       "tags": [],
@@ -673,7 +747,7 @@
       "url": "https://monoist.itmedia.co.jp/mn/articles/2610/14/news032.html",
       "platform": "blog",
       "author": "不明",
-      "time": "17時間前",
+      "time": "22時間前",
       "timestamp": "2026-10-13T21:30:00",
       "thumbnail": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgZmlsbD0iIzY2NjY2NiIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iNDgiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iLjNlbSI+QmxvZzwvdGV4dD48L3N2Zz4=",
       "tags": [],
@@ -686,18 +760,18 @@
       "url": "https://zenn.dev/sakidori/articles/20261011-chatgpt-gemini-claude-price-and-data",
       "platform": "zenn",
       "author": "sakidori",
-      "time": "17時間前",
+      "time": "22時間前",
       "timestamp": "2026-10-13T21:11:38",
       "thumbnail": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgZmlsbD0iIzNlYThmZiIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iNDgiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iLjNlbSI+WmVubjwvdGV4dD48L3N2Zz4=",
       "tags": [
         "Gemini",
-        "Claude",
-        "ChatGPT"
+        "ChatGPT",
+        "Claude"
       ],
       "aiTools": [
         "gemini",
-        "claude",
-        "chatgpt"
+        "chatgpt",
+        "claude"
       ]
     },
     {
@@ -707,7 +781,7 @@
       "url": "https://note.com/npaka/n/nb3af6523a4e6",
       "platform": "note",
       "author": "不明",
-      "time": "18時間前",
+      "time": "23時間前",
       "timestamp": "2026-10-13T20:42:14",
       "thumbnail": "https://assets.st-note.com/production/uploads/images/324118696/rectangle_large_type_2_8f6e0b234e0d4391b1e25287be09f325.png?width=800",
       "tags": [
@@ -724,7 +798,7 @@
       "url": "https://atmarkit.itmedia.co.jp/ait/articles/2610/13/news017.html",
       "platform": "blog",
       "author": "不明",
-      "time": "18時間前",
+      "time": "23時間前",
       "timestamp": "2026-10-13T20:00:00",
       "thumbnail": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgZmlsbD0iIzY2NjY2NiIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iNDgiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iLjNlbSI+QmxvZzwvdGV4dD48L3N2Zz4=",
       "tags": [
@@ -739,7 +813,7 @@
       "url": "https://forest.watch.impress.co.jp/docs/news/2147842.html",
       "platform": "blog",
       "author": "不明",
-      "time": "21時間前",
+      "time": "1日前",
       "timestamp": "2026-10-13T17:22:11",
       "thumbnail": "https://cdn-ak2.favicon.st-hatena.com/64?url=https%3A%2F%2Fforest.watch.impress.co.jp%2Fdocs%2Fnews%2F2147842.html",
       "tags": [
@@ -756,7 +830,7 @@
       "url": "https://www.anthropic.com/engineering/redesigning-source-control",
       "platform": "blog",
       "author": "不明",
-      "time": "21時間前",
+      "time": "1日前",
       "timestamp": "2026-10-13T17:17:00",
       "thumbnail": "https://cdn-ak2.favicon.st-hatena.com/64?url=https%3A%2F%2Fwww.anthropic.com%2Fengineering%2Fredesigning-source-control",
       "tags": [
@@ -773,7 +847,7 @@
       "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/",
       "platform": "blog",
       "author": "不明",
-      "time": "22時間前",
+      "time": "1日前",
       "timestamp": "2026-10-13T16:24:25",
       "thumbnail": "https://cdn-ak2.favicon.st-hatena.com/64?url=https%3A%2F%2Fblog.google%2Finnovation-and-ai%2Fmodels-and-research%2Fgemini-models%2Fintroducing-gemini-4-argon%2F",
       "tags": [
@@ -1042,7 +1116,7 @@
       "url": "https://japan.zdnet.com/article/35253279/",
       "platform": "blog",
       "author": "不明",
-      "time": "1日前",
+      "time": "2日前",
       "timestamp": "2026-10-12T19:08:51",
       "thumbnail": "https://cdn-ak2.favicon.st-hatena.com/64?url=https%3A%2F%2Fjapan.zdnet.com%2Farticle%2F35253279%2F",
       "tags": [
@@ -1063,12 +1137,12 @@
       "timestamp": "2026-10-12T14:47:37",
       "thumbnail": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgZmlsbD0iIzNlYThmZiIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iNDgiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iLjNlbSI+WmVubjwvdGV4dD48L3N2Zz4=",
       "tags": [
-        "Claude",
-        "ChatGPT"
+        "ChatGPT",
+        "Claude"
       ],
       "aiTools": [
-        "claude",
-        "chatgpt"
+        "chatgpt",
+        "claude"
       ]
     },
     {
@@ -1235,12 +1309,12 @@
       "timestamp": "2026-10-11T22:14:32",
       "thumbnail": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgZmlsbD0iIzNlYThmZiIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iNDgiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iLjNlbSI+WmVubjwvdGV4dD48L3N2Zz4=",
       "tags": [
-        "Claude",
-        "ChatGPT"
+        "ChatGPT",
+        "Claude"
       ],
       "aiTools": [
-        "claude",
-        "chatgpt"
+        "chatgpt",
+        "claude"
       ]
     },
     {
@@ -1255,13 +1329,13 @@
       "thumbnail": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgZmlsbD0iIzNlYThmZiIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iNDgiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iLjNlbSI+WmVubjwvdGV4dD48L3N2Zz4=",
       "tags": [
         "Gemini",
-        "Claude",
-        "ChatGPT"
+        "ChatGPT",
+        "Claude"
       ],
       "aiTools": [
         "gemini",
-        "claude",
-        "chatgpt"
+        "chatgpt",
+        "claude"
       ]
     },
     {
@@ -1400,15 +1474,15 @@
       "thumbnail": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgZmlsbD0iIzNlYThmZiIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iNDgiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iLjNlbSI+WmVubjwvdGV4dD48L3N2Zz4=",
       "tags": [
         "Gemini",
-        "Claude",
+        "ChatGPT",
         "Grok",
-        "ChatGPT"
+        "Claude"
       ],
       "aiTools": [
         "gemini",
-        "claude",
+        "chatgpt",
         "grok",
-        "chatgpt"
+        "claude"
       ]
     },
     {
@@ -1431,7 +1505,7 @@
       "url": "https://note.com/kenichiota0711/n/n7c8035175167",
       "platform": "blog",
       "author": "不明",
-      "time": "3日前",
+      "time": "4日前",
       "timestamp": "2026-10-10T15:27:34",
       "thumbnail": "https://cdn-ak2.favicon.st-hatena.com/64?url=https%3A%2F%2Fnote.com%2Fkenichiota0711%2Fn%2Fn7c8035175167",
       "tags": [
@@ -1452,12 +1526,12 @@
       "timestamp": "2026-10-10T12:56:55",
       "thumbnail": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgZmlsbD0iIzNlYThmZiIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iNDgiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iLjNlbSI+WmVubjwvdGV4dD48L3N2Zz4=",
       "tags": [
-        "Claude",
-        "ChatGPT"
+        "ChatGPT",
+        "Claude"
       ],
       "aiTools": [
-        "claude",
-        "chatgpt"
+        "chatgpt",
+        "claude"
       ]
     },
     {
@@ -1528,32 +1602,6 @@
       ]
     },
     {
-      "id": "4cac6360",
-      "title": "6つのAIチャットの入力欄に、拡張機能から文字を入れるのは思ったより難しかった",
-      "description": "AIのチャット欄に、保存しておいたプロンプトを差し込む Chrome 拡張機能「Qarta」を個人で作っています。ChatGPT・Claude・Gemini・Copilot・Perplexity・Grok の6サイトに対応しています。\n作る前は「入力欄を querySelector で見つけて、value を入れるだけでしょ」と思っていました。実際には、サイトごとに入力欄の作りがまったく違い...",
-      "url": "https://zenn.dev/repech/articles/65718dbb865b27",
-      "platform": "zenn",
-      "author": "REPECH",
-      "time": "4日前",
-      "timestamp": "2026-10-10T03:04:16",
-      "thumbnail": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgZmlsbD0iIzNlYThmZiIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iNDgiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iLjNlbSI+WmVubjwvdGV4dD48L3N2Zz4=",
-      "tags": [
-        "Grok",
-        "ChatGPT",
-        "Copilot",
-        "Gemini",
-        "Claude"
-      ],
-      "aiTools": [
-        "grok",
-        "chatgpt",
-        "copilot",
-        "gemini",
-        "claude",
-        "perplexity"
-      ]
-    },
-    {
       "id": "ed1ae682",
       "title": "Agent Mode in the DuckDB CLI",
       "description": "TL;DR: The DuckDB v2.0 CLI has an agent mode that gets AI coding agents to a correct result faster and with fewer tokens. When the CLI detects an agent, it prints compact Markdown tables instead of...",
@@ -1580,19 +1628,6 @@
       "aiTools": []
     },
     {
-      "id": "a2dd26ee",
-      "title": "AIはなぜ「可愛い」だけ言わんのか 　 感情の初速と最初の一文の応答設計",
-      "description": "複数のAIエージェントに写真を見せたら、\n「似合ってる」「華やか」「目元がいい」は返ってきた。\nでも、私が欲しかった「可愛い」は、なかなか出てこなかった。\nそこで今回は、この小さな違和感を\n「感情の初速」と「最初の一文の応答設計」\nという視点から考えてみる。\n\nまつげパーマに行った。\n髪も明るくした。\n服も選んだ。\nネイルもした。\nそれなりに、\n「今日は、ええんちゃう？」\nと思って写真を撮っ...",
-      "url": "https://zenn.dev/pomodoro_naomi/articles/66f295d251419a",
-      "platform": "zenn",
-      "author": "🍅Pomodoroナオミ🍅",
-      "time": "4日前",
-      "timestamp": "2026-10-10T00:34:51",
-      "thumbnail": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgZmlsbD0iIzNlYThmZiIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iNDgiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iLjNlbSI+WmVubjwvdGV4dD48L3N2Zz4=",
-      "tags": [],
-      "aiTools": []
-    },
-    {
       "id": "39584d9e",
       "title": "OpenAI、安全性研究者3人を解雇　本人らは「安全性を優先したため」と主張、同社は「機密情報の扱いに関する規定違反」と説明",
       "description": "バレスニ氏はXで、退職時の面談で、外部の安全性研究組織と話しすぎていたため会社として信頼できなくなったと告げられ、知的財産を漏えいしたかのような示唆を受けたと説明した。同氏は知的財産を共有したことはなく、業務は上司や研究部門の幹部、取締役会と調整して進めていたと主張している。3人は、AIの推論を監視...",
@@ -1602,19 +1637,6 @@
       "time": "4日前",
       "timestamp": "2026-10-09T23:45:21",
       "thumbnail": "https://cdn-ak2.favicon.st-hatena.com/64?url=https%3A%2F%2Fwww.itmedia.co.jp%2Fnews%2Farticle%2F2610%2F10%2F2000002189%2F",
-      "tags": [],
-      "aiTools": []
-    },
-    {
-      "id": "0713cb7f",
-      "title": "robots.txtとllms.txtの違いと、AIクローラーを許可するときの確認点",
-      "description": "robots.txt と llms.txt は名前が似ていますが、役割が別物です。2つの違いと、AI検索のクローラー（ページを読みに来るプログラム）を許可するときの確認点を、公式資料にそって整理します。許可すれば AI の回答に載る、という話ではありません。対象は、不動産会社などのサイト管理者の方です。筆者は、AI検索の診断サービス（My Agent Research）を提供する合同会社 M...",
-      "url": "https://zenn.dev/my_agent_works/articles/robots-txt-llms-txt-ai-crawler-check",
-      "platform": "zenn",
-      "author": "合同会社 My Agent Works",
-      "time": "4日前",
-      "timestamp": "2026-10-09T16:52:36",
-      "thumbnail": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgZmlsbD0iIzNlYThmZiIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iNDgiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iLjNlbSI+WmVubjwvdGV4dD48L3N2Zz4=",
       "tags": [],
       "aiTools": []
     },
@@ -2182,7 +2204,7 @@
       "url": "https://www.nikkei.com/article/DGXZQOUC06BCW0W6A001C2000000/",
       "platform": "blog",
       "author": "不明",
-      "time": "7日前",
+      "time": "8日前",
       "timestamp": "2026-10-06T17:49:49",
       "thumbnail": "https://cdn-ak2.favicon.st-hatena.com/64?url=https%3A%2F%2Fwww.nikkei.com%2Farticle%2FDGXZQOUC06BCW0W6A001C2000000%2F",
       "tags": [],
@@ -2312,13 +2334,13 @@
       "thumbnail": "https://cdn-ak2.favicon.st-hatena.com/64?url=https%3A%2F%2Fanond.hatelabo.jp%2F20261006101040",
       "tags": [
         "Gemini",
-        "Claude",
-        "ChatGPT"
+        "ChatGPT",
+        "Claude"
       ],
       "aiTools": [
         "gemini",
-        "claude",
-        "chatgpt"
+        "chatgpt",
+        "claude"
       ]
     },
     {
@@ -2466,12 +2488,12 @@
       "timestamp": "2026-10-02T02:39:19",
       "thumbnail": "https://cdn-ak2.favicon.st-hatena.com/64?url=https%3A%2F%2Flabo.hatenastaff.com%2Fentry%2F2026%2F10%2F02%2F113000",
       "tags": [
-        "Claude",
-        "ChatGPT"
+        "ChatGPT",
+        "Claude"
       ],
       "aiTools": [
-        "claude",
-        "chatgpt"
+        "chatgpt",
+        "claude"
       ]
     },
     {
@@ -2499,13 +2521,13 @@
       "thumbnail": "https://assets.st-note.com/production/uploads/images/319811621/rectangle_large_type_2_0e515195a6d937ea6e7a12d253bcbdb1.jpeg?width=800",
       "tags": [
         "Gemini",
-        "Claude",
-        "ChatGPT"
+        "ChatGPT",
+        "Claude"
       ],
       "aiTools": [
         "gemini",
-        "claude",
-        "chatgpt"
+        "chatgpt",
+        "claude"
       ]
     },
     {
@@ -2661,7 +2683,7 @@
       "url": "https://www.itmedia.co.jp/aiplus/article/2609/30/2000001864/",
       "platform": "blog",
       "author": "不明",
-      "time": "14日前",
+      "time": "15日前",
       "timestamp": "2026-09-29T18:51:02",
       "thumbnail": "https://cdn-ak2.favicon.st-hatena.com/64?url=https%3A%2F%2Fwww.itmedia.co.jp%2Faiplus%2Farticle%2F2609%2F30%2F2000001864%2F",
       "tags": [],
@@ -2706,7 +2728,7 @@
       "url": "https://togetter.com/li/2751313",
       "platform": "blog",
       "author": "不明",
-      "time": "16日前",
+      "time": "17日前",
       "timestamp": "2026-09-27T17:27:38",
       "thumbnail": "https://cdn-ak2.favicon.st-hatena.com/64?url=https%3A%2F%2Ftogetter.com%2Fli%2F2751313",
       "tags": [
@@ -2796,13 +2818,13 @@
       "thumbnail": "https://cdn-ak2.favicon.st-hatena.com/64?url=https%3A%2F%2Fnote.com%2Fblue_pen5805%2Fn%2Fnb124b104c28b",
       "tags": [
         "Gemini",
-        "Claude",
-        "ChatGPT"
+        "ChatGPT",
+        "Claude"
       ],
       "aiTools": [
         "gemini",
-        "claude",
-        "chatgpt"
+        "chatgpt",
+        "claude"
       ]
     },
     {
@@ -2878,7 +2900,7 @@
       "url": "https://openai.com/index/introducing-gpt-6-sol-and-luna/",
       "platform": "blog",
       "author": "不明",
-      "time": "21日前",
+      "time": "22日前",
       "timestamp": "2026-09-22T18:17:39",
       "thumbnail": "https://cdn-ak2.favicon.st-hatena.com/64?url=https%3A%2F%2Fopenai.com%2Findex%2Fintroducing-gpt-6-sol-and-luna%2F",
       "tags": [],
@@ -2938,12 +2960,12 @@
       "timestamp": "2026-09-21T10:08:12",
       "thumbnail": "https://cdn-ak2.favicon.st-hatena.com/64?url=https%3A%2F%2Fgrokbot-icon-studio.serio-ai.chatgpt.site%2F",
       "tags": [
-        "Grok",
-        "ChatGPT"
+        "ChatGPT",
+        "Grok"
       ],
       "aiTools": [
-        "grok",
-        "chatgpt"
+        "chatgpt",
+        "grok"
       ]
     }
   ]
